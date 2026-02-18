@@ -2900,5 +2900,359 @@
     "screenshots": {
       "desktop": "/motifs/hunt-big-architects/reference-desktop.png"
     }
+  },
+  {
+    "slug": "hunt-united-drone-company",
+    "name": "United Drone Company",
+    "style": "",
+    "huntDate": "2026-02-17",
+    "categories": [
+      "B2B SaaS"
+    ],
+    "engagement": 5,
+    "mode": "light",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#E5DBC4",
+          "secondary": "#1A1508",
+          "tertiary": "#2D1E0A"
+        },
+        "accent": {
+          "primary": "#E8631A",
+          "secondary": "#C49040"
+        },
+        "text": {
+          "primary": "#111111",
+          "secondary": "#C49040",
+          "muted": "#8A6428"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "'GT America Extended', 'Neue Haas Grotesk Display', 'Barlow', sans-serif",
+          "body": "'Trade Gothic', 'Barlow Condensed', 'DIN Condensed', sans-serif",
+          "mono": "'IBM Plex Mono', 'Courier Prime', monospace"
+        },
+        "scale": {
+          "hero": "clamp(64px, 10vw, 140px)",
+          "h1": "clamp(40px, 6vw, 80px)",
+          "h2": "clamp(24px, 3vw, 48px)",
+          "body": "14px",
+          "small": "12px",
+          "micro": "10px"
+        },
+        "weights": {
+          "bold": 700,
+          "semibold": 600,
+          "regular": 400,
+          "black": 900
+        },
+        "lineHeights": {
+          "tight": 1,
+          "normal": 1.3,
+          "relaxed": 1.6
+        }
+      },
+      "spacing": {
+        "section": "80px",
+        "element": "24px",
+        "tight": "8px",
+        "labelPadding": "8px 20px",
+        "gridCell": "22px"
+      },
+      "borderRadius": {
+        "card": "0px",
+        "button": "0px",
+        "pill": "0px",
+        "label": "2px"
+      },
+      "shadows": {},
+      "animation": {
+        "durations": {
+          "fast": "150ms",
+          "normal": "300ms",
+          "slow": "600ms"
+        },
+        "easings": {
+          "default": "ease-out",
+          "sharp": "cubic-bezier(0.4, 0, 0.2, 1)"
+        }
+      }
+    },
+    "motifs": [
+      {
+        "slug": "grid-background",
+        "name": "Grid Background",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "brutalist-typography",
+        "name": "Brutalist Typography",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "military-label-system",
+        "name": "Military Label System",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "color-block-sections",
+        "name": "Color Block Sections",
+        "category": "background-treatment"
+      },
+      {
+        "slug": "bracket-motif",
+        "name": "Bracket Motif",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "watermark-oversized-type",
+        "name": "Watermark Oversized Type",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "drone-swarm-dot-icons",
+        "name": "Drone Swarm Dot Icons",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "crosshair-logo-mark",
+        "name": "Crosshair Logo Mark",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "chevron-arrow-decoration",
+        "name": "Chevron Arrow Decoration",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "all-caps-hierarchy",
+        "name": "All Caps Hierarchy",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "",
+    "coreAesthetic": "Style Name: Brutalist Military Tech / Defense Operator UI\nPhilosophy: Strip decoration to zero. Every element is either data, label, or structure. Grid and brackets are the only ornament. The system communicates authority through mass — oversized type, full-bleed color blocks, and military metadata codes. Nothing is decorative; everything is functional or structural.\nInfluences:\nMilitary field manuals and STANAG typography systems\nCold War-era government print design (FAA, DoD)\nFlight operations",
+    "techStack": [],
+    "screenshots": {
+      "desktop": "/motifs/hunt-united-drone-company/reference-desktop.png"
+    }
+  },
+  {
+    "slug": "hunt-nexara",
+    "name": "Nexara",
+    "style": "",
+    "huntDate": "2026-02-17",
+    "categories": [
+      "B2B SaaS"
+    ],
+    "engagement": 5,
+    "mode": "light",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#2A1E2E",
+          "secondary": "#C77AE8",
+          "tertiary": "#9B6CE8"
+        },
+        "accent": {
+          "primary": "#E87AAF",
+          "secondary": "#7A8CE8"
+        },
+        "text": {
+          "primary": "#FFFFFF",
+          "secondary": "#E8A0B8",
+          "muted": "#E8B0A0"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "'Space Grotesk', 'Inter', sans-serif",
+          "body": "'Inter', 'Space Grotesk', sans-serif",
+          "mono": "'JetBrains Mono', 'Fira Code', monospace"
+        },
+        "scale": {
+          "hero": "72px",
+          "h1": "56px",
+          "h2": "36px",
+          "body": "17px",
+          "small": "14px",
+          "micro": "13px"
+        },
+        "weights": {
+          "bold": 800,
+          "semibold": 600,
+          "regular": 400
+        },
+        "lineHeights": {
+          "tight": 1.1,
+          "normal": 1.5,
+          "relaxed": 1.7
+        }
+      },
+      "spacing": {
+        "section": "80px",
+        "element": "32px",
+        "tight": "12px"
+      },
+      "borderRadius": {
+        "card": "0px",
+        "button": "4px",
+        "pill": "0px"
+      },
+      "shadows": {},
+      "animation": {
+        "durations": {
+          "fast": "150ms",
+          "normal": "300ms"
+        },
+        "easings": {
+          "default": "ease-out"
+        }
+      }
+    },
+    "motifs": [
+      {
+        "slug": "split-screen-composition",
+        "name": "Split Screen Composition",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "scan-line-texture",
+        "name": "Scan Line Texture",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "gradient-background",
+        "name": "Gradient Background",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "dashed-grid-overlay",
+        "name": "Dashed Grid Overlay",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "stacked-color-bars",
+        "name": "Stacked Color Bars",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "",
+    "coreAesthetic": "Style Name: Autonomous Systems Duality\nPhilosophy: Two worlds in tension — the alive, gradient-saturated left side represents signal and noise, the raw computational substrate; the dark, controlled right side represents precision, decisions, and output. The brand lives at the seam between chaotic input and structured execution.\nInfluences:\nAutonomous systems dashboards and HUD interfaces\nBrutalist editorial layout (heavy headlines, asymmetric columns)\nCRT scan-line textures and radar overlay aes",
+    "techStack": [],
+    "screenshots": {
+      "desktop": "/motifs/hunt-nexara/reference-desktop.png"
+    }
+  },
+  {
+    "slug": "hunt-blissful-team",
+    "name": "Blissful Team",
+    "style": "",
+    "huntDate": "2026-02-17",
+    "categories": [
+      "B2B SaaS"
+    ],
+    "engagement": 5,
+    "mode": "light",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#1A3D3A",
+          "secondary": "#163532",
+          "tertiary": "#112E2B"
+        },
+        "accent": {
+          "primary": "#D4978E",
+          "secondary": "#C9887F"
+        },
+        "text": {
+          "primary": "#D4978E",
+          "secondary": "#C9887F",
+          "muted": "#A87068"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "Playfair Display, Georgia, 'Times New Roman', serif",
+          "body": "Inter, 'Helvetica Neue', Arial, sans-serif",
+          "mono": "'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+        },
+        "scale": {
+          "hero": "clamp(48px, 6vw, 80px)",
+          "h1": "clamp(36px, 4.5vw, 64px)",
+          "h2": "clamp(28px, 3.5vw, 48px)",
+          "body": "16px",
+          "small": "13px",
+          "micro": "11px"
+        },
+        "weights": {
+          "bold": 700,
+          "semibold": 600,
+          "regular": 400
+        },
+        "lineHeights": {
+          "tight": 1.1,
+          "normal": 1.5,
+          "relaxed": 1.7
+        }
+      },
+      "spacing": {
+        "section": "80px",
+        "element": "32px",
+        "tight": "12px"
+      },
+      "borderRadius": {
+        "card": "0px",
+        "button": "0px",
+        "pill": "0px"
+      },
+      "shadows": {},
+      "animation": {
+        "durations": {
+          "fast": "150ms",
+          "normal": "300ms",
+          "slow": "600ms"
+        },
+        "easings": {
+          "default": "ease-out",
+          "spring": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+        }
+      }
+    },
+    "motifs": [
+      {
+        "slug": "dot-matrix-pattern",
+        "name": "Dot Matrix Pattern",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "bracket-text-block",
+        "name": "Bracket Text Block",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "floating-circles",
+        "name": "Floating Circles",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "caps-label-row",
+        "name": "Caps Label Row",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "organic-tech-palette",
+        "name": "Organic Tech Palette",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "",
+    "coreAesthetic": "Style Name: Organic Intelligence\nPhilosophy: Bridges the natural and the computational. Forest green grounds the design in something alive and growing; salmon/rose humanizes machine systems. The tension between organic color choices and cold technical vocabulary (ARCHITECT, SIMULATE, EXECUTE) creates a distinct voice — infrastructure that feels alive, not mechanical.\nInfluences:\nBrutalist editorial design (raw typographic hierarchy, zero decoration)\nSwiss International Style (grid discipline, al",
+    "techStack": [],
+    "screenshots": {
+      "desktop": "/motifs/hunt-blissful-team/reference-desktop.png"
+    }
   }
 ]
