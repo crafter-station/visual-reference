@@ -15,12 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Motif Library — visual-reference.crafter.run",
+  title: "Visual Reference — visual-reference.crafter.run",
   description:
-    "Browse, compare, and export design tokens from real-world sites. Named visual behaviors with psychological justification.",
+    "Browse, compare, and copy design tokens from real-world sites. Prompt-first visual systems for AI coding tools.",
   openGraph: {
-    title: "Motif Library",
-    description: "Design tokens from real-world sites",
+    title: "Visual Reference",
+    description: "Prompt-first design tokens from real-world sites",
     url: "https://visual-reference.crafter.run",
   },
 };

@@ -12,7 +12,7 @@ export default function HomePage() {
         <div>
           <div className="flex items-center gap-3">
             <h1 className="font-display text-4xl tracking-tight md:text-5xl">
-              Motif Library
+              Visual Reference
             </h1>
             <span className="rounded-sm bg-white/[0.06] px-2 py-0.5 font-mono text-[10px] text-white/40">
               v0.2
