@@ -1,0 +1,130 @@
+{
+  "slug": "hunt-hivemind",
+  "name": "Hivemind",
+  "style": "Extreme Minimalism Whitespace",
+  "huntDate": "2026-02-01",
+  "categories": [
+    "B2B SaaS"
+  ],
+  "engagement": 6,
+  "mode": "dark",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#FFFFFF",
+        "secondary": "#F5F5F5",
+        "subtle": "#FAFAFA"
+      },
+      "accent": {
+        "blue": "#3B82F6",
+        "green": "#10B981",
+        "yellow": "#FCD34D",
+        "red": "#EF4444"
+      },
+      "text": {
+        "primary": "#1A1A1A",
+        "secondary": "#6B7280",
+        "muted": "#9CA3AF"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "SF Pro Display, Inter, -apple-system, BlinkMacSystemFont, sans-serif",
+        "body": "SF Pro Text, Inter, system-ui, sans-serif",
+        "mono": "JetBrains Mono, SF Mono, monospace"
+      },
+      "scale": {
+        "hero": "60px",
+        "h1": "48px",
+        "h2": "36px",
+        "h3": "24px",
+        "h4": "20px",
+        "body": "16px",
+        "small": "14px",
+        "meta": "12px"
+      },
+      "weights": {
+        "bold": 700,
+        "semibold": 600,
+        "medium": 500,
+        "regular": 400
+      },
+      "lineHeights": {
+        "tight": 1.2,
+        "normal": 1.6,
+        "relaxed": 1.8
+      }
+    },
+    "spacing": {
+      "unit": "8px",
+      "grid": "24px",
+      "section": "120px",
+      "hero": "200px",
+      "container": "1200px"
+    },
+    "borderRadius": {
+      "card": "12px",
+      "button": "8px",
+      "badge": "16px",
+      "small": "4px"
+    },
+    "shadows": {
+      "card": "0 1px 3px rgba(0, 0, 0, 0.06)",
+      "cardHover": "0 4px 12px rgba(0, 0, 0, 0.08)",
+      "subtle": "0 1px 2px rgba(0, 0, 0, 0.04)"
+    },
+    "animation": {
+      "durations": {
+        "fast": "150ms",
+        "normal": "250ms",
+        "slow": "400ms"
+      },
+      "easings": {
+        "default": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "spring": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+      }
+    }
+  },
+  "motifs": [
+    {
+      "slug": "extreme-whitespace",
+      "name": "Extreme Whitespace",
+      "category": "background-treatment"
+    },
+    {
+      "slug": "typographic-hierarchy",
+      "name": "Typographic Hierarchy",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "avatar-stacks",
+      "name": "Avatar Stacks",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "status-badges",
+      "name": "Status Badges",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "minimal-borders",
+      "name": "Minimal Borders",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "floating-actions",
+      "name": "Floating Actions",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "Whitespace reduces cognitive load. Minimal color = maximum signal. Anti-Notion positioning.",
+  "coreAesthetic": "Minimal blank canvas meets collaborative workspace. Extreme whitespace with surgical use of color for status indicators and CTAs. The design prioritizes content over chrome, creating an uncluttered environment for team coordination and project tracking.",
+  "techStack": [
+    "Next.js",
+    "Tailwind",
+    "shadcn/ui"
+  ],
+  "screenshots": {
+    "desktop": "/motifs/hunt-hivemind/reference-desktop.png"
+  }
+}

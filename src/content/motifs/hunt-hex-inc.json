@@ -1,0 +1,117 @@
+{
+  "slug": "hunt-hex-inc",
+  "name": "Hex Inc Web Work",
+  "style": "Dark Premium Portfolio with Neon Accents",
+  "huntDate": "2026-02-01",
+  "categories": [
+    "Portfolio"
+  ],
+  "engagement": 7,
+  "mode": "dark",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#031B1D",
+        "card": "#FFFFFF",
+        "overlay": "#041C1E"
+      },
+      "accent": {
+        "neon": "#21FFBC",
+        "coral": "#E6737D",
+        "cyan": "#D4EFFF"
+      },
+      "text": {
+        "primary": "#FFFFFF",
+        "secondary": "#041C1E",
+        "muted": "#6B7280"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Lausanne, -apple-system, BlinkMacSystemFont, sans-serif",
+        "body": "Open Sans, system-ui, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "scale": {
+        "hero": "40px",
+        "h1": "32px",
+        "h2": "24px",
+        "h3": "18px",
+        "body": "14px",
+        "small": "12px"
+      },
+      "weights": {
+        "bold": 700,
+        "semibold": 600,
+        "regular": 400
+      },
+      "lineHeights": {
+        "tight": 1.2,
+        "normal": 1.5,
+        "relaxed": 1.75
+      }
+    },
+    "spacing": {
+      "unit": "8px",
+      "grid": "24px",
+      "section": "80px",
+      "container": "1400px"
+    },
+    "borderRadius": {
+      "card": "8px",
+      "button": "8px",
+      "small": "4px"
+    },
+    "shadows": {
+      "card": "0 2px 8px rgba(0, 0, 0, 0.1)",
+      "cardHover": "0 4px 16px rgba(0, 0, 0, 0.15)",
+      "button": "none"
+    },
+    "animation": {
+      "durations": {
+        "fast": "150ms",
+        "normal": "250ms",
+        "slow": "400ms"
+      },
+      "easings": {
+        "default": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "in": "cubic-bezier(0.4, 0, 1, 1)",
+        "out": "cubic-bezier(0, 0, 0.2, 1)"
+      }
+    }
+  },
+  "motifs": [
+    {
+      "slug": "card-hover-lift",
+      "name": "Card Hover Lift",
+      "category": "hover-interaction"
+    },
+    {
+      "slug": "button-hover-brightness",
+      "name": "Button Hover Brightness",
+      "category": "hover-interaction"
+    },
+    {
+      "slug": "neon-glow-subtle",
+      "name": "Neon Glow (Subtle)",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "fade-up-entrance",
+      "name": "Fade Up Entrance",
+      "category": "entrance-animation"
+    }
+  ],
+  "whyItWorks": "Museum curation meets dev tools. Dark teal background creates \"spotlight\" effect where white portfolio cards glow. Neon green CTAs provide urgency without aggression.",
+  "coreAesthetic": "Dark Premium Portfolio with Neon Accents\nA sophisticated dark-mode portfolio showcasing high-contrast design work through a grid-based gallery with vibrant accent colors. The design philosophy centers on \"spotlight presentation\" - letting client work shine against a minimalist dark backdrop with strategic neon green CTAs.\nKey Influences:\nPremium agency portfolios (Instrument, Basic Agency)\nDark mode dev tools aesthetic\nGallery/museum curation approach\nNeon cyberpunk accents meets corporate sophi",
+  "techStack": [
+    "Webflow",
+    "minimal JS",
+    "CSS Grid"
+  ],
+  "screenshots": {
+    "desktop": "/motifs/hunt-hex-inc/reference-desktop.png",
+    "mobile": "/motifs/hunt-hex-inc/reference-mobile.png",
+    "tablet": "/motifs/hunt-hex-inc/reference-tablet.png"
+  }
+}
