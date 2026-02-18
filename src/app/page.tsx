@@ -23,7 +23,7 @@ export default function HomePage() {
           </p>
         </div>
         <Link
-          href="/motifs"
+          href="/references"
           className="hidden font-mono text-xs text-white/30 transition-colors hover:text-white/60 sm:block"
         >
           Browse all &rarr;

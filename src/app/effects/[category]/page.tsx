@@ -81,7 +81,7 @@ export default async function EffectCategoryPage({ params }: EffectCategoryPageP
                 return (
                   <Link
                     key={motifSlug}
-                    href={`/motifs/${motifSlug}`}
+                    href={`/references/${motifSlug}`}
                     className="group relative overflow-hidden rounded-sm border border-white/[0.06] transition-all hover:border-white/[0.14]"
                   >
                     {motif.screenshots.desktop ? (

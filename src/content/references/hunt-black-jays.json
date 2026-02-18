@@ -1,0 +1,114 @@
+{
+  "slug": "hunt-black-jays",
+  "name": "Black Jays",
+  "style": "",
+  "huntDate": "2026-02-02",
+  "categories": [
+    "B2B SaaS"
+  ],
+  "engagement": 5,
+  "mode": "light",
+  "tokens": {
+    "colors": {
+      "background": {
+        "background": "#F5F3EC",
+        "backgroundAlt": "#EFE8DB"
+      },
+      "accent": {
+        "primary": "#FF6E00",
+        "primaryOrange": "#FF8A00",
+        "accent": "#FFB800"
+      },
+      "text": {
+        "text": "#2C200F",
+        "textSecondary": "#15120C",
+        "textTertiary": "#3D2E1A",
+        "black": "#000000",
+        "white": "#FFFFFF"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Roboto Slab",
+        "body": "Roboto Slab"
+      },
+      "scale": {
+        "h1": "56px",
+        "h2": "42px",
+        "h3": "28px",
+        "h4": "24px",
+        "body": "16px",
+        "small": "14px"
+      },
+      "weights": {
+        "normal": 400,
+        "bold": 700
+      },
+      "lineHeights": {
+        "tight": 1.1,
+        "normal": 1.2,
+        "relaxed": 1.6
+      }
+    },
+    "spacing": {
+      "unit": "8px",
+      "scale": [
+        8,
+        16,
+        24,
+        32,
+        40,
+        48,
+        60,
+        80,
+        120
+      ]
+    },
+    "borderRadius": {
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px"
+    },
+    "shadows": {
+      "sm": "0 2px 8px rgba(0, 0, 0, 0.08)",
+      "md": "0 4px 12px rgba(0, 0, 0, 0.1)",
+      "lg": "0 8px 24px rgba(0, 0, 0, 0.12)"
+    },
+    "animation": {
+      "durations": {
+        "fast": "200ms",
+        "normal": "300ms",
+        "slow": "500ms"
+      },
+      "easings": {
+        "default": "ease",
+        "smooth": "cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    }
+  },
+  "motifs": [
+    {
+      "slug": "hoverOpacity",
+      "name": "HoverOpacity",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "illustrationStroke",
+      "name": "IllustrationStroke",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "illustrationStrokeColor",
+      "name": "IllustrationStrokeColor",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "## Visual Appeal\n\n### Screenshot-Worthy Elements\n1. **Custom hand-drawn illustrations** - Instantly recognizable, unique brand identity\n2. **Warm color palette** - Orange/yellow + cream creates optimistic, family-friendly vibe\n3. **Editorial typography** - Single serif font (Roboto Slab) gives authority + approachability\n4. **Illustration + text composition** - Line art frames content beautifully\n\n### Design Differentiation\n- **NOT generic VC**: Avoids typical blue/gradient/tech aesthetic\n- **Hu",
+  "coreAesthetic": "Warm Editorial Modernism with Hand-Drawn Humanity\nDesign philosophy: *Professional venture capital branding softened through hand-drawn illustration and warm earth tones to convey approachability and family-focused values.*\nInfluences:\nEditorial magazine layouts (serif typography, generous whitespace)\nMid-century modern illustration (continuous line art)\nScandinavian warmth (cream/beige palettes)\nContemporary tech branding (clean layouts, minimal UI)",
+  "techStack": [],
+  "screenshots": {
+    "desktop": "/references/hunt-black-jays/reference-desktop.png",
+    "mobile": "/references/hunt-black-jays/reference-mobile.png",
+    "tablet": "/references/hunt-black-jays/reference-tablet.png"
+  }
+}

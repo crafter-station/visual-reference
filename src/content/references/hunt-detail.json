@@ -1,0 +1,129 @@
+{
+  "slug": "hunt-detail",
+  "name": "Detail",
+  "style": "Dramatic Bug-Hunter Noir",
+  "huntDate": "2026-02-01",
+  "categories": [
+    "Dev Tools"
+  ],
+  "engagement": 7,
+  "mode": "dark",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#000000",
+        "white": "#FFFFFF",
+        "overlay": "#0A0A0A"
+      },
+      "accent": {
+        "neon": "#00FF41",
+        "red": "#FF0000",
+        "cyan": "#00FFFF"
+      },
+      "text": {
+        "primary": "#FFFFFF",
+        "secondary": "#000000",
+        "muted": "#A3A3A3"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Inter, -apple-system, BlinkMacSystemFont, sans-serif",
+        "body": "Inter, system-ui, sans-serif",
+        "mono": "JetBrains Mono, Menlo, monospace"
+      },
+      "scale": {
+        "hero": "56px",
+        "h1": "44px",
+        "h2": "32px",
+        "h3": "24px",
+        "body": "16px",
+        "small": "14px"
+      },
+      "weights": {
+        "bold": 700,
+        "semibold": 600,
+        "regular": 400
+      },
+      "lineHeights": {
+        "tight": 1.1,
+        "normal": 1.5,
+        "relaxed": 1.7
+      }
+    },
+    "spacing": {
+      "unit": "8px",
+      "grid": "24px",
+      "section": "120px",
+      "container": "1400px"
+    },
+    "borderRadius": {
+      "card": "8px",
+      "button": "6px",
+      "small": "4px"
+    },
+    "shadows": {
+      "card": "0 4px 24px rgba(0, 255, 65, 0.1)",
+      "cardHover": "0 8px 32px rgba(0, 255, 65, 0.2)",
+      "button": "0 0 16px rgba(0, 255, 65, 0.4)"
+    },
+    "animation": {
+      "durations": {
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "500ms"
+      },
+      "easings": {
+        "default": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "in": "cubic-bezier(0.4, 0, 1, 1)",
+        "out": "cubic-bezier(0, 0, 0.2, 1)"
+      }
+    }
+  },
+  "motifs": [
+    {
+      "slug": "diagonal-section-cuts",
+      "name": "Diagonal Section Cuts",
+      "category": "layout-pattern"
+    },
+    {
+      "slug": "neon-glow-accents",
+      "name": "Neon Glow Accents",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "terminal-aesthetic",
+      "name": "Terminal Aesthetic",
+      "category": "content-pattern"
+    },
+    {
+      "slug": "bug-severity-visualization",
+      "name": "Bug Severity Visualization",
+      "category": "content-pattern"
+    },
+    {
+      "slug": "dramatic-negative-space",
+      "name": "Dramatic Negative Space",
+      "category": "layout-pattern"
+    },
+    {
+      "slug": "github-integration-cards",
+      "name": "Github Integration Cards",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "cto-testimonial-cards",
+      "name": "Cto Testimonial Cards",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "Diagonal cuts create visual tension. Neon green on black = trusted hacker aesthetic. Red bug bars create urgency. Real CTO social proof.",
+  "coreAesthetic": "Dramatic Bug-Hunter Noir - High contrast black/white with neon green accents. Diagonal section breaks create tension. Philosophy: \"Finding bugs is dramatic, design should match.\"",
+  "techStack": [
+    "Next.js likely",
+    "terminal aesthetics"
+  ],
+  "screenshots": {
+    "desktop": "/references/hunt-detail/reference-desktop.png"
+  }
+}

@@ -16,7 +16,7 @@ export function MotifCard({ motif }: MotifCardProps) {
 
   return (
     <Link
-      href={`/motifs/${motif.slug}`}
+      href={`/references/${motif.slug}`}
       className="group relative flex flex-col overflow-hidden rounded-md border border-white/[0.06] bg-white/[0.02] transition-all duration-300 hover:border-white/[0.14]"
     >
       <div className="relative aspect-[4/3] w-full overflow-hidden">

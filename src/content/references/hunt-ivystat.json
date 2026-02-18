@@ -1,0 +1,120 @@
+{
+  "slug": "hunt-ivystat",
+  "name": "Ivystat",
+  "style": "Modern Academic Platform",
+  "huntDate": "2026-02-01",
+  "categories": [
+    "Education"
+  ],
+  "engagement": 6,
+  "mode": "light",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#FFFFFF",
+        "subtle": "#F9FAFB"
+      },
+      "accent": {
+        "navy": "#1E3A8A",
+        "blue": "#3B82F6",
+        "green": "#10B981"
+      },
+      "text": {
+        "primary": "#111827",
+        "secondary": "#6B7280",
+        "muted": "#9CA3AF"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Inter, -apple-system, BlinkMacSystemFont, sans-serif",
+        "body": "Inter, system-ui, sans-serif",
+        "mono": "SF Mono, monospace"
+      },
+      "scale": {
+        "hero": "40px",
+        "h1": "32px",
+        "h2": "24px",
+        "h3": "20px",
+        "body": "16px",
+        "small": "14px",
+        "meta": "12px"
+      },
+      "weights": {
+        "bold": 700,
+        "semibold": 600,
+        "medium": 500,
+        "regular": 400
+      },
+      "lineHeights": {
+        "tight": 1.2,
+        "normal": 1.5,
+        "relaxed": 1.7
+      }
+    },
+    "spacing": {
+      "unit": "8px",
+      "grid": "24px",
+      "section": "72px",
+      "container": "1280px"
+    },
+    "borderRadius": {
+      "card": "8px",
+      "button": "6px",
+      "small": "4px"
+    },
+    "shadows": {
+      "card": "0 2px 8px rgba(0, 0, 0, 0.08)",
+      "cardHover": "0 4px 12px rgba(0, 0, 0, 0.12)",
+      "button": "0 1px 3px rgba(0, 0, 0, 0.1)"
+    },
+    "animation": {
+      "durations": {
+        "fast": "150ms",
+        "normal": "250ms",
+        "slow": "400ms"
+      },
+      "easings": {
+        "default": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "out": "cubic-bezier(0, 0, 0.2, 1)"
+      }
+    }
+  },
+  "motifs": [
+    {
+      "slug": "university-logo-cards",
+      "name": "University Logo Cards",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "stats-grid-display",
+      "name": "Stats Grid Display",
+      "category": "content-pattern"
+    },
+    {
+      "slug": "outline-buttons",
+      "name": "Outline Buttons",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "navy-primary-cta",
+      "name": "Navy Primary Cta",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "data-visualization-cards",
+      "name": "Data Visualization Cards",
+      "category": "content-pattern"
+    }
+  ],
+  "whyItWorks": "Navy blue = educational credibility. Card grids = easy comparison. Data viz makes complex info digestible.",
+  "coreAesthetic": "Modern Academic Platform - Clean, professional educational interface with subtle sophistication. Combines trustworthy navy blue accents with generous whitespace and card-based information architecture. Designed to feel credible and accessible for university students and counselors.",
+  "techStack": [
+    "Next.js",
+    "shadcn/ui",
+    "Chart.js"
+  ],
+  "screenshots": {
+    "desktop": "/references/hunt-ivystat/reference-desktop.png"
+  }
+}

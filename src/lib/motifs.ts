@@ -1,5 +1,5 @@
 import type { Motif, Category, MotifCategory, PaletteMode } from "./types";
-import motifData from "@/content/motifs/index.json";
+import motifData from "@/content/references/index.json";
 
 const data = motifData as unknown as Motif[];
 

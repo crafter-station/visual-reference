@@ -6,8 +6,8 @@ import { join, basename, dirname } from "path";
 const VAULT_ROOT = "/Users/raillyhugo/hunter-brain";
 const TEMPLATES_ROOT = join(VAULT_ROOT, "06_Content/v0-templates");
 const HUNT_INDEX_PATH = join(VAULT_ROOT, "05_Areas/v0-ambassador/hunt-library-index.md");
-const OUT_CONTENT_DIR = join(import.meta.dir, "../src/content/motifs");
-const OUT_PUBLIC_DIR = join(import.meta.dir, "../public/motifs");
+const OUT_CONTENT_DIR = join(import.meta.dir, "../src/content/references");
+const OUT_PUBLIC_DIR = join(import.meta.dir, "../public/references");
 
 type Category = "Portfolio" | "B2B SaaS" | "Dev Tools" | "VC / Finance" | "Creative / 3D" | "Education" | "Fintech";
 type MotifCategory = "background-treatment" | "hover-interaction" | "entrance-animation" | "layout-pattern" | "visual-accent" | "content-pattern" | "illustration-system" | "3d-spatial";
@@ -452,14 +452,14 @@ async function processHuntFolder(
     const src = join(huntDir, file);
     const dest = join(destDir, file);
     await copyFile(src, dest);
-    const publicPath = `/motifs/${slug}/${file}`;
+    const publicPath = `/references/${slug}/${file}`;
     if (file.includes("desktop")) screenshots.desktop = publicPath;
     else if (file.includes("tablet")) screenshots.tablet = publicPath;
     else if (file.includes("mobile")) screenshots.mobile = publicPath;
   }
 
   if (!screenshots.desktop && screenshotFiles.length > 0) {
-    screenshots.desktop = `/motifs/${slug}/${screenshotFiles[0]}`;
+    screenshots.desktop = `/references/${slug}/${screenshotFiles[0]}`;
   }
 
   return {

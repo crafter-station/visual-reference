@@ -45,7 +45,7 @@ export function buildPrompt(motif: Motif): string {
 
   lines.push(
     ``,
-    `Reference: https://visual-reference.crafter.run/motifs/${motif.slug}`
+    `Reference: https://visual-reference.crafter.run/references/${motif.slug}`
   );
 
   return lines.join("\n");

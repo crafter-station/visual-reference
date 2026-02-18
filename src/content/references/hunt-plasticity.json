@@ -1,0 +1,125 @@
+{
+  "slug": "hunt-plasticity",
+  "name": "Plasticity",
+  "style": "Premium Dark 3D Showcase",
+  "huntDate": "2026-02-01",
+  "categories": [
+    "Creative / 3D"
+  ],
+  "engagement": 8.5,
+  "mode": "dark",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#000000",
+        "secondary": "#18181B",
+        "elevated": "#27272A"
+      },
+      "accent": {
+        "cyan": "#0EA5E9",
+        "green": "#22C55E",
+        "purple": "#8B5CF6",
+        "amber": "#FFA500"
+      },
+      "text": {
+        "primary": "#FFFFFF",
+        "secondary": "#71717A",
+        "muted": "#A3A3A3"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Inter, Geist, -apple-system, BlinkMacSystemFont, sans-serif",
+        "body": "Inter, system-ui, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "scale": {
+        "hero": "72px",
+        "h1": "48px",
+        "h2": "36px",
+        "body": "18px",
+        "small": "14px"
+      },
+      "weights": {
+        "bold": 700,
+        "medium": 500,
+        "regular": 400
+      },
+      "lineHeights": {
+        "tight": 1.1,
+        "normal": 1.5,
+        "relaxed": 1.7
+      }
+    },
+    "spacing": {
+      "unit": "8px",
+      "grid": "32px",
+      "section": "120px",
+      "container": "1400px"
+    },
+    "borderRadius": {
+      "card": "12px",
+      "button": "8px",
+      "small": "4px"
+    },
+    "shadows": {
+      "card": "0 8px 32px rgba(0, 0, 0, 0.4)",
+      "cardHover": "0 12px 48px rgba(0, 0, 0, 0.6)",
+      "glow": "0 0 40px rgba(14, 165, 233, 0.3)"
+    },
+    "animation": {
+      "durations": {
+        "fast": "200ms",
+        "normal": "300ms",
+        "slow": "500ms"
+      },
+      "easings": {
+        "default": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "in": "cubic-bezier(0.4, 0, 1, 1)",
+        "out": "cubic-bezier(0, 0, 0.2, 1)"
+      }
+    }
+  },
+  "motifs": [
+    {
+      "slug": "starfield-background",
+      "name": "Starfield Background",
+      "category": "background-treatment"
+    },
+    {
+      "slug": "floating-3d-renders",
+      "name": "Floating 3D Renders",
+      "category": "3d-spatial"
+    },
+    {
+      "slug": "neon-glow-accents",
+      "name": "Neon Glow Accents",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "glass-morphic-cards",
+      "name": "Glass-Morphic Cards",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "perspective-grid",
+      "name": "Perspective Grid",
+      "category": "entrance-animation"
+    },
+    {
+      "slug": "ambient-lighting",
+      "name": "Ambient Lighting",
+      "category": "3d-spatial"
+    }
+  ],
+  "whyItWorks": "3D renders demonstrate capability directly. Starfield creates infinite depth. Cinematic quality justifies premium pricing.",
+  "coreAesthetic": "",
+  "techStack": [
+    "Three.js",
+    "WebGL",
+    "React Three Fiber"
+  ],
+  "screenshots": {
+    "desktop": "/references/hunt-plasticity/reference-desktop.png"
+  }
+}
