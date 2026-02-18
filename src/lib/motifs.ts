@@ -23,8 +23,21 @@ export function getMotifsByEffect(category: MotifCategory): Motif[] {
   return data.filter((m) => m.motifs.some((t) => t.category === category));
 }
 
-export function getFeaturedMotifs(count = 6): Motif[] {
-  return [...data].sort((a, b) => b.engagement - a.engagement).slice(0, count);
+const FEATURED_SLUGS = [
+  "hunt-united-drone-company",
+  "hunt-nexara",
+  "hunt-blissful-team",
+  "hunt-cassette-cat",
+  "hunt-amp-dev",
+  "hunt-cursor-directory",
+  "hunt-big-architects",
+  "hunt-maca-voice",
+];
+
+export function getFeaturedMotifs(): Motif[] {
+  return FEATURED_SLUGS
+    .map((slug) => data.find((m) => m.slug === slug))
+    .filter((m): m is Motif => m !== undefined);
 }
 
 export function getMotifSlugs(): string[] {

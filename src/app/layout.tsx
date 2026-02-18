@@ -34,34 +34,34 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0a0a0a] text-white`}
       >
-        <nav className="sticky top-0 z-50 border-b border-white/[0.06] bg-[#0a0a0a]/80 backdrop-blur-sm">
-          <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
-            <Link href="/" className="flex items-center gap-2">
-              <span className="font-mono text-sm font-medium text-white">
+        <nav className="sticky top-0 z-50 border-b border-white/[0.06] bg-[#0a0a0a]/90 backdrop-blur-md">
+          <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-2.5">
+            <Link href="/" className="flex items-center gap-1.5">
+              <span className="font-mono text-[13px] font-medium text-white/80">
                 visual-reference
               </span>
-              <span className="rounded bg-white/10 px-1.5 py-0.5 font-mono text-[10px] text-white/50">
+              <span className="font-mono text-[10px] text-white/25">
                 .crafter.run
               </span>
             </Link>
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-5">
               <Link
                 href="/motifs"
-                className="text-sm text-white/60 transition-colors hover:text-white"
+                className="font-mono text-[12px] text-white/40 transition-colors hover:text-white/70"
               >
-                Motifs
+                motifs
               </Link>
               <Link
                 href="/effects"
-                className="text-sm text-white/60 transition-colors hover:text-white"
+                className="font-mono text-[12px] text-white/40 transition-colors hover:text-white/70"
               >
-                Effects
+                effects
               </Link>
               <Link
                 href="/compare"
-                className="text-sm text-white/60 transition-colors hover:text-white"
+                className="font-mono text-[12px] text-white/40 transition-colors hover:text-white/70"
               >
-                Compare
+                compare
               </Link>
             </div>
           </div>

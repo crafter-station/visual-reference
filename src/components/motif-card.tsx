@@ -1,67 +1,59 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Motif } from "@/lib/types";
-import { ColorDNA } from "@/components/color-dna";
 
 interface MotifCardProps {
   motif: Motif;
 }
 
 export function MotifCard({ motif }: MotifCardProps) {
-  const accentColors = Object.values(motif.tokens.colors.accent).slice(0, 5);
+  const allColors = [
+    ...Object.values(motif.tokens.colors.background),
+    ...Object.values(motif.tokens.colors.accent),
+    ...Object.values(motif.tokens.colors.text),
+  ].slice(0, 8);
 
   return (
     <Link
       href={`/motifs/${motif.slug}`}
-      className="group flex flex-col overflow-hidden rounded-lg border border-white/[0.06] bg-white/[0.02] transition-all duration-200 hover:-translate-y-0.5 hover:border-white/[0.12] hover:bg-white/[0.04]"
+      className="group relative flex flex-col overflow-hidden rounded-md border border-white/[0.06] bg-white/[0.02] transition-all duration-300 hover:border-white/[0.14]"
     >
-      <div className="relative aspect-video w-full overflow-hidden bg-white/[0.03]">
+      <div className="relative aspect-[4/3] w-full overflow-hidden">
         {motif.screenshots.desktop ? (
           <Image
             src={motif.screenshots.desktop}
             alt={motif.name}
             fill
-            className="object-cover"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           />
         ) : (
-          <div className="flex h-full items-center justify-center">
-            <span className="font-mono text-xs text-white/20">No screenshot</span>
+          <div className="flex h-full items-center justify-center bg-white/[0.03]">
+            <span className="font-mono text-[10px] text-white/20">No preview</span>
           </div>
         )}
+        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#0a0a0a] to-transparent" />
       </div>
 
-      <div className="flex flex-1 flex-col gap-3 p-4">
-        <div>
-          <p className="text-sm font-semibold text-white">{motif.name}</p>
-          <p className="mt-0.5 text-xs text-white/50">{motif.style}</p>
+      <div className="flex flex-col gap-2 p-3">
+        <div className="flex items-start justify-between gap-2">
+          <div className="min-w-0">
+            <p className="truncate text-[13px] font-medium text-white">{motif.name}</p>
+            <p className="truncate text-[11px] text-white/40">{motif.style}</p>
+          </div>
+          <span className="shrink-0 font-mono text-[10px] text-white/25">
+            {motif.motifs.length}fx
+          </span>
         </div>
 
-        {accentColors.length > 0 && (
-          <div className="flex items-center gap-1.5">
-            {accentColors.map((hex) => (
-              <span
-                key={hex}
-                className="h-3 w-3 rounded-full border border-white/10"
-                style={{ backgroundColor: hex }}
-              />
-            ))}
-          </div>
-        )}
-
-        {accentColors.length > 0 && (
-          <div className="w-full overflow-hidden rounded">
-            <ColorDNA colors={accentColors} height={32} width={200} />
-          </div>
-        )}
-
-        <div className="flex items-center justify-between pt-1">
-          <span className="inline-flex items-center rounded border border-white/10 bg-white/[0.04] px-1.5 py-0.5 font-mono text-[10px] text-white/50">
-            {motif.engagement.toFixed(1)}
-          </span>
-          <span className="font-mono text-[10px] text-white/30">
-            {motif.motifs.length} effects
-          </span>
+        <div className="flex h-1.5 w-full gap-px overflow-hidden rounded-full">
+          {allColors.map((hex, i) => (
+            <div
+              key={`${hex}-${i}`}
+              className="h-full flex-1"
+              style={{ backgroundColor: hex }}
+            />
+          ))}
         </div>
       </div>
     </Link>
