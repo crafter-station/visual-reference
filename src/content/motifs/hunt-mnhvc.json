@@ -1,0 +1,87 @@
+{
+  "slug": "hunt-mnhvc",
+  "name": "MNHVC",
+  "style": "Modern VC Editorial (Warm)",
+  "huntDate": "2026-02-01",
+  "categories": [
+    "VC / Finance"
+  ],
+  "engagement": 6,
+  "mode": "warm",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#FFF8F0",
+        "secondary": "#000000"
+      },
+      "accent": {
+        "primary": "#F97316",
+        "secondary": "#60A5FA"
+      },
+      "text": {
+        "primary": "#FFFFFF",
+        "secondary": "#1F2937",
+        "tertiary": "#6B7280"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Inter",
+        "body": "Inter",
+        "mono": "JetBrains Mono"
+      },
+      "scale": {
+        "xs": "12px",
+        "sm": "14px",
+        "base": "16px",
+        "lg": "18px",
+        "xl": "24px",
+        "2xl": "32px",
+        "3xl": "48px"
+      },
+      "weights": {
+        "regular": "400",
+        "medium": "500",
+        "semibold": "600",
+        "bold": "700",
+        "heavy": "900"
+      },
+      "lineHeights": {
+        "tight": "1.2",
+        "normal": "1.5",
+        "relaxed": "1.75"
+      }
+    },
+    "spacing": {
+      "section": "80px",
+      "element": "24px",
+      "tight": "8px"
+    },
+    "borderRadius": {
+      "card": "12px",
+      "button": "8px",
+      "pill": "9999px"
+    },
+    "shadows": {},
+    "animation": {
+      "durations": {
+        "fast": "150ms",
+        "normal": "300ms"
+      },
+      "easings": {
+        "default": "ease-out"
+      }
+    }
+  },
+  "motifs": [],
+  "whyItWorks": "Warm colors break VC coldness stereotype. Modular cards = flexible content. Personality over polish.",
+  "coreAesthetic": "Modern VC Editorial - Clean, editorial-style design with strong typography hierarchy and modular card layouts. Features soft beige backgrounds, crisp white cards, and strategic use of orange accents. The aesthetic balances corporate professionalism with approachability through rounded corners and generous spacing.",
+  "techStack": [
+    "Next.js",
+    "Tailwind",
+    "custom illustrations"
+  ],
+  "screenshots": {
+    "desktop": "/motifs/hunt-mnhvc/reference-desktop.png"
+  }
+}

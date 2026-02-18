@@ -1,0 +1,88 @@
+{
+  "slug": "hunt-blink",
+  "name": "Blink",
+  "style": "Premium Education Platform (Dark)",
+  "huntDate": "2026-02-01",
+  "categories": [
+    "Education"
+  ],
+  "engagement": 7.5,
+  "mode": "dark",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#0A3A2A",
+        "secondary": "#F9FAFB"
+      },
+      "accent": {
+        "primary": "#34D399",
+        "secondary": "#F97316",
+        "tertiary": "#EC4899"
+      },
+      "text": {
+        "muted": "#15503D",
+        "primary": "#FFFFFF",
+        "secondary": "#E5E7EB"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Inter",
+        "body": "Inter",
+        "mono": "JetBrains Mono"
+      },
+      "scale": {
+        "xs": "12px",
+        "sm": "14px",
+        "base": "16px",
+        "lg": "18px",
+        "xl": "24px",
+        "2xl": "32px",
+        "3xl": "48px"
+      },
+      "weights": {
+        "regular": "400",
+        "medium": "500",
+        "semibold": "600",
+        "bold": "700",
+        "heavy": "900"
+      },
+      "lineHeights": {
+        "tight": "1.2",
+        "normal": "1.5",
+        "relaxed": "1.75"
+      }
+    },
+    "spacing": {
+      "section": "80px",
+      "element": "24px",
+      "tight": "8px"
+    },
+    "borderRadius": {
+      "card": "12px",
+      "button": "8px",
+      "pill": "9999px"
+    },
+    "shadows": {},
+    "animation": {
+      "durations": {
+        "fast": "150ms",
+        "normal": "300ms"
+      },
+      "easings": {
+        "default": "ease-out"
+      }
+    }
+  },
+  "motifs": [],
+  "whyItWorks": "Dark mode = premium positioning. Mesh gradients add depth. Calendar integration shows functionality.",
+  "coreAesthetic": "Premium Education Platform - Sophisticated dark-mode-first design with deep forest green as the primary color. Features clean typography, generous white space, and subtle gradient mesh backgrounds. The aesthetic communicates trust and professionalism while maintaining warmth through organic gradients and soft shadows.",
+  "techStack": [
+    "Next.js",
+    "mesh gradient CSS",
+    "calendar API"
+  ],
+  "screenshots": {
+    "desktop": "/motifs/hunt-blink/reference-desktop.png"
+  }
+}

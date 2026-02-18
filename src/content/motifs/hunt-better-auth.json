@@ -1,0 +1,121 @@
+{
+  "slug": "hunt-better-auth",
+  "name": "Better Auth",
+  "style": "",
+  "huntDate": "2026-01-20",
+  "categories": [
+    "B2B SaaS"
+  ],
+  "engagement": 5,
+  "mode": "light",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#0A0A0A",
+        "secondary": "#1A1A1A"
+      },
+      "accent": {
+        "primary": "#F97316",
+        "secondary": "#22C55E",
+        "tertiary": "#06B6D4"
+      },
+      "text": {
+        "primary": "#6B6B6B",
+        "secondary": "#A3A3A3",
+        "tertiary": "#E5E5E5",
+        "muted": "#2A2A2A"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Sans-serif display (likely Inter or custom)",
+        "body": "Sans-serif display (likely Inter or custom)",
+        "mono": "Monospace for technical credibility"
+      },
+      "scale": {
+        "xs": "12px",
+        "sm": "14px",
+        "base": "16px",
+        "lg": "18px",
+        "xl": "24px",
+        "2xl": "32px",
+        "3xl": "48px"
+      },
+      "weights": {
+        "regular": "400",
+        "medium": "500",
+        "semibold": "600",
+        "bold": "700",
+        "heavy": "900"
+      },
+      "lineHeights": {
+        "tight": "1.2",
+        "normal": "1.5",
+        "relaxed": "1.75"
+      }
+    },
+    "spacing": {
+      "section": "80px",
+      "element": "24px",
+      "tight": "8px"
+    },
+    "borderRadius": {
+      "card": "12px",
+      "button": "8px",
+      "pill": "9999px"
+    },
+    "shadows": {},
+    "animation": {
+      "durations": {
+        "fast": "150ms",
+        "normal": "300ms"
+      },
+      "easings": {
+        "default": "ease-out"
+      }
+    }
+  },
+  "motifs": [
+    {
+      "slug": "textures-treatments",
+      "name": "Textures Treatments",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "graphic-elements",
+      "name": "Graphic Elements",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "world-map-grid",
+      "name": "World Map Grid",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "dot-matrix-pattern",
+      "name": "Dot Matrix Pattern",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "no-gradients",
+      "name": "No Gradients",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "subtle-glow",
+      "name": "Subtle Glow",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "live-event-ticker",
+      "name": "Live Event Ticker",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "",
+  "coreAesthetic": "Style: Dark Technical Infrastructure\nDesign Philosophy: Enterprise-grade credibility through minimalist dark UI with tactical map visualization and monospace typography, conveying global scale and developer trust.\nKey Influences:\nTerminal/CLI aesthetics\nMilitary/tactical mapping systems\nSaaS enterprise dashboards\nVercel/Linear dark mode paradigm",
+  "techStack": [],
+  "screenshots": {
+    "desktop": "/motifs/hunt-better-auth/reference-desktop.png"
+  }
+}

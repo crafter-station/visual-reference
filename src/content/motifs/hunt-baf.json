@@ -1,0 +1,85 @@
+{
+  "slug": "hunt-baf",
+  "name": "BAF",
+  "style": "Illustration-Driven Business Services",
+  "huntDate": "2026-02-01",
+  "categories": [
+    "B2B SaaS"
+  ],
+  "engagement": 7,
+  "mode": "light",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#D4F4DD",
+        "secondary": "#1C1C1C"
+      },
+      "accent": {
+        "primary": "#FFD600",
+        "secondary": "#00B8A9",
+        "tertiary": "#FF6B9D"
+      },
+      "text": {
+        "primary": "#FFFFFF"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Inter",
+        "body": "Inter",
+        "mono": "JetBrains Mono"
+      },
+      "scale": {
+        "xs": "12px",
+        "sm": "14px",
+        "base": "16px",
+        "lg": "18px",
+        "xl": "24px",
+        "2xl": "32px",
+        "3xl": "48px"
+      },
+      "weights": {
+        "regular": "400",
+        "medium": "500",
+        "semibold": "600",
+        "bold": "700",
+        "heavy": "900"
+      },
+      "lineHeights": {
+        "tight": "1.2",
+        "normal": "1.5",
+        "relaxed": "1.75"
+      }
+    },
+    "spacing": {
+      "section": "80px",
+      "element": "24px",
+      "tight": "8px"
+    },
+    "borderRadius": {
+      "card": "12px",
+      "button": "8px",
+      "pill": "9999px"
+    },
+    "shadows": {},
+    "animation": {
+      "durations": {
+        "fast": "150ms",
+        "normal": "300ms"
+      },
+      "easings": {
+        "default": "ease-out"
+      }
+    }
+  },
+  "motifs": [],
+  "whyItWorks": "Illustrations differentiate in corporate space. Character system = brand moat. Magazine layouts feel premium.",
+  "coreAesthetic": "Playful Business Services - Bold illustration-driven design with vibrant color blocking. Features custom character illustrations in a flat, modern style with high contrast between mint green, electric yellow, and deep navy. The aesthetic balances professionalism with approachability through whimsical illustrations and energetic typography.",
+  "techStack": [
+    "Next.js",
+    "SVG illustration library"
+  ],
+  "screenshots": {
+    "desktop": "/motifs/hunt-baf/reference-desktop.png"
+  }
+}

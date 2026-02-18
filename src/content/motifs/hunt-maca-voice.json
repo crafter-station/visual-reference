@@ -1,0 +1,97 @@
+{
+  "slug": "hunt-maca-voice",
+  "name": "Maca Voice",
+  "style": "",
+  "huntDate": "2026-02-02",
+  "categories": [
+    "B2B SaaS"
+  ],
+  "engagement": 5,
+  "mode": "light",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#0A0A0A",
+        "secondary": "#121212",
+        "tertiary": "#F4D03F"
+      },
+      "accent": {
+        "primary": "#FFFFFF"
+      },
+      "text": {
+        "primary": "#E8C547",
+        "secondary": "#FFFFFF",
+        "tertiary": "#B8B8B8",
+        "muted": "#CCCCCC",
+        "subtle": "#2A2A2A",
+        "v5": "#333333"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Inter",
+        "body": "Inter",
+        "mono": "JetBrains Mono"
+      },
+      "scale": {
+        "xs": "12px",
+        "sm": "14px",
+        "base": "16px",
+        "lg": "18px",
+        "xl": "24px",
+        "2xl": "32px",
+        "3xl": "48px"
+      },
+      "weights": {
+        "regular": "400",
+        "medium": "500",
+        "semibold": "600",
+        "bold": "700",
+        "heavy": "900"
+      },
+      "lineHeights": {
+        "tight": "1.2",
+        "normal": "1.5",
+        "relaxed": "1.75"
+      }
+    },
+    "spacing": {
+      "section": "80px",
+      "element": "24px",
+      "tight": "8px"
+    },
+    "borderRadius": {
+      "card": "12px",
+      "button": "8px",
+      "pill": "9999px"
+    },
+    "shadows": {},
+    "animation": {
+      "durations": {
+        "fast": "150ms",
+        "normal": "300ms"
+      },
+      "easings": {
+        "default": "ease-out"
+      }
+    }
+  },
+  "motifs": [
+    {
+      "slug": "grid-layout",
+      "name": "Grid Layout",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "graphic-elements",
+      "name": "Graphic Elements",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "",
+  "coreAesthetic": "Premium Tech Minimalism with Bold Contrast\nA sophisticated dark interface design that uses strategic yellow accents to create focal points, combining technical precision with approachable warmth.\nKey Influences: Apple product pages, modern SaaS landing pages, audio/voice tech brands, high-end software interfaces",
+  "techStack": [],
+  "screenshots": {
+    "desktop": "/motifs/hunt-maca-voice/reference-desktop.png"
+  }
+}
