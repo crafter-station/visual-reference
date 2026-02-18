@@ -47,33 +47,34 @@ function CompareContent() {
       m.motifs.filter((t) => !sharedEffects.some((s) => s.slug === t.slug))
     );
 
-    const combinedColors = Array.from(
-      new Map(
-        allColors.flatMap(({ colors }) =>
-          Object.entries(colors).map(([k, v]) => [v, k])
-        )
-      ).entries()
-    ).map(([hex, name]) => ({ hex, name }));
-
     return (
-      <main className="mx-auto max-w-7xl px-6 py-16">
-        <div className="mb-4 flex items-center justify-between">
-          <h1 className="text-3xl font-bold tracking-tight">Compare</h1>
+      <main className="mx-auto max-w-[1400px] px-6 py-12">
+        <div className="mb-8 flex items-center justify-between border-b border-white/[0.06] pb-6">
+          <div>
+            <h1 className="font-display text-3xl tracking-tight">Compare</h1>
+            <p className="mt-1 font-mono text-xs text-white/40">
+              {selectedMotifs.length} systems side by side
+            </p>
+          </div>
           <button
             type="button"
             onClick={() => router.push("/compare")}
-            className="rounded-md border border-white/10 bg-white/[0.04] px-4 py-2 text-sm font-medium text-white/70 transition-colors hover:bg-white/[0.08] hover:text-white"
+            className="rounded-md border border-white/[0.08] bg-white/[0.03] px-3 py-1.5 font-mono text-[11px] text-white/50 transition-colors hover:bg-white/[0.06] hover:text-white/70"
           >
-            New Selection
+            Reset
           </button>
         </div>
 
-        <div className="mb-12 grid gap-4" style={{ gridTemplateColumns: `repeat(${selectedMotifs.length}, 1fr)` }}>
+        <div
+          className="mb-10 grid gap-3"
+          style={{ gridTemplateColumns: `repeat(${selectedMotifs.length}, 1fr)` }}
+        >
           {selectedMotifs.map((m) => (
             <div key={m.slug} className="flex flex-col gap-2">
-              <p className="text-sm font-semibold text-white/90">{m.name}</p>
+              <p className="text-[13px] font-medium text-white/90">{m.name}</p>
+              <p className="font-mono text-[10px] text-white/30">{m.style}</p>
               {m.screenshots.desktop && (
-                <div className="relative aspect-video overflow-hidden rounded-lg border border-white/[0.06]">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-md border border-white/[0.06]">
                   <Image src={m.screenshots.desktop} alt={m.name} fill className="object-cover" />
                 </div>
               )}
@@ -81,166 +82,141 @@ function CompareContent() {
           ))}
         </div>
 
-        <section className="mb-10">
-          <h2 className="mb-4 text-xs font-medium uppercase tracking-widest text-white/40">
-            Color Palettes
-          </h2>
-          <div className="grid gap-6" style={{ gridTemplateColumns: `repeat(${selectedMotifs.length}, 1fr)` }}>
-            {allColors.map(({ slug, colors }) => (
-              <div key={slug} className="flex flex-col gap-2">
-                {Object.entries(colors).map(([name, hex]) => (
-                  <div key={name} className="flex items-center gap-2">
-                    <div
-                      className="h-5 w-5 shrink-0 rounded-sm border border-white/10"
-                      style={{ backgroundColor: hex }}
-                    />
-                    <span className="font-mono text-xs text-white/50">{hex}</span>
-                    <span className="truncate text-xs text-white/30">{name}</span>
-                  </div>
-                ))}
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="mb-10">
-          <h2 className="mb-4 text-xs font-medium uppercase tracking-widest text-white/40">
-            Typography
-          </h2>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-white/[0.06]">
-                  <th className="pb-2 pr-4 text-left font-mono text-xs text-white/30">Token</th>
-                  {selectedMotifs.map((m) => (
-                    <th key={m.slug} className="pb-2 pr-4 text-left font-mono text-xs text-white/30">
-                      {m.name}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-white/[0.04]">
-                <tr>
-                  <td className="py-2 pr-4 font-mono text-xs text-white/40">Display</td>
-                  {selectedMotifs.map((m) => (
-                    <td key={m.slug} className="py-2 pr-4 text-xs text-white/70">
-                      {m.tokens.typography.families.display}
-                    </td>
-                  ))}
-                </tr>
-                <tr>
-                  <td className="py-2 pr-4 font-mono text-xs text-white/40">Body</td>
-                  {selectedMotifs.map((m) => (
-                    <td key={m.slug} className="py-2 pr-4 text-xs text-white/70">
-                      {m.tokens.typography.families.body}
-                    </td>
-                  ))}
-                </tr>
-                <tr>
-                  <td className="py-2 pr-4 font-mono text-xs text-white/40">Mono</td>
-                  {selectedMotifs.map((m) => (
-                    <td key={m.slug} className="py-2 pr-4 text-xs text-white/70">
-                      {m.tokens.typography.families.mono ?? "—"}
-                    </td>
-                  ))}
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        {sharedEffects.length > 0 && (
-          <section className="mb-10">
-            <h2 className="mb-4 text-xs font-medium uppercase tracking-widest text-white/40">
-              Shared Effects
+        <div className="grid gap-8">
+          <section>
+            <h2 className="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-white/30">
+              Color Palettes
             </h2>
-            <div className="flex flex-wrap gap-2">
-              {sharedEffects.map((t) => (
-                <span
-                  key={t.slug}
-                  className="rounded-md border border-white/[0.08] bg-white/[0.04] px-2.5 py-1 text-xs text-white/60"
-                >
-                  {t.name}
-                </span>
+            <div
+              className="grid gap-4"
+              style={{ gridTemplateColumns: `repeat(${selectedMotifs.length}, 1fr)` }}
+            >
+              {allColors.map(({ slug, colors }) => (
+                <div key={slug} className="flex flex-col gap-1.5">
+                  {Object.entries(colors).map(([name, hex]) => (
+                    <div key={name} className="flex items-center gap-2">
+                      <div
+                        className="h-4 w-4 shrink-0 rounded-sm border border-white/[0.08]"
+                        style={{ backgroundColor: hex }}
+                      />
+                      <span className="font-mono text-[10px] text-white/40">{hex}</span>
+                      <span className="truncate font-mono text-[10px] text-white/20">{name}</span>
+                    </div>
+                  ))}
+                </div>
               ))}
             </div>
           </section>
-        )}
 
-        <section className="mb-10">
-          <h2 className="mb-4 text-xs font-medium uppercase tracking-widest text-white/40">
-            Unique Effects
-          </h2>
-          <div className="grid gap-6" style={{ gridTemplateColumns: `repeat(${selectedMotifs.length}, 1fr)` }}>
-            {selectedMotifs.map((m, i) => (
-              <div key={m.slug}>
-                <p className="mb-2 text-xs font-medium text-white/50">{m.name}</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {uniqueEffectsPerMotif[i].length > 0
-                    ? uniqueEffectsPerMotif[i].map((t) => (
-                        <span
-                          key={t.slug}
-                          className="rounded-md border border-white/[0.08] bg-white/[0.04] px-2.5 py-1 text-xs text-white/60"
-                        >
-                          {t.name}
-                        </span>
-                      ))
-                    : <span className="text-xs text-white/20">None</span>
-                  }
+          <section>
+            <h2 className="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-white/30">
+              Typography
+            </h2>
+            <div className="overflow-x-auto rounded-md border border-white/[0.06]">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-white/[0.06] bg-white/[0.02]">
+                    <th className="px-3 py-2 text-left font-mono text-[10px] font-normal text-white/30">Token</th>
+                    {selectedMotifs.map((m) => (
+                      <th key={m.slug} className="px-3 py-2 text-left font-mono text-[10px] font-normal text-white/30">
+                        {m.name}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-white/[0.04]">
+                  {(["display", "body", "mono"] as const).map((key) => (
+                    <tr key={key}>
+                      <td className="px-3 py-2 font-mono text-[10px] text-white/40">{key}</td>
+                      {selectedMotifs.map((m) => (
+                        <td key={m.slug} className="px-3 py-2 text-xs text-white/60">
+                          {key === "mono"
+                            ? m.tokens.typography.families.mono ?? "—"
+                            : m.tokens.typography.families[key]}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          {sharedEffects.length > 0 && (
+            <section>
+              <h2 className="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-white/30">
+                Shared Effects
+              </h2>
+              <div className="flex flex-wrap gap-1.5">
+                {sharedEffects.map((t) => (
+                  <span
+                    key={t.slug}
+                    className="rounded-sm bg-white/[0.04] px-2 py-1 font-mono text-[10px] text-white/50"
+                  >
+                    {t.name}
+                  </span>
+                ))}
+              </div>
+            </section>
+          )}
+
+          <section>
+            <h2 className="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-white/30">
+              Unique Effects
+            </h2>
+            <div
+              className="grid gap-4"
+              style={{ gridTemplateColumns: `repeat(${selectedMotifs.length}, 1fr)` }}
+            >
+              {selectedMotifs.map((m, i) => (
+                <div key={m.slug}>
+                  <p className="mb-2 font-mono text-[10px] text-white/30">{m.name}</p>
+                  <div className="flex flex-wrap gap-1">
+                    {uniqueEffectsPerMotif[i].length > 0
+                      ? uniqueEffectsPerMotif[i].map((t) => (
+                          <span
+                            key={t.slug}
+                            className="rounded-sm bg-white/[0.04] px-2 py-1 font-mono text-[10px] text-white/50"
+                          >
+                            {t.name}
+                          </span>
+                        ))
+                      : <span className="font-mono text-[10px] text-white/15">None</span>
+                    }
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section>
-          <h2 className="mb-4 text-xs font-medium uppercase tracking-widest text-white/40">
-            Combined Palette
-          </h2>
-          <div className="flex flex-wrap gap-2">
-            {combinedColors.map(({ hex, name }) => (
-              <div
-                key={hex}
-                title={`${name} — ${hex}`}
-                className="flex flex-col items-center gap-1"
-              >
-                <div
-                  className="h-8 w-8 rounded-md border border-white/10"
-                  style={{ backgroundColor: hex }}
-                />
-                <span className="font-mono text-[10px] text-white/30">{hex}</span>
-              </div>
-            ))}
-          </div>
-        </section>
+              ))}
+            </div>
+          </section>
+        </div>
       </main>
     );
   }
 
   return (
-    <main className="mx-auto max-w-7xl px-6 py-16">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold tracking-tight">Compare</h1>
-        <p className="mt-2 text-sm text-white/50">
-          Select 2 or 3 motifs to compare side by side.
+    <main className="mx-auto max-w-[1400px] px-6 py-12">
+      <div className="mb-8 border-b border-white/[0.06] pb-6">
+        <h1 className="font-display text-3xl tracking-tight">Compare</h1>
+        <p className="mt-1 font-mono text-xs text-white/40">
+          Select 2-3 visual systems to compare side by side.
         </p>
       </div>
 
-      <div className="mb-6 flex items-center justify-between">
-        <p className="font-mono text-xs text-white/30">
+      <div className="mb-5 flex items-center justify-between">
+        <p className="font-mono text-[11px] text-white/25">
           {pendingSlugs.length} / 3 selected
         </p>
         <button
           type="button"
           disabled={pendingSlugs.length < 2}
           onClick={handleCompare}
-          className="rounded-md border border-white/10 bg-white/[0.04] px-4 py-2 text-sm font-medium text-white/70 transition-colors hover:bg-white/[0.08] hover:text-white disabled:cursor-not-allowed disabled:opacity-30"
+          className="rounded-md border border-white/[0.08] bg-white/[0.03] px-3 py-1.5 font-mono text-[11px] text-white/50 transition-colors hover:bg-white/[0.06] hover:text-white/70 disabled:cursor-not-allowed disabled:opacity-25"
         >
           Compare Selected
         </button>
       </div>
 
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {allMotifs.map((m) => {
           const isSelected = pendingSlugs.includes(m.slug);
           return (
@@ -248,20 +224,25 @@ function CompareContent() {
               key={m.slug}
               type="button"
               onClick={() => toggleMotif(m.slug)}
-              className={`flex flex-col gap-3 rounded-lg border p-4 text-left transition-colors ${
+              className={`flex flex-col gap-2 overflow-hidden rounded-md border p-2 text-left transition-all ${
                 isSelected
-                  ? "border-white/30 bg-white/[0.06]"
-                  : "border-white/[0.06] bg-white/[0.02] hover:border-white/[0.12] hover:bg-white/[0.04]"
+                  ? "border-white/25 bg-white/[0.05]"
+                  : "border-white/[0.06] bg-white/[0.02] hover:border-white/[0.12]"
               }`}
             >
               {m.screenshots.desktop && (
-                <div className="relative aspect-video w-full overflow-hidden rounded-md">
-                  <Image src={m.screenshots.desktop} alt={m.name} fill className="object-cover" />
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm">
+                  <Image src={m.screenshots.desktop} alt={m.name} fill className="object-cover" sizes="200px" />
+                  {isSelected && (
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+                      <span className="font-mono text-[10px] text-white/80">Selected</span>
+                    </div>
+                  )}
                 </div>
               )}
-              <div>
-                <p className="text-sm font-medium text-white/90">{m.name}</p>
-                <p className="mt-0.5 text-xs text-white/40">{m.style}</p>
+              <div className="px-0.5">
+                <p className="truncate text-[11px] font-medium text-white/80">{m.name}</p>
+                <p className="truncate font-mono text-[10px] text-white/30">{m.style}</p>
               </div>
             </button>
           );
@@ -273,7 +254,7 @@ function CompareContent() {
 
 export default function ComparePage() {
   return (
-    <Suspense fallback={<div className="py-16 text-center text-sm text-white/30">Loading...</div>}>
+    <Suspense fallback={<div className="py-16 text-center font-mono text-xs text-white/20">Loading...</div>}>
       <CompareContent />
     </Suspense>
   );

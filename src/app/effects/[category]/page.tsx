@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { getAllEffectCategories, getAllMotifs } from "@/lib/motifs";
 import { MOTIF_CATEGORY_LABELS, MOTIF_CATEGORY_COLORS } from "@/lib/taxonomy";
 import type { MotifCategory } from "@/lib/types";
@@ -42,39 +43,38 @@ export default async function EffectCategoryPage({ params }: EffectCategoryPageP
   }
 
   return (
-    <main className="mx-auto max-w-7xl px-6 py-16">
-      <div className="mb-2 flex items-center gap-3">
+    <main className="mx-auto max-w-[1400px] px-6 py-12">
+      <div className="mb-8 flex items-center gap-2 border-b border-white/[0.06] pb-6">
         <div
-          className="h-3 w-3 rounded-full"
+          className="h-2 w-2 rounded-full"
           style={{ backgroundColor: color }}
         />
         <Link
           href="/effects"
-          className="font-mono text-xs text-white/30 transition-colors hover:text-white/60"
+          className="font-mono text-[11px] text-white/30 transition-colors hover:text-white/60"
         >
-          Effects
+          effects
         </Link>
-        <span className="font-mono text-xs text-white/20">/</span>
-        <span className="font-mono text-xs text-white/50">{label}</span>
+        <span className="font-mono text-[11px] text-white/15">/</span>
+        <span className="font-mono text-[11px] text-white/50">{label}</span>
+        <span className="ml-auto font-mono text-[10px] text-white/20">
+          {effects.length} effects
+        </span>
       </div>
 
-      <h1 className="mb-10 text-3xl font-bold tracking-tight">{label}</h1>
-
-      <div className="flex flex-col gap-6">
+      <div className="grid grid-cols-1 gap-3 lg:grid-cols-2">
         {effects.map(([slug, { effectName, motifSlugs }]) => (
           <div
             key={slug}
-            className="rounded-lg border border-white/[0.06] bg-white/[0.02] p-5"
+            className="rounded-md border border-white/[0.06] bg-white/[0.02] p-4"
           >
-            <div className="mb-4 flex items-start justify-between gap-4">
-              <div>
-                <p className="text-sm font-medium text-white/90">{effectName}</p>
-                <p className="mt-0.5 font-mono text-xs text-white/30">
-                  {motifSlugs.length} {motifSlugs.length === 1 ? "motif" : "motifs"}
-                </p>
-              </div>
+            <div className="mb-3 flex items-center justify-between">
+              <p className="text-[13px] font-medium text-white/90">{effectName}</p>
+              <span className="font-mono text-[10px] text-white/25">
+                {motifSlugs.length} motifs
+              </span>
             </div>
-            <div className="flex flex-wrap gap-2">
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
               {motifSlugs.map((motifSlug) => {
                 const motif = motifs.find((m) => m.slug === motifSlug);
                 if (!motif) return null;
@@ -82,9 +82,26 @@ export default async function EffectCategoryPage({ params }: EffectCategoryPageP
                   <Link
                     key={motifSlug}
                     href={`/motifs/${motifSlug}`}
-                    className="rounded-md border border-white/[0.08] bg-white/[0.04] px-3 py-1.5 font-mono text-xs text-white/60 transition-colors hover:border-white/[0.16] hover:text-white/90"
+                    className="group relative overflow-hidden rounded-sm border border-white/[0.06] transition-all hover:border-white/[0.14]"
                   >
-                    {motif.name}
+                    {motif.screenshots.desktop ? (
+                      <div className="relative aspect-[16/10]">
+                        <Image
+                          src={motif.screenshots.desktop}
+                          alt={motif.name}
+                          fill
+                          className="object-cover"
+                          sizes="200px"
+                        />
+                        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-2 py-1.5">
+                          <p className="truncate font-mono text-[10px] text-white/70">{motif.name}</p>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="flex aspect-[16/10] items-center justify-center bg-white/[0.03]">
+                        <span className="font-mono text-[10px] text-white/20">{motif.name}</span>
+                      </div>
+                    )}
                   </Link>
                 );
               })}
