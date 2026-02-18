@@ -1,10 +1,10 @@
-import { getAllMotifs, getFeaturedMotifs } from "@/lib/motifs";
-import { MotifCard } from "@/components/motif-card";
+import { getAllReferences, getFeaturedReferences } from "@/lib/references";
+import { ReferenceCard } from "@/components/reference-card";
 import Link from "next/link";
 
 export default function HomePage() {
-  const featured = getFeaturedMotifs();
-  const total = getAllMotifs().length;
+  const featured = getFeaturedReferences();
+  const total = getAllReferences().length;
 
   return (
     <main className="mx-auto max-w-[1400px] px-6 py-12">
@@ -41,8 +41,8 @@ export default function HomePage() {
         </div>
         {featured.length > 0 ? (
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {featured.map((motif) => (
-              <MotifCard key={motif.slug} motif={motif} />
+            {featured.map((ref) => (
+              <ReferenceCard key={ref.slug} reference={ref} />
             ))}
           </div>
         ) : (

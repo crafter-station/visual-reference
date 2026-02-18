@@ -2,18 +2,18 @@
 
 import { useState } from "react";
 import { ClipboardCopyIcon, CheckIcon } from "lucide-react";
-import type { Motif } from "@/lib/types";
+import type { VisualReference } from "@/lib/types";
 import { buildPrompt } from "@/lib/build-prompt";
 
 interface PromptCopyProps {
-  motif: Motif;
+  reference: VisualReference;
 }
 
-export function PromptCopy({ motif }: PromptCopyProps) {
+export function PromptCopy({ reference }: PromptCopyProps) {
   const [copied, setCopied] = useState(false);
 
   async function handleCopy() {
-    const prompt = buildPrompt(motif);
+    const prompt = buildPrompt(reference);
     await navigator.clipboard.writeText(prompt);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);

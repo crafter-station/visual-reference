@@ -76,7 +76,7 @@
       }
     }
   },
-  "motifs": [
+  "effects": [
     {
       "slug": "grid-layout",
       "name": "Grid Layout",

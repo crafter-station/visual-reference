@@ -81,7 +81,7 @@
       }
     }
   },
-  "motifs": [
+  "effects": [
     {
       "slug": "halftone-dot-pattern",
       "name": "Halftone Dot Pattern",

@@ -1,6 +1,6 @@
-import type { MotifCategory, MotifTag } from "@/lib/types";
+import type { EffectCategory, EffectTag } from "@/lib/types";
 
-const TAXONOMY: Record<string, { category: MotifCategory; name: string }> = {
+const TAXONOMY: Record<string, { category: EffectCategory; name: string }> = {
   "starfield-background": { category: "background-treatment", name: "Starfield Background" },
   "color-block-sections": { category: "background-treatment", name: "Color Block Sections" },
   "scroll-driven-color-zones": { category: "background-treatment", name: "Scroll-Driven Color Zones" },
@@ -63,7 +63,7 @@ const TAXONOMY: Record<string, { category: MotifCategory; name: string }> = {
   "ambient-lighting": { category: "3d-spatial", name: "Ambient Lighting" },
 };
 
-export function classifyEffect(slug: string): MotifTag {
+export function classifyEffect(slug: string): EffectTag {
   const entry = TAXONOMY[slug];
   if (entry) {
     return { slug, name: entry.name, category: entry.category };
@@ -75,14 +75,14 @@ export function classifyEffect(slug: string): MotifTag {
   };
 }
 
-export function classifyEffects(effects: string[] | Record<string, unknown>): MotifTag[] {
+export function classifyEffects(effects: string[] | Record<string, unknown>): EffectTag[] {
   if (Array.isArray(effects)) {
     return effects.map(classifyEffect);
   }
   return Object.keys(effects).map(classifyEffect);
 }
 
-export const MOTIF_CATEGORY_LABELS: Record<MotifCategory, string> = {
+export const EFFECT_CATEGORY_LABELS: Record<EffectCategory, string> = {
   "background-treatment": "Background Treatments",
   "hover-interaction": "Hover Interactions",
   "entrance-animation": "Entrance Animations",
@@ -93,7 +93,7 @@ export const MOTIF_CATEGORY_LABELS: Record<MotifCategory, string> = {
   "3d-spatial": "3D & Spatial",
 };
 
-export const MOTIF_CATEGORY_COLORS: Record<MotifCategory, string> = {
+export const EFFECT_CATEGORY_COLORS: Record<EffectCategory, string> = {
   "background-treatment": "#6366f1",
   "hover-interaction": "#f59e0b",
   "entrance-animation": "#10b981",

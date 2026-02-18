@@ -80,7 +80,7 @@
       }
     }
   },
-  "motifs": [
+  "effects": [
     {
       "slug": "diagonal-section-cuts",
       "name": "Diagonal Section Cuts",

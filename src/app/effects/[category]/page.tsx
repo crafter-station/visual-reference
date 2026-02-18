@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { getAllEffectCategories, getAllMotifs } from "@/lib/motifs";
-import { MOTIF_CATEGORY_LABELS, MOTIF_CATEGORY_COLORS } from "@/lib/taxonomy";
-import type { MotifCategory } from "@/lib/types";
+import { getAllEffectCategories, getAllReferences } from "@/lib/references";
+import { EFFECT_CATEGORY_LABELS, EFFECT_CATEGORY_COLORS } from "@/lib/taxonomy";
+import type { EffectCategory } from "@/lib/types";
 
 interface EffectCategoryPageProps {
   params: Promise<{ category: string }>;
@@ -15,27 +15,27 @@ export async function generateStaticParams() {
 
 export default async function EffectCategoryPage({ params }: EffectCategoryPageProps) {
   const { category } = await params;
-  const motifs = getAllMotifs();
+  const references = getAllReferences();
 
-  const label = MOTIF_CATEGORY_LABELS[category as MotifCategory];
+  const label = EFFECT_CATEGORY_LABELS[category as EffectCategory];
   if (!label) {
     notFound();
   }
 
-  const color = MOTIF_CATEGORY_COLORS[category as MotifCategory];
+  const color = EFFECT_CATEGORY_COLORS[category as EffectCategory];
 
-  const effectsMap = new Map<string, { effectName: string; motifSlugs: string[] }>();
-  for (const motif of motifs) {
-    for (const tag of motif.motifs) {
+  const effectsMap = new Map<string, { effectName: string; refSlugs: string[] }>();
+  for (const ref of references) {
+    for (const tag of ref.effects) {
       if (tag.category !== category) continue;
-      const entry = effectsMap.get(tag.slug) ?? { effectName: tag.name, motifSlugs: [] };
-      entry.motifSlugs.push(motif.slug);
+      const entry = effectsMap.get(tag.slug) ?? { effectName: tag.name, refSlugs: [] };
+      entry.refSlugs.push(ref.slug);
       effectsMap.set(tag.slug, entry);
     }
   }
 
   const effects = Array.from(effectsMap.entries()).sort((a, b) =>
-    b[1].motifSlugs.length - a[1].motifSlugs.length
+    b[1].refSlugs.length - a[1].refSlugs.length
   );
 
   if (effects.length === 0) {
@@ -63,7 +63,7 @@ export default async function EffectCategoryPage({ params }: EffectCategoryPageP
       </div>
 
       <div className="grid grid-cols-1 gap-3 lg:grid-cols-2">
-        {effects.map(([slug, { effectName, motifSlugs }]) => (
+        {effects.map(([slug, { effectName, refSlugs }]) => (
           <div
             key={slug}
             className="rounded-md border border-white/[0.06] bg-white/[0.02] p-4"
@@ -71,35 +71,35 @@ export default async function EffectCategoryPage({ params }: EffectCategoryPageP
             <div className="mb-3 flex items-center justify-between">
               <p className="text-[13px] font-medium text-white/90">{effectName}</p>
               <span className="font-mono text-[10px] text-white/25">
-                {motifSlugs.length} references
+                {refSlugs.length} references
               </span>
             </div>
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
-              {motifSlugs.map((motifSlug) => {
-                const motif = motifs.find((m) => m.slug === motifSlug);
-                if (!motif) return null;
+              {refSlugs.map((refSlug) => {
+                const ref = references.find((m) => m.slug === refSlug);
+                if (!ref) return null;
                 return (
                   <Link
-                    key={motifSlug}
-                    href={`/references/${motifSlug}`}
+                    key={refSlug}
+                    href={`/references/${refSlug}`}
                     className="group relative overflow-hidden rounded-sm border border-white/[0.06] transition-all hover:border-white/[0.14]"
                   >
-                    {motif.screenshots.desktop ? (
+                    {ref.screenshots.desktop ? (
                       <div className="relative aspect-[16/10]">
                         <Image
-                          src={motif.screenshots.desktop}
-                          alt={motif.name}
+                          src={ref.screenshots.desktop}
+                          alt={ref.name}
                           fill
                           className="object-cover"
                           sizes="200px"
                         />
                         <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-2 py-1.5">
-                          <p className="truncate font-mono text-[10px] text-white/70">{motif.name}</p>
+                          <p className="truncate font-mono text-[10px] text-white/70">{ref.name}</p>
                         </div>
                       </div>
                     ) : (
                       <div className="flex aspect-[16/10] items-center justify-center bg-white/[0.03]">
-                        <span className="font-mono text-[10px] text-white/20">{motif.name}</span>
+                        <span className="font-mono text-[10px] text-white/20">{ref.name}</span>
                       </div>
                     )}
                   </Link>

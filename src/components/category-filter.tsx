@@ -2,12 +2,12 @@
 
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { useCallback } from "react";
-import type { MotifCategory } from "@/lib/types";
-import { MOTIF_CATEGORY_LABELS, MOTIF_CATEGORY_COLORS } from "@/lib/taxonomy";
+import type { EffectCategory } from "@/lib/types";
+import { EFFECT_CATEGORY_LABELS, EFFECT_CATEGORY_COLORS } from "@/lib/taxonomy";
 
 interface CategoryFilterProps {
-  categories: MotifCategory[];
-  activeCategory?: MotifCategory;
+  categories: EffectCategory[];
+  activeCategory?: EffectCategory;
 }
 
 export function CategoryFilter({ categories, activeCategory }: CategoryFilterProps) {
@@ -16,7 +16,7 @@ export function CategoryFilter({ categories, activeCategory }: CategoryFilterPro
   const searchParams = useSearchParams();
 
   const handleSelect = useCallback(
-    (category: MotifCategory) => {
+    (category: EffectCategory) => {
       const params = new URLSearchParams(searchParams.toString());
       if (activeCategory === category) {
         params.delete("category");
@@ -32,7 +32,7 @@ export function CategoryFilter({ categories, activeCategory }: CategoryFilterPro
     <div className="flex flex-wrap gap-2">
       {categories.map((category) => {
         const isActive = activeCategory === category;
-        const color = MOTIF_CATEGORY_COLORS[category];
+        const color = EFFECT_CATEGORY_COLORS[category];
 
         return (
           <button
@@ -54,7 +54,7 @@ export function CategoryFilter({ categories, activeCategory }: CategoryFilterPro
                   }
             }
           >
-            {MOTIF_CATEGORY_LABELS[category]}
+            {EFFECT_CATEGORY_LABELS[category]}
           </button>
         );
       })}

@@ -7,7 +7,7 @@ export type Category =
   | "Education"
   | "Fintech";
 
-export type MotifCategory =
+export type EffectCategory =
   | "background-treatment"
   | "hover-interaction"
   | "entrance-animation"
@@ -19,10 +19,10 @@ export type MotifCategory =
 
 export type PaletteMode = "dark" | "light" | "warm";
 
-export interface MotifTag {
+export interface EffectTag {
   slug: string;
   name: string;
-  category: MotifCategory;
+  category: EffectCategory;
   cssHint?: string;
 }
 
@@ -51,7 +51,7 @@ export interface NormalizedTokens {
   };
 }
 
-export interface Motif {
+export interface VisualReference {
   slug: string;
   name: string;
   style: string;
@@ -61,7 +61,7 @@ export interface Motif {
   engagement: number;
   mode: PaletteMode;
   tokens: NormalizedTokens;
-  motifs: MotifTag[];
+  effects: EffectTag[];
   whyItWorks: string;
   coreAesthetic: string;
   techStack: string[];

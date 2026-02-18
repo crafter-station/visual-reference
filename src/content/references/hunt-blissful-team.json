@@ -73,7 +73,7 @@
       }
     }
   },
-  "motifs": [
+  "effects": [
     {
       "slug": "dot-matrix-pattern",
       "name": "Dot Matrix Pattern",

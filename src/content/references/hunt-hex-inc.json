@@ -80,7 +80,7 @@
       }
     }
   },
-  "motifs": [
+  "effects": [
     {
       "slug": "card-hover-lift",
       "name": "Card Hover Lift",

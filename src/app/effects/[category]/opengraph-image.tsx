@@ -1,7 +1,7 @@
 import { ImageResponse } from "@takumi-rs/image-response";
-import { getAllEffectCategories } from "@/lib/motifs";
-import { MOTIF_CATEGORY_LABELS, MOTIF_CATEGORY_COLORS } from "@/lib/taxonomy";
-import type { MotifCategory } from "@/lib/types";
+import { getAllEffectCategories } from "@/lib/references";
+import { EFFECT_CATEGORY_LABELS, EFFECT_CATEGORY_COLORS } from "@/lib/taxonomy";
+import type { EffectCategory } from "@/lib/types";
 
 export const alt = "Effect Category";
 export const size = { width: 1200, height: 630 };
@@ -17,8 +17,8 @@ export default async function Image({
   params: Promise<{ category: string }>;
 }) {
   const { category } = await params;
-  const label = MOTIF_CATEGORY_LABELS[category as MotifCategory] ?? category;
-  const color = MOTIF_CATEGORY_COLORS[category as MotifCategory] ?? "#ffffff";
+  const label = EFFECT_CATEGORY_LABELS[category as EffectCategory] ?? category;
+  const color = EFFECT_CATEGORY_COLORS[category as EffectCategory] ?? "#ffffff";
 
   return new ImageResponse(
     <div tw="flex h-full w-full flex-col justify-end bg-[#0a0a0a] p-16">

@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import { ClipboardCopyIcon, CheckIcon } from "lucide-react";
-import type { Motif } from "@/lib/types";
+import type { VisualReference } from "@/lib/types";
 import { buildPrompt } from "@/lib/build-prompt";
 
-export function CardCopyButton({ motif }: { motif: Motif }) {
+export function CardCopyButton({ reference }: { reference: VisualReference }) {
   const [copied, setCopied] = useState(false);
 
   return (
@@ -14,7 +14,7 @@ export function CardCopyButton({ motif }: { motif: Motif }) {
       onClick={(e) => {
         e.preventDefault();
         e.stopPropagation();
-        const prompt = buildPrompt(motif);
+        const prompt = buildPrompt(reference);
         navigator.clipboard.writeText(prompt);
         setCopied(true);
         setTimeout(() => setCopied(false), 1500);

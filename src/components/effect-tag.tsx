@@ -1,12 +1,12 @@
-import type { MotifTag } from "@/lib/types";
-import { MOTIF_CATEGORY_COLORS } from "@/lib/taxonomy";
+import type { EffectTag as EffectTagType } from "@/lib/types";
+import { EFFECT_CATEGORY_COLORS } from "@/lib/taxonomy";
 
 interface EffectTagProps {
-  tag: MotifTag;
+  tag: EffectTagType;
 }
 
 export function EffectTag({ tag }: EffectTagProps) {
-  const color = MOTIF_CATEGORY_COLORS[tag.category];
+  const color = EFFECT_CATEGORY_COLORS[tag.category];
 
   return (
     <span

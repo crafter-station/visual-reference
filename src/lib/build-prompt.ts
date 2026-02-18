@@ -1,4 +1,4 @@
-import type { Motif } from "./types";
+import type { VisualReference } from "./types";
 
 function formatColors(colors: Record<string, string>): string {
   return Object.entries(colors)
@@ -6,46 +6,46 @@ function formatColors(colors: Record<string, string>): string {
     .join("\n");
 }
 
-export function buildPrompt(motif: Motif): string {
+export function buildPrompt(ref: VisualReference): string {
   const lines: string[] = [
     `Build a web page using this visual system:`,
     ``,
-    `Visual System: ${motif.name}`,
-    `Style: ${motif.style}`,
-    `Mode: ${motif.mode}`,
+    `Visual System: ${ref.name}`,
+    `Style: ${ref.style}`,
+    `Mode: ${ref.mode}`,
     ``,
     `Colors`,
     `Background:`,
-    formatColors(motif.tokens.colors.background),
+    formatColors(ref.tokens.colors.background),
     `Accent:`,
-    formatColors(motif.tokens.colors.accent),
+    formatColors(ref.tokens.colors.accent),
     `Text:`,
-    formatColors(motif.tokens.colors.text),
+    formatColors(ref.tokens.colors.text),
     ``,
     `Typography`,
-    `  Display: ${motif.tokens.typography.families.display}`,
-    `  Body: ${motif.tokens.typography.families.body}`,
+    `  Display: ${ref.tokens.typography.families.display}`,
+    `  Body: ${ref.tokens.typography.families.body}`,
   ];
 
-  if (motif.tokens.typography.families.mono) {
-    lines.push(`  Mono: ${motif.tokens.typography.families.mono}`);
+  if (ref.tokens.typography.families.mono) {
+    lines.push(`  Mono: ${ref.tokens.typography.families.mono}`);
   }
 
-  if (motif.motifs.length > 0) {
+  if (ref.effects.length > 0) {
     lines.push(``, `Effects`);
-    for (const tag of motif.motifs) {
+    for (const tag of ref.effects) {
       const hint = tag.cssHint ? ` — ${tag.cssHint}` : "";
       lines.push(`  - ${tag.name}${hint}`);
     }
   }
 
-  if (motif.coreAesthetic) {
-    lines.push(``, `Design Direction`, motif.coreAesthetic);
+  if (ref.coreAesthetic) {
+    lines.push(``, `Design Direction`, ref.coreAesthetic);
   }
 
   lines.push(
     ``,
-    `Reference: https://visual-reference.crafter.run/references/${motif.slug}`
+    `Reference: https://visual-reference.crafter.run/references/${ref.slug}`
   );
 
   return lines.join("\n");

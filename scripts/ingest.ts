@@ -10,13 +10,13 @@ const OUT_CONTENT_DIR = join(import.meta.dir, "../src/content/references");
 const OUT_PUBLIC_DIR = join(import.meta.dir, "../public/references");
 
 type Category = "Portfolio" | "B2B SaaS" | "Dev Tools" | "VC / Finance" | "Creative / 3D" | "Education" | "Fintech";
-type MotifCategory = "background-treatment" | "hover-interaction" | "entrance-animation" | "layout-pattern" | "visual-accent" | "content-pattern" | "illustration-system" | "3d-spatial";
+type EffectCategory = "background-treatment" | "hover-interaction" | "entrance-animation" | "layout-pattern" | "visual-accent" | "content-pattern" | "illustration-system" | "3d-spatial";
 type PaletteMode = "dark" | "light" | "warm";
 
-interface MotifTag {
+interface EffectTag {
   slug: string;
   name: string;
-  category: MotifCategory;
+  category: EffectCategory;
   cssHint?: string;
 }
 
@@ -41,7 +41,7 @@ interface NormalizedTokens {
   };
 }
 
-interface Motif {
+interface VisualReference {
   slug: string;
   name: string;
   style: string;
@@ -51,7 +51,7 @@ interface Motif {
   engagement: number;
   mode: PaletteMode;
   tokens: NormalizedTokens;
-  motifs: MotifTag[];
+  effects: EffectTag[];
   whyItWorks: string;
   coreAesthetic: string;
   techStack: string[];
@@ -100,7 +100,7 @@ const CATEGORY_MAP: Record<string, Category> = {
   "Business Services": "B2B SaaS",
 };
 
-const TAXONOMY: Record<string, { category: MotifCategory; name: string }> = {
+const TAXONOMY: Record<string, { category: EffectCategory; name: string }> = {
   "starfield-background": { category: "background-treatment", name: "Starfield Background" },
   "color-block-sections": { category: "background-treatment", name: "Color Block Sections" },
   "scroll-driven-color-zones": { category: "background-treatment", name: "Scroll-Driven Color Zones" },
@@ -156,7 +156,7 @@ const TAXONOMY: Record<string, { category: MotifCategory; name: string }> = {
   "ambient-lighting": { category: "3d-spatial", name: "Ambient Lighting" },
 };
 
-function classifyEffect(slug: string): MotifTag {
+function classifyEffect(slug: string): EffectTag {
   const entry = TAXONOMY[slug];
   if (entry) return { slug, name: entry.name, category: entry.category };
   return {
@@ -166,7 +166,7 @@ function classifyEffect(slug: string): MotifTag {
   };
 }
 
-function classifyEffects(effects: string[] | Record<string, unknown>): MotifTag[] {
+function classifyEffects(effects: string[] | Record<string, unknown>): EffectTag[] {
   if (Array.isArray(effects)) return effects.map(classifyEffect);
   return Object.keys(effects).map(classifyEffect);
 }
@@ -397,7 +397,7 @@ async function processHuntFolder(
   huntDir: string,
   dateStr: string,
   huntIndexMap: Map<string, HuntIndexEntry>
-): Promise<Motif | null> {
+): Promise<VisualReference | null> {
   const huntDirName = basename(huntDir);
   const indexEntry = huntIndexMap.get(huntDirName);
 
@@ -424,7 +424,7 @@ async function processHuntFolder(
   const tokens = variantB ? normalizeVariantB(rawTokens) : normalizeVariantA(rawTokens);
 
   const rawEffects = rawTokens.effects as string[] | Record<string, unknown> | undefined;
-  const motifTags: MotifTag[] = rawEffects ? classifyEffects(rawEffects) : [];
+  const effectTags: EffectTag[] = rawEffects ? classifyEffects(rawEffects) : [];
 
   let coreAesthetic = "";
   const visualRefPath = join(huntDir, "visual-reference.md");
@@ -443,7 +443,7 @@ async function processHuntFolder(
   const destDir = join(OUT_PUBLIC_DIR, slug);
   await mkdir(destDir, { recursive: true });
 
-  const screenshots: Motif["screenshots"] = { desktop: "" };
+  const screenshots: VisualReference["screenshots"] = { desktop: "" };
   const screenshotFiles = await readdir(huntDir).then((files) =>
     files.filter((f) => f.startsWith("reference-") && f.endsWith(".png"))
   ).catch(() => [] as string[]);
@@ -471,7 +471,7 @@ async function processHuntFolder(
     engagement: indexEntry?.engagement ?? 5,
     mode: indexEntry?.mode ?? "light",
     tokens,
-    motifs: motifTags,
+    effects: effectTags,
     whyItWorks,
     coreAesthetic,
     techStack: indexEntry?.techStack ?? [],
@@ -488,7 +488,7 @@ async function main() {
   await mkdir(OUT_PUBLIC_DIR, { recursive: true });
 
   const dateDirs = await readdir(TEMPLATES_ROOT).catch(() => [] as string[]);
-  const motifs: Motif[] = [];
+  const references: VisualReference[] = [];
 
   for (const dateDir of dateDirs.sort()) {
     const datePath = join(TEMPLATES_ROOT, dateDir);
@@ -503,20 +503,20 @@ async function main() {
     for (const huntName of huntDirs) {
       const huntPath = join(datePath, huntName);
       console.log(`Processing ${dateDir}/${huntName}...`);
-      const motif = await processHuntFolder(huntPath, dateDir, huntIndexMap);
-      if (motif) {
-        motifs.push(motif);
-        const individualPath = join(OUT_CONTENT_DIR, `${motif.slug}.json`);
-        await writeFile(individualPath, JSON.stringify(motif, null, 2), "utf-8");
-        console.log(`  Written: ${motif.slug}.json`);
+      const ref = await processHuntFolder(huntPath, dateDir, huntIndexMap);
+      if (ref) {
+        references.push(ref);
+        const individualPath = join(OUT_CONTENT_DIR, `${ref.slug}.json`);
+        await writeFile(individualPath, JSON.stringify(ref, null, 2), "utf-8");
+        console.log(`  Written: ${ref.slug}.json`);
       }
     }
   }
 
   const indexPath = join(OUT_CONTENT_DIR, "index.json");
-  await writeFile(indexPath, JSON.stringify(motifs, null, 2), "utf-8");
+  await writeFile(indexPath, JSON.stringify(references, null, 2), "utf-8");
 
-  console.log(`\nDone. ${motifs.length} motifs written to:`);
+  console.log(`\nDone. ${references.length} references written to:`);
   console.log(`  ${OUT_CONTENT_DIR}/index.json`);
   console.log(`  ${OUT_CONTENT_DIR}/{slug}.json`);
   console.log(`  ${OUT_PUBLIC_DIR}/{slug}/*.png`);

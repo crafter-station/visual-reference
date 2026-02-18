@@ -1,14 +1,14 @@
 import { ImageResponse } from "@takumi-rs/image-response";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { getMotifBySlug, getMotifSlugs } from "@/lib/motifs";
+import { getReferenceBySlug, getReferenceSlugs } from "@/lib/references";
 
 export const alt = "Visual System";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export async function generateStaticParams() {
-  return getMotifSlugs().map((slug) => ({ slug }));
+  return getReferenceSlugs().map((slug) => ({ slug }));
 }
 
 export default async function Image({
@@ -17,9 +17,9 @@ export default async function Image({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const motif = getMotifBySlug(slug);
+  const ref = getReferenceBySlug(slug);
 
-  if (!motif) {
+  if (!ref) {
     return new ImageResponse(
       <div tw="flex h-full w-full items-center justify-center bg-[#0a0a0a]">
         <div tw="text-4xl text-white/30">Not Found</div>
@@ -29,16 +29,16 @@ export default async function Image({
   }
 
   const allColors = [
-    ...Object.values(motif.tokens.colors.background),
-    ...Object.values(motif.tokens.colors.accent),
+    ...Object.values(ref.tokens.colors.background),
+    ...Object.values(ref.tokens.colors.accent),
   ].slice(0, 8);
 
   let screenshotSrc: string | null = null;
-  if (motif.screenshots.desktop) {
+  if (ref.screenshots.desktop) {
     try {
-      const imgPath = join(process.cwd(), "public", motif.screenshots.desktop);
+      const imgPath = join(process.cwd(), "public", ref.screenshots.desktop);
       const data = await readFile(imgPath, "base64");
-      const ext = motif.screenshots.desktop.endsWith(".jpg") ? "jpeg" : "png";
+      const ext = ref.screenshots.desktop.endsWith(".jpg") ? "jpeg" : "png";
       screenshotSrc = `data:image/${ext};base64,${data}`;
     } catch {
       // screenshot not available, skip
@@ -70,15 +70,15 @@ export default async function Image({
             tw="mt-4 text-4xl font-bold text-white"
             style={{ fontFamily: "Geist", letterSpacing: "-0.02em" }}
           >
-            {motif.name}
+            {ref.name}
           </div>
-          <div tw="mt-2 text-lg text-white/40">{motif.style}</div>
+          <div tw="mt-2 text-lg text-white/40">{ref.style}</div>
           <div tw="mt-4 flex items-center gap-2">
             <div tw="rounded bg-white/8 px-2 py-1 text-xs text-white/50">
-              {motif.mode}
+              {ref.mode}
             </div>
             <div tw="text-xs text-white/25">
-              {motif.motifs.length} effects
+              {ref.effects.length} effects
             </div>
           </div>
         </div>
@@ -95,13 +95,13 @@ export default async function Image({
           </div>
           <div tw="flex items-center gap-3">
             <div tw="text-sm text-white/30">
-              {motif.tokens.typography.families.display}
+              {ref.tokens.typography.families.display}
             </div>
-            {motif.tokens.typography.families.mono && (
+            {ref.tokens.typography.families.mono && (
               <>
                 <div tw="text-sm text-white/15">/</div>
                 <div tw="text-sm text-white/30">
-                  {motif.tokens.typography.families.mono}
+                  {ref.tokens.typography.families.mono}
                 </div>
               </>
             )}

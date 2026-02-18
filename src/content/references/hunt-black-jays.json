@@ -86,7 +86,7 @@
       }
     }
   },
-  "motifs": [
+  "effects": [
     {
       "slug": "hoverOpacity",
       "name": "HoverOpacity",

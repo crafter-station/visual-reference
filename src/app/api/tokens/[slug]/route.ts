@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getMotifBySlug } from "@/lib/motifs";
+import { getReferenceBySlug } from "@/lib/references";
 import { exportTokens, type ExportFormat } from "@/lib/export-tokens";
 
 export async function GET(
@@ -8,13 +8,13 @@ export async function GET(
 ) {
   const { slug } = await params;
   const format = (request.nextUrl.searchParams.get("format") ?? "json") as ExportFormat;
-  const motif = getMotifBySlug(slug);
+  const ref = getReferenceBySlug(slug);
 
-  if (!motif) {
+  if (!ref) {
     return NextResponse.json({ error: "Not found" }, { status: 404 });
   }
 
-  const content = exportTokens(motif.tokens, format, motif.name);
+  const content = exportTokens(ref.tokens, format, ref.name);
   const contentType = format === "css" ? "text/css" : "application/json";
 
   return new NextResponse(content, {

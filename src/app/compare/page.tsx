@@ -3,25 +3,25 @@
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useState } from "react";
 import Image from "next/image";
-import { getAllMotifs } from "@/lib/motifs";
-import type { Motif } from "@/lib/types";
+import { getAllReferences } from "@/lib/references";
+import type { VisualReference } from "@/lib/types";
 
 function CompareContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const rawSlugs = searchParams.get("motifs");
+  const rawSlugs = searchParams.get("refs");
   const selectedSlugs = rawSlugs ? rawSlugs.split(",").filter(Boolean) : [];
-  const allMotifs = getAllMotifs();
+  const allRefs = getAllReferences();
 
-  const selectedMotifs = selectedSlugs
-    .map((s) => allMotifs.find((m) => m.slug === s))
-    .filter((m): m is Motif => m !== undefined);
+  const selectedRefs = selectedSlugs
+    .map((s) => allRefs.find((m) => m.slug === s))
+    .filter((m): m is VisualReference => m !== undefined);
 
   const [pendingSlugs, setPendingSlugs] = useState<string[]>(
     selectedSlugs.length > 0 ? selectedSlugs : []
   );
 
-  function toggleMotif(slug: string) {
+  function toggleRef(slug: string) {
     setPendingSlugs((prev) => {
       if (prev.includes(slug)) return prev.filter((s) => s !== slug);
       if (prev.length >= 3) return prev;
@@ -30,21 +30,21 @@ function CompareContent() {
   }
 
   function handleCompare() {
-    router.push(`/compare?motifs=${pendingSlugs.join(",")}`);
+    router.push(`/compare?refs=${pendingSlugs.join(",")}`);
   }
 
-  if (selectedMotifs.length >= 2) {
-    const allColors = selectedMotifs.map((m) => ({
+  if (selectedRefs.length >= 2) {
+    const allColors = selectedRefs.map((m) => ({
       slug: m.slug,
       colors: { ...m.tokens.colors.background, ...m.tokens.colors.accent },
     }));
 
-    const effectSlugs = selectedMotifs.map((m) => new Set(m.motifs.map((t) => t.slug)));
-    const sharedEffects = selectedMotifs[0].motifs.filter((t) =>
+    const effectSlugs = selectedRefs.map((m) => new Set(m.effects.map((t) => t.slug)));
+    const sharedEffects = selectedRefs[0].effects.filter((t) =>
       effectSlugs.every((set) => set.has(t.slug))
     );
-    const uniqueEffectsPerMotif = selectedMotifs.map((m) =>
-      m.motifs.filter((t) => !sharedEffects.some((s) => s.slug === t.slug))
+    const uniqueEffectsPerRef = selectedRefs.map((m) =>
+      m.effects.filter((t) => !sharedEffects.some((s) => s.slug === t.slug))
     );
 
     return (
@@ -53,7 +53,7 @@ function CompareContent() {
           <div>
             <h1 className="font-display text-3xl tracking-tight">Compare</h1>
             <p className="mt-1 font-mono text-xs text-white/40">
-              {selectedMotifs.length} systems side by side
+              {selectedRefs.length} systems side by side
             </p>
           </div>
           <button
@@ -67,9 +67,9 @@ function CompareContent() {
 
         <div
           className="mb-10 grid gap-3"
-          style={{ gridTemplateColumns: `repeat(${selectedMotifs.length}, 1fr)` }}
+          style={{ gridTemplateColumns: `repeat(${selectedRefs.length}, 1fr)` }}
         >
-          {selectedMotifs.map((m) => (
+          {selectedRefs.map((m) => (
             <div key={m.slug} className="flex flex-col gap-2">
               <p className="text-[13px] font-medium text-white/90">{m.name}</p>
               <p className="font-mono text-[10px] text-white/30">{m.style}</p>
@@ -89,7 +89,7 @@ function CompareContent() {
             </h2>
             <div
               className="grid gap-4"
-              style={{ gridTemplateColumns: `repeat(${selectedMotifs.length}, 1fr)` }}
+              style={{ gridTemplateColumns: `repeat(${selectedRefs.length}, 1fr)` }}
             >
               {allColors.map(({ slug, colors }) => (
                 <div key={slug} className="flex flex-col gap-1.5">
@@ -117,7 +117,7 @@ function CompareContent() {
                 <thead>
                   <tr className="border-b border-white/[0.06] bg-white/[0.02]">
                     <th className="px-3 py-2 text-left font-mono text-[10px] font-normal text-white/30">Token</th>
-                    {selectedMotifs.map((m) => (
+                    {selectedRefs.map((m) => (
                       <th key={m.slug} className="px-3 py-2 text-left font-mono text-[10px] font-normal text-white/30">
                         {m.name}
                       </th>
@@ -128,7 +128,7 @@ function CompareContent() {
                   {(["display", "body", "mono"] as const).map((key) => (
                     <tr key={key}>
                       <td className="px-3 py-2 font-mono text-[10px] text-white/40">{key}</td>
-                      {selectedMotifs.map((m) => (
+                      {selectedRefs.map((m) => (
                         <td key={m.slug} className="px-3 py-2 text-xs text-white/60">
                           {key === "mono"
                             ? m.tokens.typography.families.mono ?? "—"
@@ -166,14 +166,14 @@ function CompareContent() {
             </h2>
             <div
               className="grid gap-4"
-              style={{ gridTemplateColumns: `repeat(${selectedMotifs.length}, 1fr)` }}
+              style={{ gridTemplateColumns: `repeat(${selectedRefs.length}, 1fr)` }}
             >
-              {selectedMotifs.map((m, i) => (
+              {selectedRefs.map((m, i) => (
                 <div key={m.slug}>
                   <p className="mb-2 font-mono text-[10px] text-white/30">{m.name}</p>
                   <div className="flex flex-wrap gap-1">
-                    {uniqueEffectsPerMotif[i].length > 0
-                      ? uniqueEffectsPerMotif[i].map((t) => (
+                    {uniqueEffectsPerRef[i].length > 0
+                      ? uniqueEffectsPerRef[i].map((t) => (
                           <span
                             key={t.slug}
                             className="rounded-sm bg-white/[0.04] px-2 py-1 font-mono text-[10px] text-white/50"
@@ -217,13 +217,13 @@ function CompareContent() {
       </div>
 
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-        {allMotifs.map((m) => {
+        {allRefs.map((m) => {
           const isSelected = pendingSlugs.includes(m.slug);
           return (
             <button
               key={m.slug}
               type="button"
-              onClick={() => toggleMotif(m.slug)}
+              onClick={() => toggleRef(m.slug)}
               className={`flex flex-col gap-2 overflow-hidden rounded-md border p-2 text-left transition-all ${
                 isSelected
                   ? "border-white/25 bg-white/[0.05]"

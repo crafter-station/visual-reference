@@ -72,7 +72,7 @@
         }
       }
     },
-    "motifs": [],
+    "effects": [],
     "whyItWorks": "",
     "coreAesthetic": "Style: Dark Editorial with Technical Sophistication\nA design philosophy that marries premium editorial typography with developer-focused credibility. The aesthetic says \"we're serious engineers who also care deeply about craft.\"\nKey influences: Bloomberg Terminal meets premium SaaS, with touches of indie hacker authenticity through real Twitter testimonials.",
     "techStack": [],
@@ -155,7 +155,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "textures-and-treatments",
         "name": "Textures And Treatments",
@@ -274,7 +274,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "textures-and-treatments",
         "name": "Textures And Treatments",
@@ -375,7 +375,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "textures-treatments",
         "name": "Textures Treatments",
@@ -501,7 +501,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "diagonal-section-cuts",
         "name": "Diagonal Section Cuts",
@@ -630,7 +630,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "starfield-background",
         "name": "Starfield Background",
@@ -760,7 +760,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "extreme-whitespace",
         "name": "Extreme Whitespace",
@@ -886,7 +886,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "dot-pattern-branding",
         "name": "Dot Pattern Branding",
@@ -1002,7 +1002,7 @@
         }
       }
     },
-    "motifs": [],
+    "effects": [],
     "whyItWorks": "Bright colors make finance approachable. Dual-tone cards create systematic pairing. Rounds corners balance brutalist blocks.",
     "coreAesthetic": "Playful Fintech Brutalism - Bold, accessible banking interface using bright neon yellow and mint green on pale green background. Card-based layout with rounded corners softening the brutalist color blocking. Friendly, approachable tone for complex financial services.",
     "techStack": [
@@ -1088,7 +1088,7 @@
         }
       }
     },
-    "motifs": [],
+    "effects": [],
     "whyItWorks": "Warm colors break VC coldness stereotype. Modular cards = flexible content. Personality over polish.",
     "coreAesthetic": "Modern VC Editorial - Clean, editorial-style design with strong typography hierarchy and modular card layouts. Features soft beige backgrounds, crisp white cards, and strategic use of orange accents. The aesthetic balances corporate professionalism with approachability through rounded corners and generous spacing.",
     "techStack": [
@@ -1176,7 +1176,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "editorial-minimalism",
         "name": "Editorial Minimalism",
@@ -1301,7 +1301,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "hand-drawn-illustrations",
         "name": "Hand-Drawn Illustrations",
@@ -1419,7 +1419,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "terminal-syntax-highlighting",
         "name": "Terminal Syntax Highlighting",
@@ -1539,7 +1539,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "card-hover-lift",
         "name": "Card Hover Lift",
@@ -1658,7 +1658,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "color-block-sections",
         "name": "Color Block Sections",
@@ -1780,7 +1780,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "halftone-dot-pattern",
         "name": "Halftone Dot Pattern",
@@ -1892,7 +1892,7 @@
         }
       }
     },
-    "motifs": [],
+    "effects": [],
     "whyItWorks": "Illustrations differentiate in corporate space. Character system = brand moat. Magazine layouts feel premium.",
     "coreAesthetic": "Playful Business Services - Bold illustration-driven design with vibrant color blocking. Features custom character illustrations in a flat, modern style with high contrast between mint green, electric yellow, and deep navy. The aesthetic balances professionalism with approachability through whimsical illustrations and energetic typography.",
     "techStack": [
@@ -1985,7 +1985,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "university-logo-cards",
         "name": "University Logo Cards",
@@ -2097,7 +2097,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "custom-line-art-illustrations",
         "name": "Custom Line Art Illustrations",
@@ -2242,7 +2242,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "dark-premium-aesthetic",
         "name": "Dark Premium Aesthetic",
@@ -2360,7 +2360,7 @@
         }
       }
     },
-    "motifs": [],
+    "effects": [],
     "whyItWorks": "Dark mode = premium positioning. Mesh gradients add depth. Calendar integration shows functionality.",
     "coreAesthetic": "Premium Education Platform - Sophisticated dark-mode-first design with deep forest green as the primary color. Features clean typography, generous white space, and subtle gradient mesh backgrounds. The aesthetic communicates trust and professionalism while maintaining warmth through organic gradients and soft shadows.",
     "techStack": [
@@ -2449,7 +2449,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "philosophical-minimalism",
         "name": "Philosophical Minimalism",
@@ -2579,7 +2579,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "hoverOpacity",
         "name": "HoverOpacity",
@@ -2683,7 +2683,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "grid-layout",
         "name": "Grid Layout",
@@ -2783,7 +2783,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "cassette-tape-structure",
         "name": "Cassette Tape Structure",
@@ -2887,7 +2887,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "textures-treatments",
         "name": "Textures Treatments",
@@ -2980,7 +2980,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "grid-background",
         "name": "Grid Background",
@@ -3112,7 +3112,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "split-screen-composition",
         "name": "Split Screen Composition",
@@ -3221,7 +3221,7 @@
         }
       }
     },
-    "motifs": [
+    "effects": [
       {
         "slug": "dot-matrix-pattern",
         "name": "Dot Matrix Pattern",

@@ -79,7 +79,7 @@
       }
     }
   },
-  "motifs": [
+  "effects": [
     {
       "slug": "terminal-syntax-highlighting",
       "name": "Terminal Syntax Highlighting",

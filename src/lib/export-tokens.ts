@@ -156,6 +156,6 @@ export function exportTokens(
     case "css":
       return toCSS(tokens);
     case "dtcg":
-      return toDTCG(tokens, name ?? "Motif");
+      return toDTCG(tokens, name ?? "VisualReference");
   }
 }

@@ -1,23 +1,23 @@
-import { getAllMotifs } from "@/lib/motifs";
-import { MOTIF_CATEGORY_LABELS } from "@/lib/taxonomy";
-import type { MotifCategory } from "@/lib/types";
-import { MotifCard } from "@/components/motif-card";
+import { getAllReferences } from "@/lib/references";
+import { EFFECT_CATEGORY_LABELS } from "@/lib/taxonomy";
+import type { EffectCategory } from "@/lib/types";
+import { ReferenceCard } from "@/components/reference-card";
 import { CategoryFilter } from "@/components/category-filter";
 
-interface MotifsPageProps {
+interface ReferencesPageProps {
   searchParams: Promise<{ category?: string }>;
 }
 
-export default async function MotifsPage({ searchParams }: MotifsPageProps) {
+export default async function ReferencesPage({ searchParams }: ReferencesPageProps) {
   const params = await searchParams;
-  const activeCategory = params.category as MotifCategory | undefined;
-  const allMotifs = getAllMotifs();
+  const activeCategory = params.category as EffectCategory | undefined;
+  const allReferences = getAllReferences();
 
   const filtered = activeCategory
-    ? allMotifs.filter((m) => m.motifs.some((t) => t.category === activeCategory))
-    : allMotifs;
+    ? allReferences.filter((m) => m.effects.some((t) => t.category === activeCategory))
+    : allReferences;
 
-  const categories = Object.keys(MOTIF_CATEGORY_LABELS) as MotifCategory[];
+  const categories = Object.keys(EFFECT_CATEGORY_LABELS) as EffectCategory[];
 
   return (
     <main className="mx-auto max-w-[1400px] px-6 py-12">
@@ -27,7 +27,7 @@ export default async function MotifsPage({ searchParams }: MotifsPageProps) {
             Browse
           </h1>
           <p className="mt-1 font-mono text-xs text-white/40">
-            {filtered.length} of {allMotifs.length} visual systems
+            {filtered.length} of {allReferences.length} visual systems
           </p>
         </div>
       </div>
@@ -37,8 +37,8 @@ export default async function MotifsPage({ searchParams }: MotifsPageProps) {
       <div className="mt-6">
         {filtered.length > 0 ? (
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {filtered.map((motif) => (
-              <MotifCard key={motif.slug} motif={motif} />
+            {filtered.map((ref) => (
+              <ReferenceCard key={ref.slug} reference={ref} />
             ))}
           </div>
         ) : (

@@ -77,7 +77,7 @@
       }
     }
   },
-  "motifs": [
+  "effects": [
     {
       "slug": "grid-background",
       "name": "Grid Background",

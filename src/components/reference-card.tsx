@@ -1,29 +1,29 @@
 import Link from "next/link";
 import Image from "next/image";
-import type { Motif } from "@/lib/types";
+import type { VisualReference } from "@/lib/types";
 import { CardCopyButton } from "./card-copy-button";
 
-interface MotifCardProps {
-  motif: Motif;
+interface ReferenceCardProps {
+  reference: VisualReference;
 }
 
-export function MotifCard({ motif }: MotifCardProps) {
+export function ReferenceCard({ reference }: ReferenceCardProps) {
   const allColors = [
-    ...Object.values(motif.tokens.colors.background),
-    ...Object.values(motif.tokens.colors.accent),
-    ...Object.values(motif.tokens.colors.text),
+    ...Object.values(reference.tokens.colors.background),
+    ...Object.values(reference.tokens.colors.accent),
+    ...Object.values(reference.tokens.colors.text),
   ].slice(0, 8);
 
   return (
     <Link
-      href={`/references/${motif.slug}`}
+      href={`/references/${reference.slug}`}
       className="group relative flex flex-col overflow-hidden rounded-md border border-white/[0.06] bg-white/[0.02] transition-all duration-300 hover:border-white/[0.14]"
     >
       <div className="relative aspect-[4/3] w-full overflow-hidden">
-        {motif.screenshots.desktop ? (
+        {reference.screenshots.desktop ? (
           <Image
-            src={motif.screenshots.desktop}
-            alt={motif.name}
+            src={reference.screenshots.desktop}
+            alt={reference.name}
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -39,13 +39,13 @@ export function MotifCard({ motif }: MotifCardProps) {
       <div className="flex flex-col gap-2 p-3">
         <div className="flex items-start justify-between gap-2">
           <div className="min-w-0">
-            <p className="truncate text-[13px] font-medium text-white">{motif.name}</p>
-            <p className="truncate text-[11px] text-white/40">{motif.style}</p>
+            <p className="truncate text-[13px] font-medium text-white">{reference.name}</p>
+            <p className="truncate text-[11px] text-white/40">{reference.style}</p>
           </div>
           <div className="flex shrink-0 items-center gap-1">
-            <CardCopyButton motif={motif} />
+            <CardCopyButton reference={reference} />
             <span className="font-mono text-[10px] text-white/25">
-              {motif.motifs.length}fx
+              {reference.effects.length}fx
             </span>
           </div>
         </div>
