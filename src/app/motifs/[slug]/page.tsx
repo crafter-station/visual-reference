@@ -55,7 +55,7 @@ export default async function MotifDetailPage({ params }: MotifDetailPageProps) 
             href="/motifs"
             className="mb-3 inline-block font-mono text-[10px] text-white/40 transition-colors hover:text-white/70"
           >
-            &larr; motifs
+            &larr; browse
           </Link>
           <h1 className="font-display text-3xl font-bold tracking-tight lg:text-4xl">
             {motif.name}

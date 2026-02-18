@@ -71,7 +71,7 @@ export default async function EffectCategoryPage({ params }: EffectCategoryPageP
             <div className="mb-3 flex items-center justify-between">
               <p className="text-[13px] font-medium text-white/90">{effectName}</p>
               <span className="font-mono text-[10px] text-white/25">
-                {motifSlugs.length} motifs
+                {motifSlugs.length} references
               </span>
             </div>
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">

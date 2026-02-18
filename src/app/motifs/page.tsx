@@ -24,7 +24,7 @@ export default async function MotifsPage({ searchParams }: MotifsPageProps) {
       <div className="mb-8 flex items-end justify-between border-b border-white/[0.06] pb-6">
         <div>
           <h1 className="font-display text-3xl tracking-tight">
-            Browse Motifs
+            Browse
           </h1>
           <p className="mt-1 font-mono text-xs text-white/40">
             {filtered.length} of {allMotifs.length} visual systems
@@ -44,7 +44,7 @@ export default async function MotifsPage({ searchParams }: MotifsPageProps) {
         ) : (
           <div className="flex min-h-48 items-center justify-center rounded-md border border-white/[0.06] bg-white/[0.02]">
             <p className="font-mono text-xs text-white/30">
-              No motifs in this category yet.
+              No references in this category yet.
             </p>
           </div>
         )}

@@ -48,7 +48,7 @@ export default function HomePage() {
         ) : (
           <div className="flex min-h-48 items-center justify-center rounded-md border border-white/[0.06] bg-white/[0.02]">
             <p className="font-mono text-xs text-white/30">
-              No motifs yet. Run the ingest script.
+              No references yet. Run the ingest script.
             </p>
           </div>
         )}

@@ -50,7 +50,7 @@ export default function RootLayout({
                 href="/motifs"
                 className="font-mono text-[12px] text-white/40 transition-colors hover:text-white/70"
               >
-                motifs
+                browse
               </Link>
               <Link
                 href="/effects"

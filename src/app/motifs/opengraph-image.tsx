@@ -12,10 +12,10 @@ export default function Image() {
         tw="mt-2 text-6xl font-bold text-white"
         style={{ fontFamily: "Geist", letterSpacing: "-0.03em" }}
       >
-        Browse Visual Systems
+        Browse
       </div>
       <div tw="mt-3 text-xl text-white/40">
-        29 curated design references with extractable tokens
+        29 curated visual references with extractable tokens
       </div>
     </div>,
     { ...size }
