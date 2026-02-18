@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Motif } from "@/lib/types";
+import { CardCopyButton } from "./card-copy-button";
 
 interface MotifCardProps {
   motif: Motif;
@@ -41,9 +42,12 @@ export function MotifCard({ motif }: MotifCardProps) {
             <p className="truncate text-[13px] font-medium text-white">{motif.name}</p>
             <p className="truncate text-[11px] text-white/40">{motif.style}</p>
           </div>
-          <span className="shrink-0 font-mono text-[10px] text-white/25">
-            {motif.motifs.length}fx
-          </span>
+          <div className="flex shrink-0 items-center gap-1">
+            <CardCopyButton motif={motif} />
+            <span className="font-mono text-[10px] text-white/25">
+              {motif.motifs.length}fx
+            </span>
+          </div>
         </div>
 
         <div className="flex h-1.5 w-full gap-px overflow-hidden rounded-full">

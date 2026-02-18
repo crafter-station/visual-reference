@@ -5,6 +5,7 @@ import { MOTIF_CATEGORY_COLORS } from "@/lib/taxonomy";
 import { Badge } from "@/components/ui/badge";
 import { ColorPalette } from "@/components/color-palette";
 import { EffectTag } from "@/components/effect-tag";
+import { PromptCopy } from "@/components/prompt-copy";
 import { TokenExport } from "@/components/token-export";
 
 interface MotifDetailPageProps {
@@ -28,7 +29,7 @@ export default async function MotifDetailPage({ params }: MotifDetailPageProps) 
   const allColors = { ...bgColors, ...accentColors };
 
   return (
-    <main className="mx-auto max-w-7xl px-6 py-16">
+    <main className="mx-auto max-w-[1400px] px-6 py-16">
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-[3fr_2fr]">
         <div className="flex flex-col gap-8">
           {motif.screenshots.desktop && (
@@ -157,6 +158,7 @@ export default async function MotifDetailPage({ params }: MotifDetailPageProps) 
             </dl>
           </section>
 
+          <PromptCopy motif={motif} />
           <TokenExport tokens={motif.tokens} name={motif.name} />
         </div>
       </div>
