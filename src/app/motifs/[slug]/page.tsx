@@ -23,15 +23,17 @@ export default async function MotifDetailPage({ params }: MotifDetailPageProps) 
     notFound();
   }
 
-  const bgColors = Object.entries(motif.tokens.colors.background);
-  const accentColors = Object.entries(motif.tokens.colors.accent);
-  const textColors = Object.entries(motif.tokens.colors.text);
+  const bgColors = Object.entries(motif.tokens.colors.background).slice(0, 4);
+  const accentColors = Object.entries(motif.tokens.colors.accent).slice(0, 4);
+  const textColors = Object.entries(motif.tokens.colors.text).slice(0, 3);
+  const allColorEntries = [...bgColors, ...accentColors, ...textColors];
+  const effects = motif.motifs.slice(0, 8);
 
   return (
-    <main className="min-h-screen">
-      <section className="relative w-full">
+    <main className="flex h-[calc(100vh-41px)] overflow-hidden">
+      <div className="relative flex-1 overflow-hidden">
         {motif.screenshots.desktop ? (
-          <div className="relative h-[70vh] w-full overflow-hidden">
+          <>
             <Image
               src={motif.screenshots.desktop}
               alt={motif.name}
@@ -39,211 +41,160 @@ export default async function MotifDetailPage({ params }: MotifDetailPageProps) 
               className="object-cover object-top"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/20 to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 px-8 pb-8">
-              <div className="mx-auto max-w-[1400px]">
-                <Link
-                  href="/motifs"
-                  className="mb-4 inline-block font-mono text-[11px] text-white/40 transition-colors hover:text-white/70"
-                >
-                  &larr; motifs
-                </Link>
-                <h1 className="font-display text-4xl font-bold tracking-tight md:text-5xl">
-                  {motif.name}
-                </h1>
-                <p className="mt-1 text-lg text-white/50">{motif.style}</p>
-                <div className="mt-3 flex items-center gap-3">
-                  <span className="rounded-sm bg-white/[0.08] px-2 py-0.5 font-mono text-[10px] text-white/50">
-                    {motif.mode}
-                  </span>
-                  <span className="font-mono text-[10px] text-white/25">
-                    {motif.motifs.length} effects
-                  </span>
-                  <span className="font-mono text-[10px] text-white/25">
-                    {motif.huntDate}
-                  </span>
-                  {motif.sourceUrl && (
-                    <a
-                      href={motif.sourceUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-mono text-[10px] text-white/25 transition-colors hover:text-white/50"
-                    >
-                      {new URL(motif.sourceUrl).hostname} &nearr;
-                    </a>
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/70 via-transparent to-[#0a0a0a]/40" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/80 via-transparent to-transparent" />
+          </>
         ) : (
-          <div className="flex h-48 items-center justify-center bg-white/[0.02]">
+          <div className="flex h-full items-center justify-center bg-white/[0.02]">
             <span className="font-mono text-xs text-white/20">No preview</span>
           </div>
         )}
-      </section>
 
-      <section className="mx-auto max-w-[1400px] px-8 py-10">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_320px]">
-          <div className="flex flex-col gap-8">
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-              <div className="rounded-md border border-white/[0.06] bg-white/[0.02] p-4">
-                <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.15em] text-white/30">
-                  Background
-                </p>
-                <div className="flex flex-col gap-2">
-                  {bgColors.map(([name, hex]) => (
-                    <ColorSwatch key={name} name={name} hex={hex} />
-                  ))}
-                </div>
-              </div>
-              <div className="rounded-md border border-white/[0.06] bg-white/[0.02] p-4">
-                <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.15em] text-white/30">
-                  Accent
-                </p>
-                <div className="flex flex-col gap-2">
-                  {accentColors.map(([name, hex]) => (
-                    <ColorSwatch key={name} name={name} hex={hex} />
-                  ))}
-                </div>
-              </div>
-              <div className="rounded-md border border-white/[0.06] bg-white/[0.02] p-4">
-                <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.15em] text-white/30">
-                  Text
-                </p>
-                <div className="flex flex-col gap-2">
-                  {textColors.map(([name, hex]) => (
-                    <ColorSwatch key={name} name={name} hex={hex} />
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <div className="rounded-md border border-white/[0.06] bg-white/[0.02] p-4">
-                <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.15em] text-white/30">
-                  Typography
-                </p>
-                <div className="flex flex-col gap-3">
-                  <div>
-                    <p className="font-mono text-[10px] text-white/25">display</p>
-                    <p className="text-xl font-bold text-white/90" style={{ fontFamily: motif.tokens.typography.families.display }}>
-                      {motif.tokens.typography.families.display}
-                    </p>
-                  </div>
-                  <div>
-                    <p className="font-mono text-[10px] text-white/25">body</p>
-                    <p className="text-sm text-white/60" style={{ fontFamily: motif.tokens.typography.families.body }}>
-                      {motif.tokens.typography.families.body}
-                    </p>
-                  </div>
-                  {motif.tokens.typography.families.mono && (
-                    <div>
-                      <p className="font-mono text-[10px] text-white/25">mono</p>
-                      <p className="font-mono text-sm text-white/60">
-                        {motif.tokens.typography.families.mono}
-                      </p>
-                    </div>
-                  )}
-                </div>
-              </div>
-
-              {motif.motifs.length > 0 && (
-                <div className="rounded-md border border-white/[0.06] bg-white/[0.02] p-4">
-                  <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.15em] text-white/30">
-                    Effects
-                  </p>
-                  <div className="flex flex-wrap gap-1.5">
-                    {motif.motifs.map((tag) => {
-                      const color = MOTIF_CATEGORY_COLORS[tag.category];
-                      return (
-                        <Link
-                          key={tag.slug}
-                          href={`/effects/${tag.category}`}
-                          className="inline-flex items-center gap-1.5 rounded-sm px-2 py-1 font-mono text-[10px] transition-colors hover:bg-white/[0.06]"
-                          style={{
-                            backgroundColor: `${color}10`,
-                            color: `${color}cc`,
-                          }}
-                        >
-                          <span
-                            className="h-1.5 w-1.5 rounded-full"
-                            style={{ backgroundColor: color }}
-                          />
-                          {tag.name}
-                        </Link>
-                      );
-                    })}
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {motif.coreAesthetic && (
-              <div className="rounded-md border border-white/[0.06] bg-white/[0.02] p-4">
-                <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.15em] text-white/30">
-                  Design Direction
-                </p>
-                <p className="text-[13px] leading-relaxed text-white/60">
-                  {motif.coreAesthetic}
-                </p>
-              </div>
-            )}
-
-            {motif.whyItWorks && (
-              <div className="rounded-md border border-white/[0.06] bg-white/[0.02] p-4">
-                <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.15em] text-white/30">
-                  Why It Works
-                </p>
-                <p className="text-[13px] leading-relaxed text-white/60">
-                  {motif.whyItWorks}
-                </p>
-              </div>
-            )}
-          </div>
-
-          <div className="flex flex-col gap-3 lg:sticky lg:top-16 lg:self-start">
-            <PromptCopy motif={motif} />
-            <TokenExport tokens={motif.tokens} name={motif.name} />
-
-            {motif.techStack.length > 0 && (
-              <div className="mt-2 rounded-md border border-white/[0.06] bg-white/[0.02] p-3">
-                <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.15em] text-white/30">
-                  Tech Stack
-                </p>
-                <div className="flex flex-wrap gap-1">
-                  {motif.techStack.map((tech) => (
-                    <span
-                      key={tech}
-                      className="rounded-sm bg-white/[0.04] px-1.5 py-0.5 font-mono text-[10px] text-white/40"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {motif.categories.length > 0 && (
-              <div className="rounded-md border border-white/[0.06] bg-white/[0.02] p-3">
-                <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.15em] text-white/30">
-                  Categories
-                </p>
-                <div className="flex flex-wrap gap-1">
-                  {motif.categories.map((cat) => (
-                    <span
-                      key={cat}
-                      className="rounded-sm bg-white/[0.04] px-1.5 py-0.5 font-mono text-[10px] text-white/40"
-                    >
-                      {cat}
-                    </span>
-                  ))}
-                </div>
-              </div>
+        <div className="absolute inset-x-0 bottom-0 p-6">
+          <Link
+            href="/motifs"
+            className="mb-3 inline-block font-mono text-[10px] text-white/40 transition-colors hover:text-white/70"
+          >
+            &larr; motifs
+          </Link>
+          <h1 className="font-display text-3xl font-bold tracking-tight lg:text-4xl">
+            {motif.name}
+          </h1>
+          <p className="mt-0.5 text-sm text-white/50">{motif.style}</p>
+          <div className="mt-2 flex flex-wrap items-center gap-2">
+            <span className="rounded-sm bg-white/[0.1] px-1.5 py-0.5 font-mono text-[9px] text-white/60">
+              {motif.mode}
+            </span>
+            <span className="font-mono text-[9px] text-white/30">
+              {motif.motifs.length} effects
+            </span>
+            <span className="font-mono text-[9px] text-white/30">
+              {motif.huntDate}
+            </span>
+            {motif.sourceUrl && (
+              <a
+                href={motif.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono text-[9px] text-white/30 transition-colors hover:text-white/60"
+              >
+                {new URL(motif.sourceUrl).hostname} &nearr;
+              </a>
             )}
           </div>
         </div>
-      </section>
+      </div>
+
+      <div className="flex w-[340px] shrink-0 flex-col border-l border-white/[0.06] bg-[#0a0a0a] lg:w-[380px]">
+        <div className="flex flex-1 flex-col gap-4 overflow-y-auto p-4">
+          <div className="flex gap-2">
+            <div className="flex-1">
+              <PromptCopy motif={motif} />
+            </div>
+            <div className="flex-1">
+              <TokenExport tokens={motif.tokens} name={motif.name} />
+            </div>
+          </div>
+
+          <div>
+            <p className="mb-2 font-mono text-[9px] uppercase tracking-[0.15em] text-white/25">
+              Palette
+            </p>
+            <div className="grid grid-cols-2 gap-x-3 gap-y-1.5">
+              {allColorEntries.map(([name, hex]) => (
+                <ColorSwatch key={name} name={name} hex={hex} />
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <p className="mb-2 font-mono text-[9px] uppercase tracking-[0.15em] text-white/25">
+              Typography
+            </p>
+            <div className="flex flex-col gap-1.5">
+              <div className="flex items-baseline justify-between">
+                <span className="font-mono text-[9px] text-white/25">display</span>
+                <span className="text-[13px] font-bold text-white/80" style={{ fontFamily: motif.tokens.typography.families.display }}>
+                  {motif.tokens.typography.families.display}
+                </span>
+              </div>
+              <div className="flex items-baseline justify-between">
+                <span className="font-mono text-[9px] text-white/25">body</span>
+                <span className="text-[12px] text-white/50" style={{ fontFamily: motif.tokens.typography.families.body }}>
+                  {motif.tokens.typography.families.body}
+                </span>
+              </div>
+              {motif.tokens.typography.families.mono && (
+                <div className="flex items-baseline justify-between">
+                  <span className="font-mono text-[9px] text-white/25">mono</span>
+                  <span className="font-mono text-[12px] text-white/50">
+                    {motif.tokens.typography.families.mono}
+                  </span>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {effects.length > 0 && (
+            <div>
+              <p className="mb-2 font-mono text-[9px] uppercase tracking-[0.15em] text-white/25">
+                Effects
+              </p>
+              <div className="flex flex-wrap gap-1">
+                {effects.map((tag) => {
+                  const color = MOTIF_CATEGORY_COLORS[tag.category];
+                  return (
+                    <Link
+                      key={tag.slug}
+                      href={`/effects/${tag.category}`}
+                      className="inline-flex items-center gap-1 rounded-sm px-1.5 py-0.5 font-mono text-[9px] transition-colors hover:bg-white/[0.06]"
+                      style={{
+                        backgroundColor: `${color}10`,
+                        color: `${color}cc`,
+                      }}
+                    >
+                      <span
+                        className="h-1 w-1 rounded-full"
+                        style={{ backgroundColor: color }}
+                      />
+                      {tag.name}
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {motif.coreAesthetic && (
+            <div>
+              <p className="mb-1 font-mono text-[9px] uppercase tracking-[0.15em] text-white/25">
+                Design Direction
+              </p>
+              <p className="text-[11px] leading-relaxed text-white/45">
+                {motif.coreAesthetic}
+              </p>
+            </div>
+          )}
+
+          {motif.techStack.length > 0 && (
+            <div>
+              <p className="mb-1.5 font-mono text-[9px] uppercase tracking-[0.15em] text-white/25">
+                Stack
+              </p>
+              <div className="flex flex-wrap gap-1">
+                {motif.techStack.map((tech) => (
+                  <span
+                    key={tech}
+                    className="rounded-sm bg-white/[0.04] px-1.5 py-0.5 font-mono text-[9px] text-white/35"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
     </main>
   );
 }
