@@ -1,0 +1,123 @@
+{
+  "slug": "hunt-prime-intellect",
+  "name": "Prime Intellect",
+  "style": "Terminal Dark Research Lab",
+  "huntDate": "2026-03-11",
+  "categories": [
+    "Dev Tools",
+    "B2B SaaS"
+  ],
+  "engagement": 8.5,
+  "mode": "dark",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#080808",
+        "secondary": "#0F0F0F",
+        "tertiary": "#151515"
+      },
+      "accent": {
+        "primary": "#00FF88",
+        "secondary": "#FF3B30"
+      },
+      "text": {
+        "primary": "#E8E8E0",
+        "secondary": "#6A6A60",
+        "muted": "#3A3A32"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "JetBrains Mono",
+        "body": "JetBrains Mono",
+        "mono": "JetBrains Mono"
+      },
+      "scale": {
+        "hero": "48px",
+        "h1": "42px",
+        "h2": "28px",
+        "body": "13px",
+        "small": "12px",
+        "micro": "11px"
+      },
+      "weights": {
+        "bold": 700,
+        "semibold": 500,
+        "regular": 400
+      },
+      "lineHeights": {
+        "tight": 1.25,
+        "normal": 1.6,
+        "relaxed": 1.8
+      }
+    },
+    "spacing": {
+      "section": "80px",
+      "element": "24px",
+      "tight": "8px"
+    },
+    "borderRadius": {
+      "card": "0px",
+      "button": "2px",
+      "pill": "4px"
+    },
+    "shadows": {
+      "glow": "0 0 40px rgba(0,255,136,0.1)"
+    },
+    "animation": {
+      "durations": {
+        "fast": "100ms",
+        "normal": "200ms"
+      },
+      "easings": {
+        "default": "linear"
+      }
+    }
+  },
+  "effects": [
+    {
+      "slug": "laser-particle-visualization",
+      "name": "Laser Particle Visualization",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "monospace-everything",
+      "name": "Monospace Everything",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "terminal-black-canvas",
+      "name": "Terminal Black Canvas",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "numbered-section-labels",
+      "name": "Numbered Section Labels",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "matrix-grid-terrain",
+      "name": "Matrix Grid Terrain",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "credibility-name-drop",
+      "name": "Credibility Name Drop",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "minimal-cta-border",
+      "name": "Minimal Cta Border",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "Designed FOR researchers BY researchers. Monospace-everything signals: this is a technical instrument, not a marketing site. The laser visualization is as close as possible to showing raw computation.",
+  "coreAesthetic": "Style: Terminal Dark Research Lab — Laser Light Visualization + Monospace Typography\nDesign philosophy: This is a site for researchers, not consumers. Every design choice signals rigor, density, and computational power. The laser visualization is raw physics — not decorative, not explanatory.\nInfluences: CERN research papers × Bloomberg Terminal × 1990s Silicon Graphics workstations × Hacker aesthetic taken upmarket.",
+  "techStack": [
+    "Next.js",
+    "Three.js"
+  ],
+  "screenshots": {
+    "desktop": "/references/hunt-prime-intellect/reference-desktop.png"
+  }
+}

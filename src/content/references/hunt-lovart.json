@@ -1,0 +1,124 @@
+{
+  "slug": "hunt-lovart",
+  "name": "Lovart",
+  "style": "Dark Minimal AI SaaS with Editorial Serif",
+  "huntDate": "2026-03-11",
+  "categories": [
+    "B2B SaaS",
+    "Creative / 3D"
+  ],
+  "engagement": 8,
+  "mode": "dark",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#0E0E0E",
+        "secondary": "#161616",
+        "tertiary": "#1C1C1C"
+      },
+      "accent": {
+        "primary": "#3A8AFF",
+        "secondary": "#F0F0F0"
+      },
+      "text": {
+        "primary": "#F0F0F0",
+        "secondary": "#888888",
+        "muted": "#555555"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Tiempos Headline / editorial serif",
+        "body": "Inter",
+        "mono": "JetBrains Mono"
+      },
+      "scale": {
+        "hero": "56px",
+        "h1": "48px",
+        "h2": "32px",
+        "body": "16px",
+        "small": "12px",
+        "micro": "11px"
+      },
+      "weights": {
+        "bold": 600,
+        "semibold": 400,
+        "regular": 400
+      },
+      "lineHeights": {
+        "tight": 1.15,
+        "normal": 1.5,
+        "relaxed": 1.7
+      }
+    },
+    "spacing": {
+      "section": "80px",
+      "element": "24px",
+      "tight": "8px"
+    },
+    "borderRadius": {
+      "card": "12px",
+      "button": "9999px",
+      "panel": "10px"
+    },
+    "shadows": {
+      "panel": "0 8px 32px rgba(0,0,0,0.5)",
+      "card": "0 2px 8px rgba(0,0,0,0.3)"
+    },
+    "animation": {
+      "durations": {
+        "fast": "150ms",
+        "normal": "300ms"
+      },
+      "easings": {
+        "default": "ease-out"
+      }
+    }
+  },
+  "effects": [
+    {
+      "slug": "embedded-product-demo",
+      "name": "Embedded Product Demo",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "editorial-serif-on-dark",
+      "name": "Editorial Serif On Dark",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "citation-superscript-headline",
+      "name": "Citation Superscript Headline",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "kicker-spaced-caps",
+      "name": "Kicker Spaced Caps",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "split-canvas-chat",
+      "name": "Split Canvas Chat",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "blue-project-badge",
+      "name": "Blue Project Badge",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "checked-list-ai-response",
+      "name": "Checked List Ai Response",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "Serif headline on dark creates luxury editorial dissonance in a tech context. The product demo embedded as hero section eliminates the \"show don't tell\" problem entirely.",
+  "coreAesthetic": "Style: Dark Minimal AI SaaS — Product Screenshot as Hero with Floating Chat Interface\nDesign philosophy: Show the product, not a mockup of the product. The actual AI interface floats below the headline as a live demonstration embedded in the marketing page.\nInfluences: Linear dark mode × Vercel dashboard × Notion AI — the \"dark minimal productivity tool\" aesthetic perfected.",
+  "techStack": [
+    "Next.js",
+    "React"
+  ],
+  "screenshots": {
+    "desktop": "/references/hunt-lovart/reference-desktop.png"
+  }
+}

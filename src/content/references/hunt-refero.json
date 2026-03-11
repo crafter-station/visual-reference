@@ -1,0 +1,125 @@
+{
+  "slug": "hunt-refero",
+  "name": "Refero",
+  "style": "Clean Light SaaS Research Directory",
+  "huntDate": "2026-03-11",
+  "categories": [
+    "B2B SaaS",
+    "Dev Tools"
+  ],
+  "engagement": 8.5,
+  "mode": "light",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#FFFFFF",
+        "secondary": "#F8F9FA",
+        "tertiary": "#F3F4F6"
+      },
+      "accent": {
+        "primary": "#0F0F0F",
+        "secondary": "#22C55E",
+        "tertiary": "#DCFCE7"
+      },
+      "text": {
+        "primary": "#0F0F0F",
+        "secondary": "#6B7280",
+        "muted": "#9CA3AF"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Inter",
+        "body": "Inter",
+        "mono": "JetBrains Mono"
+      },
+      "scale": {
+        "hero": "76px",
+        "h1": "48px",
+        "h2": "32px",
+        "body": "18px",
+        "small": "14px",
+        "micro": "12px"
+      },
+      "weights": {
+        "bold": 800,
+        "semibold": 600,
+        "regular": 400
+      },
+      "lineHeights": {
+        "tight": 1.1,
+        "normal": 1.5,
+        "relaxed": 1.7
+      }
+    },
+    "spacing": {
+      "section": "80px",
+      "element": "24px",
+      "tight": "8px"
+    },
+    "borderRadius": {
+      "card": "12px",
+      "button": "9999px",
+      "pill": "9999px"
+    },
+    "shadows": {
+      "card": "0 8px 24px rgba(0,0,0,0.08)",
+      "modal": "0 24px 64px rgba(0,0,0,0.12)"
+    },
+    "animation": {
+      "durations": {
+        "fast": "150ms",
+        "normal": "300ms"
+      },
+      "easings": {
+        "default": "ease-out"
+      }
+    }
+  },
+  "effects": [
+    {
+      "slug": "floating-ui-cards",
+      "name": "Floating Ui Cards",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "dark-heavy-display",
+      "name": "Dark Heavy Display",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "green-freshness-badge",
+      "name": "Green Freshness Badge",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "platform-tab-nav",
+      "name": "Platform Tab Nav",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "drop-shadow-cards",
+      "name": "Drop Shadow Cards",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "category-label-cards",
+      "name": "Category Label Cards",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "modal-overlay",
+      "name": "Modal Overlay",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "Real product screenshots float organically around the headline — both proof of value AND visual dynamism. The split Web/iOS filtering signals depth of library immediately.",
+  "coreAesthetic": "Style: Clean Light SaaS Research Directory — Floating UI Cards\nDesign philosophy: Documentation-quality clarity with editorial energy — heavy black display type anchors a chaotic but intentional cloud of real product screenshots.\nInfluences: Linear.app meets Raycast meets product hunt landing page. Modern SaaS light mode done correctly.",
+  "techStack": [
+    "Next.js",
+    "React"
+  ],
+  "screenshots": {
+    "desktop": "/references/hunt-refero/reference-desktop.png"
+  }
+}

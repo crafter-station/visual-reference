@@ -1,0 +1,125 @@
+{
+  "slug": "hunt-mastra",
+  "name": "Mastra",
+  "style": "Dark Agent Graph SaaS",
+  "huntDate": "2026-03-11",
+  "categories": [
+    "Dev Tools",
+    "B2B SaaS"
+  ],
+  "engagement": 8.5,
+  "mode": "dark",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#0A0A0A",
+        "secondary": "#111111",
+        "tertiary": "#1A1A1A"
+      },
+      "accent": {
+        "primary": "#22FF44",
+        "secondary": "#1DB954"
+      },
+      "text": {
+        "primary": "#F2F2F2",
+        "secondary": "#888888",
+        "muted": "#555555"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Inter",
+        "body": "Inter",
+        "mono": "JetBrains Mono"
+      },
+      "scale": {
+        "hero": "56px",
+        "h1": "48px",
+        "h2": "32px",
+        "body": "17px",
+        "small": "13px",
+        "micro": "11px"
+      },
+      "weights": {
+        "bold": 800,
+        "semibold": 600,
+        "regular": 400
+      },
+      "lineHeights": {
+        "tight": 1.15,
+        "normal": 1.5,
+        "relaxed": 1.7
+      }
+    },
+    "spacing": {
+      "section": "80px",
+      "element": "24px",
+      "tight": "8px"
+    },
+    "borderRadius": {
+      "card": "8px",
+      "button": "6px",
+      "pill": "9999px",
+      "node": "12px"
+    },
+    "shadows": {
+      "card": "0 4px 16px rgba(0,0,0,0.4)",
+      "node": "0 0 16px rgba(34,255,68,0.15)"
+    },
+    "animation": {
+      "durations": {
+        "fast": "150ms",
+        "normal": "250ms"
+      },
+      "easings": {
+        "default": "ease-out"
+      }
+    }
+  },
+  "effects": [
+    {
+      "slug": "agent-graph-hero",
+      "name": "Agent Graph Hero",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "neon-green-accent",
+      "name": "Neon Green Accent",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "npm-code-pill",
+      "name": "Npm Code Pill",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "graph-node-floating",
+      "name": "Graph Node Floating",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "left-bar-badge",
+      "name": "Left Bar Badge",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "star-count-nav",
+      "name": "Star Count Nav",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "dark-developer-nav",
+      "name": "Dark Developer Nav",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "The product (agent orchestration) IS the hero visualization. Neon green creates matrix-terminal feeling without being retro. One accent color, total coherence.",
+  "coreAesthetic": "Style: Dark Agent Graph SaaS — Neon Green Network Visualization on Black\nDesign philosophy: Visualize the abstract (AI agent graphs) as the hero element. The product demo IS the hero — no mockup frames, the visualization floats over the dark canvas.\nInfluences: Observable HQ data visualization × GitHub dark mode × Vercel dashboard aesthetic. Developer-native dark UI done with taste.",
+  "techStack": [
+    "Next.js",
+    "TypeScript"
+  ],
+  "screenshots": {
+    "desktop": "/references/hunt-mastra/reference-desktop.png"
+  }
+}

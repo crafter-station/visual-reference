@@ -1,0 +1,123 @@
+{
+  "slug": "hunt-commerce-cream",
+  "name": "Commerce Cream",
+  "style": "Soft Blush Pastel Editorial Gallery",
+  "huntDate": "2026-03-11",
+  "categories": [
+    "B2B SaaS"
+  ],
+  "engagement": 8,
+  "mode": "light",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#F8E6F0",
+        "secondary": "#FFFFFF",
+        "tertiary": "#F0D8E8"
+      },
+      "accent": {
+        "primary": "#3A3333",
+        "secondary": "#D8C8D2"
+      },
+      "text": {
+        "primary": "#3A3333",
+        "secondary": "#6B5C62",
+        "muted": "#9E8E96"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Canela",
+        "body": "Inter",
+        "mono": "JetBrains Mono"
+      },
+      "scale": {
+        "hero": "88px",
+        "h1": "56px",
+        "h2": "36px",
+        "body": "16px",
+        "small": "13px",
+        "micro": "11px"
+      },
+      "weights": {
+        "bold": 300,
+        "semibold": 200,
+        "regular": 100
+      },
+      "lineHeights": {
+        "tight": 1.05,
+        "normal": 1.5,
+        "relaxed": 1.7
+      }
+    },
+    "spacing": {
+      "section": "120px",
+      "element": "32px",
+      "tight": "12px"
+    },
+    "borderRadius": {
+      "card": "4px",
+      "button": "9999px",
+      "pill": "9999px"
+    },
+    "shadows": {
+      "card": "none",
+      "button": "none"
+    },
+    "animation": {
+      "durations": {
+        "fast": "200ms",
+        "normal": "400ms"
+      },
+      "easings": {
+        "default": "ease-in-out"
+      }
+    }
+  },
+  "effects": [
+    {
+      "slug": "ultra-thin-display-serif",
+      "name": "Ultra Thin Display Serif",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "blush-monochromatic-bg",
+      "name": "Blush Monochromatic Bg",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "minimal-wordmark",
+      "name": "Minimal Wordmark",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "category-pill-row",
+      "name": "Category Pill Row",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "pill-cta",
+      "name": "Pill Cta",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "dark-mode-toggle",
+      "name": "Dark Mode Toggle",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "rotary-badge",
+      "name": "Rotary Badge",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "Maximum typography confidence on the softest possible background. The blush pink makes thin dark serif feel luxurious not weak. Category pills and controls don't compete — they sit quietly below the headline's dominance.",
+  "coreAesthetic": "Style: Soft Blush Pastel Editorial Gallery\nDesign philosophy: Maximum typography confidence on the softest possible background — let one enormous thin serif do all the emotional work, then let the products do the rest.\nInfluences: Celine/Loewe luxury fashion editorial, Brutalist typography meets feminine palette, An co Studio aesthetic.",
+  "techStack": [
+    "Sanity CMS",
+    "Next.js"
+  ],
+  "screenshots": {
+    "desktop": "/references/hunt-commerce-cream/reference-desktop.png"
+  }
+}

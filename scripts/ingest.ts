@@ -73,8 +73,10 @@ interface HuntIndexEntry {
 const DARK_MODE_HUNTS = new Set([
   "hunt-hex-inc", "hunt-replo", "hunt-detail", "hunt-momentic",
   "hunt-plasticity", "hunt-blink", "hunt-hivemind", "hunt-harbour", "hunt-patchwork",
+  "hunt-cosmos", "hunt-design-everywhere", "hunt-ogfolio", "hunt-a24",
+  "hunt-mastra", "hunt-prime-intellect", "hunt-lovart",
 ]);
-const WARM_MODE_HUNTS = new Set(["hunt-mnhvc", "hunt-millennium"]);
+const WARM_MODE_HUNTS = new Set(["hunt-mnhvc", "hunt-millennium", "hunt-spiral-soot", "hunt-topology"]);
 
 const CATEGORY_MAP: Record<string, Category> = {
   "Portfolio": "Portfolio",

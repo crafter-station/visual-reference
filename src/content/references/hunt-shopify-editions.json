@@ -1,0 +1,118 @@
+{
+  "slug": "hunt-shopify-editions",
+  "name": "Shopify Editions Winter 2026",
+  "style": "Renaissance Painting × Brutalist Typography Collage",
+  "huntDate": "2026-03-11",
+  "categories": [
+    "B2B SaaS",
+    "Creative / 3D"
+  ],
+  "engagement": 9,
+  "mode": "light",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#8BA4C8",
+        "secondary": "#5A7A4A",
+        "tertiary": "#E8D8B0"
+      },
+      "accent": {
+        "primary": "#FF1493",
+        "secondary": "#1DB954"
+      },
+      "text": {
+        "primary": "#FFFFFF",
+        "secondary": "#1A1A1A",
+        "muted": "#4A4A4A"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Custom editorial serif",
+        "body": "Helvetica Neue",
+        "mono": "JetBrains Mono"
+      },
+      "scale": {
+        "hero": "48px",
+        "h1": "42px",
+        "h2": "28px",
+        "body": "13px",
+        "small": "12px",
+        "micro": "11px"
+      },
+      "weights": {
+        "bold": 600,
+        "semibold": 400,
+        "regular": 300
+      },
+      "lineHeights": {
+        "tight": 1.2,
+        "normal": 1.5,
+        "relaxed": 1.7
+      }
+    },
+    "spacing": {
+      "section": "0px",
+      "element": "20px",
+      "tight": "8px"
+    },
+    "borderRadius": {
+      "card": "8px",
+      "button": "9999px",
+      "panel": "12px"
+    },
+    "shadows": {
+      "panel": "0 8px 32px rgba(0,0,0,0.2)"
+    },
+    "animation": {
+      "durations": {
+        "fast": "200ms",
+        "normal": "400ms"
+      },
+      "easings": {
+        "default": "ease-out"
+      }
+    }
+  },
+  "effects": [
+    {
+      "slug": "renaissance-painting-bg",
+      "name": "Renaissance Painting Bg",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "anachronistic-object-collision",
+      "name": "Anachronistic Object Collision",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "double-slash-brand-mark",
+      "name": "Double Slash Brand Mark",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "translucent-sidebar-panel",
+      "name": "Translucent Sidebar Panel",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "hot-pink-on-classical",
+      "name": "Hot Pink On Classical",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "high-culture-commerce",
+      "name": "High Culture Commerce",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "Turns a product changelog into cultural commentary. Classical art signals sophistication. The anachronistic skateboard is the punchline — art history as hype.",
+  "coreAesthetic": "Style: Renaissance Painting × Brutalist Typography Collage — High-Culture Commerce\nDesign philosophy: Use classical art as brand material rather than custom illustration. The collision between 17th century oil painting and aggressive modern typography creates tension that demands attention.\nInfluences: Virgil Abloh's Off-White brand language × Balenciaga fashion editorial × David LaChapelle photography × Supreme box logo irreverence applied to commerce.",
+  "techStack": [
+    "Next.js",
+    "Shopify"
+  ],
+  "screenshots": {
+    "desktop": "/references/hunt-shopify-editions/reference-desktop.png"
+  }
+}

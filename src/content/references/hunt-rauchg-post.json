@@ -1,0 +1,120 @@
+{
+  "slug": "hunt-rauchg-post",
+  "name": "Rauchg Post",
+  "style": "",
+  "huntDate": "2026-02-21",
+  "categories": [
+    "B2B SaaS"
+  ],
+  "engagement": 5,
+  "mode": "light",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#000000",
+        "secondary": "#0A0A0A",
+        "tertiary": "#111111",
+        "input": "#1A1A1A",
+        "selectedItem": "#1E3A5F"
+      },
+      "accent": {
+        "primary": "#3B82F6",
+        "secondary": "#EF4444"
+      },
+      "text": {
+        "primary": "#FFFFFF",
+        "secondary": "#A1A1AA",
+        "muted": "#71717A",
+        "micro": "#52525B"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Geist Sans",
+        "body": "Geist Sans",
+        "mono": "Geist Mono"
+      },
+      "scale": {
+        "hero": "48px",
+        "h1": "32px",
+        "h2": "24px",
+        "sectionLabel": "14px",
+        "body": "13px",
+        "small": "12px",
+        "micro": "11px"
+      },
+      "weights": {
+        "bold": 700,
+        "semibold": 600,
+        "medium": 500,
+        "regular": 400
+      },
+      "lineHeights": {
+        "tight": 1.2,
+        "normal": 1.5,
+        "relaxed": 1.7
+      }
+    },
+    "spacing": {
+      "section": "32px",
+      "element": "16px",
+      "tight": "8px",
+      "micro": "4px"
+    },
+    "borderRadius": {
+      "card": "12px",
+      "button": "8px",
+      "pill": "9999px",
+      "input": "6px"
+    },
+    "shadows": {},
+    "animation": {
+      "durations": {
+        "fast": "150ms",
+        "normal": "200ms",
+        "slow": "300ms"
+      },
+      "easings": {
+        "default": "cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    }
+  },
+  "effects": [
+    {
+      "slug": "particle-noise-background",
+      "name": "Particle Noise Background",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "hairline-borders",
+      "name": "Hairline Borders",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "selected-template-blue-glow",
+      "name": "Selected Template Blue Glow",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "tab-segmented-control",
+      "name": "Tab Segmented Control",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "card-preview-shadow",
+      "name": "Card Preview Shadow",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "monospace-header",
+      "name": "Monospace Header",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "",
+  "coreAesthetic": "Style: Dark Tooling Dashboard — Vercel Internal Utility\nPhilosophy: Stripped-down, monochrome utility design that treats the OG card preview as the hero, with the sidebar acting as a functional control panel. Zero ornamentation beyond the particle-noise background texture.\nInfluences: Vercel dashboard, Linear settings panels, Raycast configuration UIs. The split-pane layout (sidebar controls + live preview) is the canonical pattern for design tooling interfaces.",
+  "techStack": [],
+  "screenshots": {
+    "desktop": "/references/hunt-rauchg-post/reference-desktop.png"
+  }
+}

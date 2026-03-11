@@ -1,0 +1,118 @@
+{
+  "slug": "hunt-topology",
+  "name": "Topology VC",
+  "style": "3D Iridescent Minimalism",
+  "huntDate": "2026-03-11",
+  "categories": [
+    "VC / Finance"
+  ],
+  "engagement": 9,
+  "mode": "warm",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#E8E6E0",
+        "secondary": "#F0EFEC",
+        "tertiary": "#D8D6D0"
+      },
+      "accent": {
+        "primary": "#FF4444",
+        "secondary": "#4488FF",
+        "tertiary": "#44DD44"
+      },
+      "text": {
+        "primary": "#FFFFFF",
+        "secondary": "#9E9C97",
+        "muted": "#C0BEB8"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Helvetica Neue",
+        "body": "Helvetica Neue",
+        "mono": "JetBrains Mono"
+      },
+      "scale": {
+        "hero": "80px",
+        "h1": "56px",
+        "h2": "32px",
+        "body": "16px",
+        "small": "13px",
+        "micro": "11px"
+      },
+      "weights": {
+        "bold": 400,
+        "semibold": 300,
+        "regular": 300
+      },
+      "lineHeights": {
+        "tight": 1.1,
+        "normal": 1.5,
+        "relaxed": 1.7
+      }
+    },
+    "spacing": {
+      "section": "0px",
+      "element": "32px",
+      "tight": "16px"
+    },
+    "borderRadius": {
+      "card": "0px",
+      "button": "9999px",
+      "pill": "9999px"
+    },
+    "shadows": {
+      "object": "0 40px 80px rgba(0,0,0,0.15)"
+    },
+    "animation": {
+      "durations": {
+        "fast": "300ms",
+        "normal": "800ms"
+      },
+      "easings": {
+        "default": "cubic-bezier(0.25,0.1,0.25,1)"
+      }
+    }
+  },
+  "effects": [
+    {
+      "slug": "viewport-filling-3d-object",
+      "name": "Viewport Filling 3d Object",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "iridescent-edge-refraction",
+      "name": "Iridescent Edge Refraction",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "warm-gray-canvas",
+      "name": "Warm Gray Canvas",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "bottom-left-type",
+      "name": "Bottom Left Type",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "concentric-groove-topology",
+      "name": "Concentric Groove Topology",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "pure-minimal-nav",
+      "name": "Pure Minimal Nav",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "One extraordinary 3D object makes everything else minimal to the point of absence. Iridescent edges reveal hidden complexity — like a prism, looks simple but shows spectrum under light.",
+  "coreAesthetic": "Style: 3D Iridescent Minimalism — Warm Gray + Rainbow Spectrum Caustics\nDesign philosophy: One single 3D object fills the entire viewport and communicates everything — depth, precision, frontier thinking. Typography floats below as a second thought.\nInfluences: Teenage Engineering product photography × Anish Kapoor sculpture × Apple Vision Pro UI philosophy. Physical object as interface.",
+  "techStack": [
+    "Three.js / WebGL",
+    "custom"
+  ],
+  "screenshots": {
+    "desktop": "/references/hunt-topology/reference-desktop.png"
+  }
+}

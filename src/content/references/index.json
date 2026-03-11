@@ -3254,5 +3254,2234 @@
     "screenshots": {
       "desktop": "/references/hunt-blissful-team/reference-desktop.png"
     }
+  },
+  {
+    "slug": "hunt-vercel-ship",
+    "name": "Vercel Ship",
+    "style": "",
+    "huntDate": "2026-02-21",
+    "categories": [
+      "B2B SaaS"
+    ],
+    "engagement": 5,
+    "mode": "light",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#000000",
+          "secondary": "#1A1A1A",
+          "tertiary": "#333333"
+        },
+        "accent": {
+          "primary": "#FFFFFF",
+          "secondary": "#E5E5E5"
+        },
+        "text": {
+          "primary": "#FFFFFF",
+          "secondary": "#A0A0A0",
+          "muted": "#666666"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "Geist Sans",
+          "body": "Geist Mono",
+          "mono": "Geist Mono"
+        },
+        "scale": {
+          "hero": "600px",
+          "h1": "80px",
+          "h2": "48px",
+          "h3": "32px",
+          "body": "16px",
+          "small": "14px",
+          "micro": "12px"
+        },
+        "weights": {
+          "heavy": 800,
+          "bold": 700,
+          "regular": 400,
+          "light": 300
+        },
+        "lineHeights": {
+          "tight": 1,
+          "normal": 1.5,
+          "relaxed": 1.7
+        }
+      },
+      "spacing": {
+        "section": "120px",
+        "element": "32px",
+        "tight": "8px",
+        "container": "80px"
+      },
+      "borderRadius": {
+        "card": "0px",
+        "button": "0px",
+        "pill": "9999px"
+      },
+      "shadows": {},
+      "animation": {
+        "durations": {
+          "fast": "150ms",
+          "normal": "300ms",
+          "slow": "600ms"
+        },
+        "easings": {
+          "default": "cubic-bezier(0.4, 0, 0.2, 1)"
+        }
+      }
+    },
+    "effects": [
+      {
+        "slug": "particle-disintegration",
+        "name": "Particle Disintegration",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "hero-crop-type",
+        "name": "Hero Crop Type",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "dotted-section-frame",
+        "name": "Dotted Section Frame",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "corner-bracket-frame",
+        "name": "Corner Bracket Frame",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "mono-metadata-strip",
+        "name": "Mono Metadata Strip",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "letter-feature-grid",
+        "name": "Letter Feature Grid",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "vercel-triangle-footer",
+        "name": "Vercel Triangle Footer",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "",
+    "coreAesthetic": "Style: Brutalist Conference Noir\nOne-sentence philosophy: Massive deconstructed typography on pure black, punctuated by particle disintegration effects and monospace metadata, creating a high-contrast editorial brutalism that signals premium developer events.\nKey influences: Swiss typographic posters, brutalist web design, particle physics visualizations, Vercel's existing brand language (triangle, monochrome).",
+    "techStack": [],
+    "screenshots": {
+      "desktop": "/references/hunt-vercel-ship/reference-desktop.png"
+    }
+  },
+  {
+    "slug": "hunt-rauchg-post",
+    "name": "Rauchg Post",
+    "style": "",
+    "huntDate": "2026-02-21",
+    "categories": [
+      "B2B SaaS"
+    ],
+    "engagement": 5,
+    "mode": "light",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#000000",
+          "secondary": "#0A0A0A",
+          "tertiary": "#111111",
+          "input": "#1A1A1A",
+          "selectedItem": "#1E3A5F"
+        },
+        "accent": {
+          "primary": "#3B82F6",
+          "secondary": "#EF4444"
+        },
+        "text": {
+          "primary": "#FFFFFF",
+          "secondary": "#A1A1AA",
+          "muted": "#71717A",
+          "micro": "#52525B"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "Geist Sans",
+          "body": "Geist Sans",
+          "mono": "Geist Mono"
+        },
+        "scale": {
+          "hero": "48px",
+          "h1": "32px",
+          "h2": "24px",
+          "sectionLabel": "14px",
+          "body": "13px",
+          "small": "12px",
+          "micro": "11px"
+        },
+        "weights": {
+          "bold": 700,
+          "semibold": 600,
+          "medium": 500,
+          "regular": 400
+        },
+        "lineHeights": {
+          "tight": 1.2,
+          "normal": 1.5,
+          "relaxed": 1.7
+        }
+      },
+      "spacing": {
+        "section": "32px",
+        "element": "16px",
+        "tight": "8px",
+        "micro": "4px"
+      },
+      "borderRadius": {
+        "card": "12px",
+        "button": "8px",
+        "pill": "9999px",
+        "input": "6px"
+      },
+      "shadows": {},
+      "animation": {
+        "durations": {
+          "fast": "150ms",
+          "normal": "200ms",
+          "slow": "300ms"
+        },
+        "easings": {
+          "default": "cubic-bezier(0.4, 0, 0.2, 1)"
+        }
+      }
+    },
+    "effects": [
+      {
+        "slug": "particle-noise-background",
+        "name": "Particle Noise Background",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "hairline-borders",
+        "name": "Hairline Borders",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "selected-template-blue-glow",
+        "name": "Selected Template Blue Glow",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "tab-segmented-control",
+        "name": "Tab Segmented Control",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "card-preview-shadow",
+        "name": "Card Preview Shadow",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "monospace-header",
+        "name": "Monospace Header",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "",
+    "coreAesthetic": "Style: Dark Tooling Dashboard — Vercel Internal Utility\nPhilosophy: Stripped-down, monochrome utility design that treats the OG card preview as the hero, with the sidebar acting as a functional control panel. Zero ornamentation beyond the particle-noise background texture.\nInfluences: Vercel dashboard, Linear settings panels, Raycast configuration UIs. The split-pane layout (sidebar controls + live preview) is the canonical pattern for design tooling interfaces.",
+    "techStack": [],
+    "screenshots": {
+      "desktop": "/references/hunt-rauchg-post/reference-desktop.png"
+    }
+  },
+  {
+    "slug": "hunt-figma-blog",
+    "name": "Figma Blog",
+    "style": "",
+    "huntDate": "2026-02-24",
+    "categories": [
+      "B2B SaaS"
+    ],
+    "engagement": 5,
+    "mode": "light",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#131313",
+          "secondary": "#222222",
+          "hero": "#F5F5F5",
+          "heroDark": "#0A0A0A",
+          "card": "#131313",
+          "cardHover": "#222222",
+          "tag": "#1A1A1A",
+          "tagHover": "#222222",
+          "footer": "#131313",
+          "focusHighlight": "#E4FF97",
+          "overlay": "#131313"
+        },
+        "accent": {
+          "green": "#00E639",
+          "orange": "#FF6B2B",
+          "blue": "#3B82F6",
+          "cyan": "#22D3EE",
+          "magenta": "#D946EF",
+          "red": "#EF4444",
+          "purple": "#A855F7"
+        },
+        "text": {
+          "primary": "#FFFFFF",
+          "secondary": "#999999",
+          "muted": "#666666",
+          "onLight": "#000000",
+          "onFocus": "#000000"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "",
+          "body": ""
+        },
+        "scale": {},
+        "weights": {},
+        "lineHeights": {}
+      },
+      "spacing": {},
+      "borderRadius": {},
+      "shadows": {},
+      "animation": {
+        "durations": {},
+        "easings": {}
+      }
+    },
+    "effects": [
+      {
+        "slug": "transitions",
+        "name": "Transitions",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "hover",
+        "name": "Hover",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "focus",
+        "name": "Focus",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "",
+    "coreAesthetic": "",
+    "techStack": [],
+    "screenshots": {
+      "desktop": ""
+    }
+  },
+  {
+    "slug": "hunt-pulse-ethereal-glow",
+    "name": "Pulse Ethereal Glow",
+    "style": "",
+    "huntDate": "2026-03-04",
+    "categories": [
+      "B2B SaaS"
+    ],
+    "engagement": 5,
+    "mode": "light",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#0A0A0A",
+          "secondary": "#111111",
+          "tertiary": "#1A1A1A"
+        },
+        "accent": {
+          "primary": "#E63946",
+          "secondary": "#F2CC0C",
+          "tertiary": "#3D5AF1",
+          "warm": "#F4A261",
+          "green": "#2EC44D",
+          "teal": "#1B998B",
+          "violet": "#7B2FBE",
+          "cyan": "#00D4FF"
+        },
+        "text": {
+          "primary": "#FFFFFF",
+          "secondary": "#D4D4D4",
+          "muted": "#8A8A8A"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "Space Grotesk",
+          "body": "Geist",
+          "mono": "JetBrains Mono"
+        },
+        "scale": {
+          "hero": "72px",
+          "h1": "48px",
+          "h2": "32px",
+          "h3": "24px",
+          "body": "16px",
+          "small": "14px",
+          "micro": "12px"
+        },
+        "weights": {
+          "bold": 700,
+          "semibold": 600,
+          "regular": 400
+        },
+        "lineHeights": {
+          "tight": 1,
+          "normal": 1.5,
+          "relaxed": 1.7
+        }
+      },
+      "spacing": {
+        "section": "80px",
+        "element": "24px",
+        "tight": "8px"
+      },
+      "borderRadius": {
+        "card": "12px",
+        "button": "8px",
+        "pill": "9999px"
+      },
+      "shadows": {
+        "glow-warm": "0 0 60px rgba(255, 228, 181, 0.4)",
+        "glow-accent": "0 0 40px rgba(230, 57, 70, 0.3)",
+        "glow-spectral": "0 0 80px rgba(61, 90, 241, 0.2), 0 0 80px rgba(230, 57, 70, 0.2)"
+      },
+      "animation": {
+        "durations": {
+          "fast": "150ms",
+          "normal": "300ms",
+          "slow": "800ms",
+          "pulse": "2000ms"
+        },
+        "easings": {
+          "default": "ease-out",
+          "glow": "ease-in-out"
+        }
+      }
+    },
+    "effects": [
+      {
+        "slug": "chromatic-frequency-waves",
+        "name": "Chromatic Frequency Waves",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "ethereal-figure-glow",
+        "name": "Ethereal Figure Glow",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "film-grain-overlay",
+        "name": "Film Grain Overlay",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "vhs-border-damage",
+        "name": "Vhs Border Damage",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "light-leak-artifacts",
+        "name": "Light Leak Artifacts",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "spectral-color-bleed",
+        "name": "Spectral Color Bleed",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "dust-particle-scatter",
+        "name": "Dust Particle Scatter",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "vertical-streak-distortion",
+        "name": "Vertical Streak Distortion",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "dark-premium-aesthetic",
+        "name": "Dark Premium Aesthetic",
+        "category": "background-treatment"
+      }
+    ],
+    "whyItWorks": "",
+    "coreAesthetic": "Style: Analog Ethereal — Chromatic Frequency Decay\nA dark, film-damaged aesthetic combining analog photography artifacts (grain, light leaks, VHS distortion) with an ethereal luminous figure suspended in chromatic sound waves. The design philosophy fuses lo-fi analog degradation with high-energy spectral light — decay meets transcendence.\nInfluences: Kirlian photography, analog VHS glitch art, spectrogram visualizations, film negative damage, aurora borealis color dispersion.",
+    "techStack": [],
+    "screenshots": {
+      "desktop": ""
+    }
+  },
+  {
+    "slug": "hunt-latambench-moodboard",
+    "name": "Latambench Moodboard",
+    "style": "",
+    "huntDate": "2026-03-06",
+    "categories": [
+      "B2B SaaS"
+    ],
+    "engagement": 5,
+    "mode": "light",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#080808",
+          "secondary": "#111111",
+          "tertiary": "#1A1A1A"
+        },
+        "accent": {
+          "primary": "#F8F8F8",
+          "secondary": "#C8C4BE"
+        },
+        "text": {
+          "primary": "#FFFFFF",
+          "secondary": "#C8C4BE",
+          "muted": "#6B6560"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "Space Grotesk",
+          "body": "IBM Plex Sans",
+          "mono": "JetBrains Mono"
+        },
+        "scale": {
+          "hero": "88px",
+          "h1": "56px",
+          "h2": "36px",
+          "h3": "24px",
+          "body": "16px",
+          "small": "14px",
+          "caption": "12px",
+          "micro": "10px"
+        },
+        "weights": {
+          "light": 300,
+          "regular": 400,
+          "medium": 500,
+          "semibold": 600
+        },
+        "lineHeights": {
+          "tight": 1.05,
+          "heading": 1.2,
+          "normal": 1.55,
+          "relaxed": 1.7
+        }
+      },
+      "spacing": {
+        "section": "120px",
+        "block": "64px",
+        "element": "24px",
+        "tight": "12px",
+        "micro": "4px"
+      },
+      "borderRadius": {
+        "card": "2px",
+        "button": "2px",
+        "pill": "9999px",
+        "none": "0px"
+      },
+      "shadows": {
+        "none": "none"
+      },
+      "animation": {
+        "durations": {
+          "fast": "150ms",
+          "normal": "300ms",
+          "slow": "600ms",
+          "draw": "2000ms"
+        },
+        "easings": {
+          "default": "ease-out",
+          "spring": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+          "linear": "linear"
+        }
+      }
+    },
+    "effects": [
+      {
+        "slug": "void-background",
+        "name": "Void Background",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "hairline-grid",
+        "name": "Hairline Grid",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "fibonacci-spiral-overlay",
+        "name": "Fibonacci Spiral Overlay",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "sacred-geometry-circles",
+        "name": "Sacred Geometry Circles",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "sequential-motion-grid",
+        "name": "Sequential Motion Grid",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "parchment-inset",
+        "name": "Parchment Inset",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "anatomical-wireframe",
+        "name": "Anatomical Wireframe",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "mathematical-annotation",
+        "name": "Mathematical Annotation",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "light-trail-motion",
+        "name": "Light Trail Motion",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "diagram-draw-in",
+        "name": "Diagram Draw In",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "sequential-reveal",
+        "name": "Sequential Reveal",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "full-bleed-dark",
+        "name": "Full Bleed Dark",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "asymmetric-column",
+        "name": "Asymmetric Column",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "diagram-text-split",
+        "name": "Diagram Text Split",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "film-strip-row",
+        "name": "Film Strip Row",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "hairline-borders",
+        "name": "Hairline Borders",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "",
+    "coreAesthetic": "Style Name: Scientific Noir / Mathematical Precision Dark\nDesign Philosophy: The beauty of measurement made visible — where academic rigor, natural mathematics, and motion science converge into a unified visual language. No decoration for its own sake; every element earns its place by revealing structure.\nKey Influences:\nEadweard Muybridge (motion sequence photography, sequential data grids)\nSacred geometry diagrams (Vesica Piscis, overlapping circles, proportional systems)\n19th century patent t",
+    "techStack": [],
+    "screenshots": {
+      "desktop": ""
+    }
+  },
+  {
+    "slug": "hunt-refero",
+    "name": "Refero",
+    "style": "Clean Light SaaS Research Directory",
+    "huntDate": "2026-03-11",
+    "categories": [
+      "B2B SaaS",
+      "Dev Tools"
+    ],
+    "engagement": 8.5,
+    "mode": "light",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#FFFFFF",
+          "secondary": "#F8F9FA",
+          "tertiary": "#F3F4F6"
+        },
+        "accent": {
+          "primary": "#0F0F0F",
+          "secondary": "#22C55E",
+          "tertiary": "#DCFCE7"
+        },
+        "text": {
+          "primary": "#0F0F0F",
+          "secondary": "#6B7280",
+          "muted": "#9CA3AF"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "Inter",
+          "body": "Inter",
+          "mono": "JetBrains Mono"
+        },
+        "scale": {
+          "hero": "76px",
+          "h1": "48px",
+          "h2": "32px",
+          "body": "18px",
+          "small": "14px",
+          "micro": "12px"
+        },
+        "weights": {
+          "bold": 800,
+          "semibold": 600,
+          "regular": 400
+        },
+        "lineHeights": {
+          "tight": 1.1,
+          "normal": 1.5,
+          "relaxed": 1.7
+        }
+      },
+      "spacing": {
+        "section": "80px",
+        "element": "24px",
+        "tight": "8px"
+      },
+      "borderRadius": {
+        "card": "12px",
+        "button": "9999px",
+        "pill": "9999px"
+      },
+      "shadows": {
+        "card": "0 8px 24px rgba(0,0,0,0.08)",
+        "modal": "0 24px 64px rgba(0,0,0,0.12)"
+      },
+      "animation": {
+        "durations": {
+          "fast": "150ms",
+          "normal": "300ms"
+        },
+        "easings": {
+          "default": "ease-out"
+        }
+      }
+    },
+    "effects": [
+      {
+        "slug": "floating-ui-cards",
+        "name": "Floating Ui Cards",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "dark-heavy-display",
+        "name": "Dark Heavy Display",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "green-freshness-badge",
+        "name": "Green Freshness Badge",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "platform-tab-nav",
+        "name": "Platform Tab Nav",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "drop-shadow-cards",
+        "name": "Drop Shadow Cards",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "category-label-cards",
+        "name": "Category Label Cards",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "modal-overlay",
+        "name": "Modal Overlay",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "Real product screenshots float organically around the headline — both proof of value AND visual dynamism. The split Web/iOS filtering signals depth of library immediately.",
+    "coreAesthetic": "Style: Clean Light SaaS Research Directory — Floating UI Cards\nDesign philosophy: Documentation-quality clarity with editorial energy — heavy black display type anchors a chaotic but intentional cloud of real product screenshots.\nInfluences: Linear.app meets Raycast meets product hunt landing page. Modern SaaS light mode done correctly.",
+    "techStack": [
+      "Next.js",
+      "React"
+    ],
+    "screenshots": {
+      "desktop": "/references/hunt-refero/reference-desktop.png"
+    }
+  },
+  {
+    "slug": "hunt-lovart",
+    "name": "Lovart",
+    "style": "Dark Minimal AI SaaS with Editorial Serif",
+    "huntDate": "2026-03-11",
+    "categories": [
+      "B2B SaaS",
+      "Creative / 3D"
+    ],
+    "engagement": 8,
+    "mode": "dark",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#0E0E0E",
+          "secondary": "#161616",
+          "tertiary": "#1C1C1C"
+        },
+        "accent": {
+          "primary": "#3A8AFF",
+          "secondary": "#F0F0F0"
+        },
+        "text": {
+          "primary": "#F0F0F0",
+          "secondary": "#888888",
+          "muted": "#555555"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "Tiempos Headline / editorial serif",
+          "body": "Inter",
+          "mono": "JetBrains Mono"
+        },
+        "scale": {
+          "hero": "56px",
+          "h1": "48px",
+          "h2": "32px",
+          "body": "16px",
+          "small": "12px",
+          "micro": "11px"
+        },
+        "weights": {
+          "bold": 600,
+          "semibold": 400,
+          "regular": 400
+        },
+        "lineHeights": {
+          "tight": 1.15,
+          "normal": 1.5,
+          "relaxed": 1.7
+        }
+      },
+      "spacing": {
+        "section": "80px",
+        "element": "24px",
+        "tight": "8px"
+      },
+      "borderRadius": {
+        "card": "12px",
+        "button": "9999px",
+        "panel": "10px"
+      },
+      "shadows": {
+        "panel": "0 8px 32px rgba(0,0,0,0.5)",
+        "card": "0 2px 8px rgba(0,0,0,0.3)"
+      },
+      "animation": {
+        "durations": {
+          "fast": "150ms",
+          "normal": "300ms"
+        },
+        "easings": {
+          "default": "ease-out"
+        }
+      }
+    },
+    "effects": [
+      {
+        "slug": "embedded-product-demo",
+        "name": "Embedded Product Demo",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "editorial-serif-on-dark",
+        "name": "Editorial Serif On Dark",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "citation-superscript-headline",
+        "name": "Citation Superscript Headline",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "kicker-spaced-caps",
+        "name": "Kicker Spaced Caps",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "split-canvas-chat",
+        "name": "Split Canvas Chat",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "blue-project-badge",
+        "name": "Blue Project Badge",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "checked-list-ai-response",
+        "name": "Checked List Ai Response",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "Serif headline on dark creates luxury editorial dissonance in a tech context. The product demo embedded as hero section eliminates the \"show don't tell\" problem entirely.",
+    "coreAesthetic": "Style: Dark Minimal AI SaaS — Product Screenshot as Hero with Floating Chat Interface\nDesign philosophy: Show the product, not a mockup of the product. The actual AI interface floats below the headline as a live demonstration embedded in the marketing page.\nInfluences: Linear dark mode × Vercel dashboard × Notion AI — the \"dark minimal productivity tool\" aesthetic perfected.",
+    "techStack": [
+      "Next.js",
+      "React"
+    ],
+    "screenshots": {
+      "desktop": "/references/hunt-lovart/reference-desktop.png"
+    }
+  },
+  {
+    "slug": "hunt-shopify-editions",
+    "name": "Shopify Editions Winter 2026",
+    "style": "Renaissance Painting × Brutalist Typography Collage",
+    "huntDate": "2026-03-11",
+    "categories": [
+      "B2B SaaS",
+      "Creative / 3D"
+    ],
+    "engagement": 9,
+    "mode": "light",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#8BA4C8",
+          "secondary": "#5A7A4A",
+          "tertiary": "#E8D8B0"
+        },
+        "accent": {
+          "primary": "#FF1493",
+          "secondary": "#1DB954"
+        },
+        "text": {
+          "primary": "#FFFFFF",
+          "secondary": "#1A1A1A",
+          "muted": "#4A4A4A"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "Custom editorial serif",
+          "body": "Helvetica Neue",
+          "mono": "JetBrains Mono"
+        },
+        "scale": {
+          "hero": "48px",
+          "h1": "42px",
+          "h2": "28px",
+          "body": "13px",
+          "small": "12px",
+          "micro": "11px"
+        },
+        "weights": {
+          "bold": 600,
+          "semibold": 400,
+          "regular": 300
+        },
+        "lineHeights": {
+          "tight": 1.2,
+          "normal": 1.5,
+          "relaxed": 1.7
+        }
+      },
+      "spacing": {
+        "section": "0px",
+        "element": "20px",
+        "tight": "8px"
+      },
+      "borderRadius": {
+        "card": "8px",
+        "button": "9999px",
+        "panel": "12px"
+      },
+      "shadows": {
+        "panel": "0 8px 32px rgba(0,0,0,0.2)"
+      },
+      "animation": {
+        "durations": {
+          "fast": "200ms",
+          "normal": "400ms"
+        },
+        "easings": {
+          "default": "ease-out"
+        }
+      }
+    },
+    "effects": [
+      {
+        "slug": "renaissance-painting-bg",
+        "name": "Renaissance Painting Bg",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "anachronistic-object-collision",
+        "name": "Anachronistic Object Collision",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "double-slash-brand-mark",
+        "name": "Double Slash Brand Mark",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "translucent-sidebar-panel",
+        "name": "Translucent Sidebar Panel",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "hot-pink-on-classical",
+        "name": "Hot Pink On Classical",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "high-culture-commerce",
+        "name": "High Culture Commerce",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "Turns a product changelog into cultural commentary. Classical art signals sophistication. The anachronistic skateboard is the punchline — art history as hype.",
+    "coreAesthetic": "Style: Renaissance Painting × Brutalist Typography Collage — High-Culture Commerce\nDesign philosophy: Use classical art as brand material rather than custom illustration. The collision between 17th century oil painting and aggressive modern typography creates tension that demands attention.\nInfluences: Virgil Abloh's Off-White brand language × Balenciaga fashion editorial × David LaChapelle photography × Supreme box logo irreverence applied to commerce.",
+    "techStack": [
+      "Next.js",
+      "Shopify"
+    ],
+    "screenshots": {
+      "desktop": "/references/hunt-shopify-editions/reference-desktop.png"
+    }
+  },
+  {
+    "slug": "hunt-craftwork",
+    "name": "Craftwork",
+    "style": "Clean Light Curated Gallery with Sidebar Navigation",
+    "huntDate": "2026-03-11",
+    "categories": [
+      "Creative / 3D",
+      "B2B SaaS"
+    ],
+    "engagement": 8,
+    "mode": "light",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#FFFFFF",
+          "secondary": "#F7F7F7",
+          "tertiary": "#F3F4F6"
+        },
+        "accent": {
+          "primary": "#1A1A1A",
+          "secondary": "#FBBF24"
+        },
+        "text": {
+          "primary": "#1A1A1A",
+          "secondary": "#6B7280",
+          "muted": "#9CA3AF"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "Inter",
+          "body": "Inter",
+          "mono": "JetBrains Mono"
+        },
+        "scale": {
+          "hero": "30px",
+          "h1": "30px",
+          "h2": "20px",
+          "body": "14px",
+          "small": "13px",
+          "micro": "11px"
+        },
+        "weights": {
+          "bold": 700,
+          "semibold": 500,
+          "regular": 400
+        },
+        "lineHeights": {
+          "tight": 1.3,
+          "normal": 1.5,
+          "relaxed": 1.6
+        }
+      },
+      "spacing": {
+        "section": "48px",
+        "element": "20px",
+        "tight": "8px"
+      },
+      "borderRadius": {
+        "card": "10px",
+        "button": "6px",
+        "pill": "9999px"
+      },
+      "shadows": {
+        "card": "0 1px 4px rgba(0,0,0,0.06)",
+        "hover": "0 4px 16px rgba(0,0,0,0.10)"
+      },
+      "animation": {
+        "durations": {
+          "fast": "150ms",
+          "normal": "250ms"
+        },
+        "easings": {
+          "default": "ease-out"
+        }
+      }
+    },
+    "effects": [
+      {
+        "slug": "sidebar-category-nav",
+        "name": "Sidebar Category Nav",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "two-column-masonry-grid",
+        "name": "Two Column Masonry Grid",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "tab-navigation",
+        "name": "Tab Navigation",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "filter-dropdown-row",
+        "name": "Filter Dropdown Row",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "breadcrumb-nav",
+        "name": "Breadcrumb Nav",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "card-action-icons",
+        "name": "Card Action Icons",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "category-color-icons",
+        "name": "Category Color Icons",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "pro-badge",
+        "name": "Pro Badge",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "Sidebar provides hierarchical taxonomy while main area provides visual browsing. Two mental models simultaneously: \"I know what I want\" (sidebar) and \"I'm exploring\" (grid).",
+    "coreAesthetic": "Style: Clean Light Curated Gallery — Sidebar Navigation with Masonry Grid\nDesign philosophy: Functional curation first — the sidebar acts as a taxonomy system while the main area is a pure gallery. Clarity over decoration.\nInfluences: Dribbble, Behance light mode, Apple HIG for navigation patterns. Studio database aesthetic.",
+    "techStack": [
+      "Next.js",
+      "BunnyCDN"
+    ],
+    "screenshots": {
+      "desktop": "/references/hunt-craftwork/reference-desktop.png"
+    }
+  },
+  {
+    "slug": "hunt-ogfolio",
+    "name": "OGfolio",
+    "style": "Dark Tech Gallery with Filter System",
+    "huntDate": "2026-03-11",
+    "categories": [
+      "Dev Tools",
+      "Creative / 3D"
+    ],
+    "engagement": 7.5,
+    "mode": "dark",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#0D0D0D",
+          "secondary": "#161616",
+          "tertiary": "#1A1A1A"
+        },
+        "accent": {
+          "primary": "#F2F2F2",
+          "secondary": "#3A3A3A"
+        },
+        "text": {
+          "primary": "#F2F2F2",
+          "secondary": "#888888",
+          "muted": "#555555"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "Inter",
+          "body": "Inter",
+          "mono": "JetBrains Mono"
+        },
+        "scale": {
+          "hero": "16px",
+          "h1": "16px",
+          "h2": "14px",
+          "body": "13px",
+          "small": "12px",
+          "micro": "11px"
+        },
+        "weights": {
+          "bold": 600,
+          "semibold": 500,
+          "regular": 400
+        },
+        "lineHeights": {
+          "tight": 1.2,
+          "normal": 1.5,
+          "relaxed": 1.6
+        }
+      },
+      "spacing": {
+        "section": "48px",
+        "element": "16px",
+        "tight": "8px"
+      },
+      "borderRadius": {
+        "card": "8px",
+        "button": "6px",
+        "pill": "9999px"
+      },
+      "shadows": {
+        "card": "0 1px 3px rgba(0,0,0,0.4)",
+        "hover": "0 4px 12px rgba(0,0,0,0.6)"
+      },
+      "animation": {
+        "durations": {
+          "fast": "150ms",
+          "normal": "250ms"
+        },
+        "easings": {
+          "default": "ease-out"
+        }
+      }
+    },
+    "effects": [
+      {
+        "slug": "horizontal-filter-pills",
+        "name": "Horizontal Filter Pills",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "dark-gallery-shell",
+        "name": "Dark Gallery Shell",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "og-image-card",
+        "name": "Og Image Card",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "card-hover-reveal",
+        "name": "Card Hover Reveal",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "mode-toggle",
+        "name": "Mode Toggle",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "mixed-card-sizes",
+        "name": "Mixed Card Sizes",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "Navigation by aesthetic mode (dark, light, colorful) rather than content type. The dark shell creates cinema-like focus on each displayed image.",
+    "coreAesthetic": "Style: Dark Tech Gallery — Curated OG Image Library with Filter System\nDesign philosophy: Maximum signal-to-noise — dark shell that makes colorful OG images pop with zero distraction. The filter pill system is the navigation.\nInfluences: Dribbble dark mode, Figma Community gallery, Linear dark theme. Developer-tool aesthetic applied to visual curation.",
+    "techStack": [
+      "Framer"
+    ],
+    "screenshots": {
+      "desktop": "/references/hunt-ogfolio/reference-desktop.png"
+    }
+  },
+  {
+    "slug": "hunt-topology",
+    "name": "Topology VC",
+    "style": "3D Iridescent Minimalism",
+    "huntDate": "2026-03-11",
+    "categories": [
+      "VC / Finance"
+    ],
+    "engagement": 9,
+    "mode": "warm",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#E8E6E0",
+          "secondary": "#F0EFEC",
+          "tertiary": "#D8D6D0"
+        },
+        "accent": {
+          "primary": "#FF4444",
+          "secondary": "#4488FF",
+          "tertiary": "#44DD44"
+        },
+        "text": {
+          "primary": "#FFFFFF",
+          "secondary": "#9E9C97",
+          "muted": "#C0BEB8"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "Helvetica Neue",
+          "body": "Helvetica Neue",
+          "mono": "JetBrains Mono"
+        },
+        "scale": {
+          "hero": "80px",
+          "h1": "56px",
+          "h2": "32px",
+          "body": "16px",
+          "small": "13px",
+          "micro": "11px"
+        },
+        "weights": {
+          "bold": 400,
+          "semibold": 300,
+          "regular": 300
+        },
+        "lineHeights": {
+          "tight": 1.1,
+          "normal": 1.5,
+          "relaxed": 1.7
+        }
+      },
+      "spacing": {
+        "section": "0px",
+        "element": "32px",
+        "tight": "16px"
+      },
+      "borderRadius": {
+        "card": "0px",
+        "button": "9999px",
+        "pill": "9999px"
+      },
+      "shadows": {
+        "object": "0 40px 80px rgba(0,0,0,0.15)"
+      },
+      "animation": {
+        "durations": {
+          "fast": "300ms",
+          "normal": "800ms"
+        },
+        "easings": {
+          "default": "cubic-bezier(0.25,0.1,0.25,1)"
+        }
+      }
+    },
+    "effects": [
+      {
+        "slug": "viewport-filling-3d-object",
+        "name": "Viewport Filling 3d Object",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "iridescent-edge-refraction",
+        "name": "Iridescent Edge Refraction",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "warm-gray-canvas",
+        "name": "Warm Gray Canvas",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "bottom-left-type",
+        "name": "Bottom Left Type",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "concentric-groove-topology",
+        "name": "Concentric Groove Topology",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "pure-minimal-nav",
+        "name": "Pure Minimal Nav",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "One extraordinary 3D object makes everything else minimal to the point of absence. Iridescent edges reveal hidden complexity — like a prism, looks simple but shows spectrum under light.",
+    "coreAesthetic": "Style: 3D Iridescent Minimalism — Warm Gray + Rainbow Spectrum Caustics\nDesign philosophy: One single 3D object fills the entire viewport and communicates everything — depth, precision, frontier thinking. Typography floats below as a second thought.\nInfluences: Teenage Engineering product photography × Anish Kapoor sculpture × Apple Vision Pro UI philosophy. Physical object as interface.",
+    "techStack": [
+      "Three.js / WebGL",
+      "custom"
+    ],
+    "screenshots": {
+      "desktop": "/references/hunt-topology/reference-desktop.png"
+    }
+  },
+  {
+    "slug": "hunt-prime-intellect",
+    "name": "Prime Intellect",
+    "style": "Terminal Dark Research Lab",
+    "huntDate": "2026-03-11",
+    "categories": [
+      "Dev Tools",
+      "B2B SaaS"
+    ],
+    "engagement": 8.5,
+    "mode": "dark",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#080808",
+          "secondary": "#0F0F0F",
+          "tertiary": "#151515"
+        },
+        "accent": {
+          "primary": "#00FF88",
+          "secondary": "#FF3B30"
+        },
+        "text": {
+          "primary": "#E8E8E0",
+          "secondary": "#6A6A60",
+          "muted": "#3A3A32"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "JetBrains Mono",
+          "body": "JetBrains Mono",
+          "mono": "JetBrains Mono"
+        },
+        "scale": {
+          "hero": "48px",
+          "h1": "42px",
+          "h2": "28px",
+          "body": "13px",
+          "small": "12px",
+          "micro": "11px"
+        },
+        "weights": {
+          "bold": 700,
+          "semibold": 500,
+          "regular": 400
+        },
+        "lineHeights": {
+          "tight": 1.25,
+          "normal": 1.6,
+          "relaxed": 1.8
+        }
+      },
+      "spacing": {
+        "section": "80px",
+        "element": "24px",
+        "tight": "8px"
+      },
+      "borderRadius": {
+        "card": "0px",
+        "button": "2px",
+        "pill": "4px"
+      },
+      "shadows": {
+        "glow": "0 0 40px rgba(0,255,136,0.1)"
+      },
+      "animation": {
+        "durations": {
+          "fast": "100ms",
+          "normal": "200ms"
+        },
+        "easings": {
+          "default": "linear"
+        }
+      }
+    },
+    "effects": [
+      {
+        "slug": "laser-particle-visualization",
+        "name": "Laser Particle Visualization",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "monospace-everything",
+        "name": "Monospace Everything",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "terminal-black-canvas",
+        "name": "Terminal Black Canvas",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "numbered-section-labels",
+        "name": "Numbered Section Labels",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "matrix-grid-terrain",
+        "name": "Matrix Grid Terrain",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "credibility-name-drop",
+        "name": "Credibility Name Drop",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "minimal-cta-border",
+        "name": "Minimal Cta Border",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "Designed FOR researchers BY researchers. Monospace-everything signals: this is a technical instrument, not a marketing site. The laser visualization is as close as possible to showing raw computation.",
+    "coreAesthetic": "Style: Terminal Dark Research Lab — Laser Light Visualization + Monospace Typography\nDesign philosophy: This is a site for researchers, not consumers. Every design choice signals rigor, density, and computational power. The laser visualization is raw physics — not decorative, not explanatory.\nInfluences: CERN research papers × Bloomberg Terminal × 1990s Silicon Graphics workstations × Hacker aesthetic taken upmarket.",
+    "techStack": [
+      "Next.js",
+      "Three.js"
+    ],
+    "screenshots": {
+      "desktop": "/references/hunt-prime-intellect/reference-desktop.png"
+    }
+  },
+  {
+    "slug": "hunt-a24",
+    "name": "A24 Membership",
+    "style": "Dark Chrome Brutalist Cinematic",
+    "huntDate": "2026-03-11",
+    "categories": [
+      "Creative / 3D",
+      "Portfolio"
+    ],
+    "engagement": 9.5,
+    "mode": "dark",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#000000",
+          "secondary": "#111111",
+          "tertiary": "#222222"
+        },
+        "accent": {
+          "primary": "#F5F0E8",
+          "secondary": "#C8C8C8"
+        },
+        "text": {
+          "primary": "#F0F0F0",
+          "secondary": "#999999",
+          "muted": "#555555"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "Helvetica Neue Condensed",
+          "body": "Helvetica Neue",
+          "mono": "JetBrains Mono"
+        },
+        "scale": {
+          "hero": "100px",
+          "h1": "60px",
+          "h2": "36px",
+          "body": "14px",
+          "small": "12px",
+          "micro": "11px"
+        },
+        "weights": {
+          "bold": 900,
+          "semibold": 700,
+          "regular": 400
+        },
+        "lineHeights": {
+          "tight": 0.95,
+          "normal": 1.4,
+          "relaxed": 1.6
+        }
+      },
+      "spacing": {
+        "section": "0px",
+        "element": "24px",
+        "tight": "8px"
+      },
+      "borderRadius": {
+        "card": "0px",
+        "button": "4px",
+        "pill": "9999px"
+      },
+      "shadows": {
+        "card": "none"
+      },
+      "animation": {
+        "durations": {
+          "fast": "150ms",
+          "normal": "300ms"
+        },
+        "easings": {
+          "default": "ease-out"
+        }
+      }
+    },
+    "effects": [
+      {
+        "slug": "3d-chrome-letterform",
+        "name": "3d Chrome Letterform",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "absolute-black-canvas",
+        "name": "Absolute Black Canvas",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "sidebar-pricing-panel",
+        "name": "Sidebar Pricing Panel",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "condensed-display-headline",
+        "name": "Condensed Display Headline",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "warm-cta-on-black",
+        "name": "Warm Cta On Black",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "em-dash-in-headline",
+        "name": "Em Dash In Headline",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "Typography as sculpture. The 3D chrome letters don't explain the product — they ARE the experience. Functional sidebar quietly supports a star performer.",
+    "coreAesthetic": "Style: Dark Chrome Brutalist Cinematic — 3D Metallic Display Typography\nDesign philosophy: Typography as sculpture. The site is one massive 3D chrome letterform that fills and overflows the viewport. The UI is secondary — the art is the hero.\nInfluences: David Carson deconstructivism × Neville Brody metal poster design × Industrial editorial. Film poster culture applied to web.",
+    "techStack": [
+      "Custom WebGL/Three.js likely"
+    ],
+    "screenshots": {
+      "desktop": "/references/hunt-a24/reference-desktop.png"
+    }
+  },
+  {
+    "slug": "hunt-mastra",
+    "name": "Mastra",
+    "style": "Dark Agent Graph SaaS",
+    "huntDate": "2026-03-11",
+    "categories": [
+      "Dev Tools",
+      "B2B SaaS"
+    ],
+    "engagement": 8.5,
+    "mode": "dark",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#0A0A0A",
+          "secondary": "#111111",
+          "tertiary": "#1A1A1A"
+        },
+        "accent": {
+          "primary": "#22FF44",
+          "secondary": "#1DB954"
+        },
+        "text": {
+          "primary": "#F2F2F2",
+          "secondary": "#888888",
+          "muted": "#555555"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "Inter",
+          "body": "Inter",
+          "mono": "JetBrains Mono"
+        },
+        "scale": {
+          "hero": "56px",
+          "h1": "48px",
+          "h2": "32px",
+          "body": "17px",
+          "small": "13px",
+          "micro": "11px"
+        },
+        "weights": {
+          "bold": 800,
+          "semibold": 600,
+          "regular": 400
+        },
+        "lineHeights": {
+          "tight": 1.15,
+          "normal": 1.5,
+          "relaxed": 1.7
+        }
+      },
+      "spacing": {
+        "section": "80px",
+        "element": "24px",
+        "tight": "8px"
+      },
+      "borderRadius": {
+        "card": "8px",
+        "button": "6px",
+        "pill": "9999px",
+        "node": "12px"
+      },
+      "shadows": {
+        "card": "0 4px 16px rgba(0,0,0,0.4)",
+        "node": "0 0 16px rgba(34,255,68,0.15)"
+      },
+      "animation": {
+        "durations": {
+          "fast": "150ms",
+          "normal": "250ms"
+        },
+        "easings": {
+          "default": "ease-out"
+        }
+      }
+    },
+    "effects": [
+      {
+        "slug": "agent-graph-hero",
+        "name": "Agent Graph Hero",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "neon-green-accent",
+        "name": "Neon Green Accent",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "npm-code-pill",
+        "name": "Npm Code Pill",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "graph-node-floating",
+        "name": "Graph Node Floating",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "left-bar-badge",
+        "name": "Left Bar Badge",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "star-count-nav",
+        "name": "Star Count Nav",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "dark-developer-nav",
+        "name": "Dark Developer Nav",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "The product (agent orchestration) IS the hero visualization. Neon green creates matrix-terminal feeling without being retro. One accent color, total coherence.",
+    "coreAesthetic": "Style: Dark Agent Graph SaaS — Neon Green Network Visualization on Black\nDesign philosophy: Visualize the abstract (AI agent graphs) as the hero element. The product demo IS the hero — no mockup frames, the visualization floats over the dark canvas.\nInfluences: Observable HQ data visualization × GitHub dark mode × Vercel dashboard aesthetic. Developer-native dark UI done with taste.",
+    "techStack": [
+      "Next.js",
+      "TypeScript"
+    ],
+    "screenshots": {
+      "desktop": "/references/hunt-mastra/reference-desktop.png"
+    }
+  },
+  {
+    "slug": "hunt-cosmos",
+    "name": "Cosmos",
+    "style": "Dark Editorial Moodboard Gallery",
+    "huntDate": "2026-03-11",
+    "categories": [
+      "Creative / 3D",
+      "Portfolio"
+    ],
+    "engagement": 9,
+    "mode": "dark",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#0A0A0A",
+          "secondary": "#141414",
+          "tertiary": "#1F1F1F"
+        },
+        "accent": {
+          "primary": "#FFFFFF",
+          "secondary": "#1E1E1E"
+        },
+        "text": {
+          "primary": "#F5F5F5",
+          "secondary": "#888888",
+          "muted": "#555555"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "Inter",
+          "body": "Inter",
+          "mono": "JetBrains Mono"
+        },
+        "scale": {
+          "hero": "60px",
+          "h1": "48px",
+          "h2": "32px",
+          "body": "15px",
+          "small": "13px",
+          "micro": "11px"
+        },
+        "weights": {
+          "bold": 700,
+          "semibold": 500,
+          "regular": 400
+        },
+        "lineHeights": {
+          "tight": 1.15,
+          "normal": 1.5,
+          "relaxed": 1.7
+        }
+      },
+      "spacing": {
+        "section": "80px",
+        "element": "24px",
+        "tight": "8px"
+      },
+      "borderRadius": {
+        "card": "8px",
+        "button": "9999px",
+        "pill": "9999px"
+      },
+      "shadows": {
+        "card": "none",
+        "hover": "0 0 0 1px rgba(255,255,255,0.08)"
+      },
+      "animation": {
+        "durations": {
+          "fast": "150ms",
+          "normal": "250ms"
+        },
+        "easings": {
+          "default": "ease-out"
+        }
+      }
+    },
+    "effects": [
+      {
+        "slug": "scattered-image-mosaic",
+        "name": "Scattered Image Mosaic",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "headline-over-gallery",
+        "name": "Headline Over Gallery",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "minimal-dark-nav",
+        "name": "Minimal Dark Nav",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "mixed-aspect-cards",
+        "name": "Mixed Aspect Cards",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "dark-editorial",
+        "name": "Dark Editorial",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "no-card-chrome-at-rest",
+        "name": "No Card Chrome At Rest",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "The gallery IS the hero — scattered photos replace the traditional hero illustration. Near-black canvas makes every image luminous. Maximum confidence move: text floats over chaos with no container.",
+    "coreAesthetic": "Style: Dark Editorial Moodboard Gallery\nDesign philosophy: Let the content be the interface — the hero IS the gallery, scattered organically over a near-black canvas with headline text floating above the chaos.\nInfluences: Are.na meets Pinterest Dark, editorial magazine layouts, photography portfolio sites. Anti-grid expressionism.",
+    "techStack": [
+      "Next.js",
+      "Sanity CMS"
+    ],
+    "screenshots": {
+      "desktop": "/references/hunt-cosmos/reference-desktop.png"
+    }
+  },
+  {
+    "slug": "hunt-commerce-cream",
+    "name": "Commerce Cream",
+    "style": "Soft Blush Pastel Editorial Gallery",
+    "huntDate": "2026-03-11",
+    "categories": [
+      "B2B SaaS"
+    ],
+    "engagement": 8,
+    "mode": "light",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#F8E6F0",
+          "secondary": "#FFFFFF",
+          "tertiary": "#F0D8E8"
+        },
+        "accent": {
+          "primary": "#3A3333",
+          "secondary": "#D8C8D2"
+        },
+        "text": {
+          "primary": "#3A3333",
+          "secondary": "#6B5C62",
+          "muted": "#9E8E96"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "Canela",
+          "body": "Inter",
+          "mono": "JetBrains Mono"
+        },
+        "scale": {
+          "hero": "88px",
+          "h1": "56px",
+          "h2": "36px",
+          "body": "16px",
+          "small": "13px",
+          "micro": "11px"
+        },
+        "weights": {
+          "bold": 300,
+          "semibold": 200,
+          "regular": 100
+        },
+        "lineHeights": {
+          "tight": 1.05,
+          "normal": 1.5,
+          "relaxed": 1.7
+        }
+      },
+      "spacing": {
+        "section": "120px",
+        "element": "32px",
+        "tight": "12px"
+      },
+      "borderRadius": {
+        "card": "4px",
+        "button": "9999px",
+        "pill": "9999px"
+      },
+      "shadows": {
+        "card": "none",
+        "button": "none"
+      },
+      "animation": {
+        "durations": {
+          "fast": "200ms",
+          "normal": "400ms"
+        },
+        "easings": {
+          "default": "ease-in-out"
+        }
+      }
+    },
+    "effects": [
+      {
+        "slug": "ultra-thin-display-serif",
+        "name": "Ultra Thin Display Serif",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "blush-monochromatic-bg",
+        "name": "Blush Monochromatic Bg",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "minimal-wordmark",
+        "name": "Minimal Wordmark",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "category-pill-row",
+        "name": "Category Pill Row",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "pill-cta",
+        "name": "Pill Cta",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "dark-mode-toggle",
+        "name": "Dark Mode Toggle",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "rotary-badge",
+        "name": "Rotary Badge",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "Maximum typography confidence on the softest possible background. The blush pink makes thin dark serif feel luxurious not weak. Category pills and controls don't compete — they sit quietly below the headline's dominance.",
+    "coreAesthetic": "Style: Soft Blush Pastel Editorial Gallery\nDesign philosophy: Maximum typography confidence on the softest possible background — let one enormous thin serif do all the emotional work, then let the products do the rest.\nInfluences: Celine/Loewe luxury fashion editorial, Brutalist typography meets feminine palette, An co Studio aesthetic.",
+    "techStack": [
+      "Sanity CMS",
+      "Next.js"
+    ],
+    "screenshots": {
+      "desktop": "/references/hunt-commerce-cream/reference-desktop.png"
+    }
+  },
+  {
+    "slug": "hunt-design-everywhere",
+    "name": "Design Everywhere",
+    "style": "Dark Editorial Photography Gallery",
+    "huntDate": "2026-03-11",
+    "categories": [
+      "Portfolio",
+      "Creative / 3D"
+    ],
+    "engagement": 8,
+    "mode": "dark",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#0A0A0A",
+          "secondary": "#111111",
+          "tertiary": "#1E1E1E"
+        },
+        "accent": {
+          "primary": "#E8E6E0",
+          "secondary": "#C8B898"
+        },
+        "text": {
+          "primary": "#E8E6E0",
+          "secondary": "#666666",
+          "muted": "#444444"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "Helvetica Neue",
+          "body": "Helvetica Neue",
+          "mono": "JetBrains Mono"
+        },
+        "scale": {
+          "hero": "14px",
+          "h1": "22px",
+          "h2": "18px",
+          "body": "13px",
+          "small": "12px",
+          "micro": "11px"
+        },
+        "weights": {
+          "bold": 500,
+          "semibold": 400,
+          "regular": 300
+        },
+        "lineHeights": {
+          "tight": 1.2,
+          "normal": 1.5,
+          "relaxed": 1.6
+        }
+      },
+      "spacing": {
+        "section": "0px",
+        "element": "16px",
+        "tight": "8px"
+      },
+      "borderRadius": {
+        "card": "0px",
+        "button": "4px",
+        "pill": "9999px"
+      },
+      "shadows": {
+        "card": "none",
+        "overlay": "linear-gradient(to top, rgba(0,0,0,0.6), transparent)"
+      },
+      "animation": {
+        "durations": {
+          "fast": "200ms",
+          "normal": "400ms"
+        },
+        "easings": {
+          "default": "ease-out"
+        }
+      }
+    },
+    "effects": [
+      {
+        "slug": "full-bleed-photography",
+        "name": "Full Bleed Photography",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "dark-cinematic-bg",
+        "name": "Dark Cinematic Bg",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "centered-wordmark-nav",
+        "name": "Centered Wordmark Nav",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "gradient-overlay-text",
+        "name": "Gradient Overlay Text",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "copyright-in-site-name",
+        "name": "Copyright In Site Name",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "tight-category-nav",
+        "name": "Tight Category Nav",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "like-count-chip",
+        "name": "Like Count Chip",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "Strips away every UI element that doesn't serve the photography. The dark background functions as a darkroom — images are developed, not displayed.",
+    "coreAesthetic": "Style: Dark Editorial Photography Gallery — Cinematic Moody Archive\nDesign philosophy: Full-bleed photography as the primary design element — the interface disappears into the content. Typography floats over film-like imagery.\nInfluences: A24 film archives, Kinfolk magazine, Craig Mod digital walks. Dark-room editorial restraint.",
+    "techStack": [
+      "DatoCMS",
+      "Next.js"
+    ],
+    "screenshots": {
+      "desktop": "/references/hunt-design-everywhere/reference-desktop.png"
+    }
+  },
+  {
+    "slug": "hunt-spiral-soot",
+    "name": "Spiral Soot",
+    "style": "Ultra-Minimal Warm White Intelligent Search",
+    "huntDate": "2026-03-11",
+    "categories": [
+      "Creative / 3D",
+      "B2B SaaS"
+    ],
+    "engagement": 9,
+    "mode": "warm",
+    "tokens": {
+      "colors": {
+        "background": {
+          "primary": "#EDECEA",
+          "secondary": "#F5F4F2",
+          "tertiary": "#DDE8F5"
+        },
+        "accent": {
+          "primary": "#1A1A1A",
+          "secondary": "#D0CFC8"
+        },
+        "text": {
+          "primary": "#1A1A1A",
+          "secondary": "#888884",
+          "muted": "#B0AFA8"
+        }
+      },
+      "typography": {
+        "families": {
+          "display": "Tiempos Headline / serif",
+          "body": "Inter",
+          "mono": "JetBrains Mono"
+        },
+        "scale": {
+          "hero": "68px",
+          "h1": "48px",
+          "h2": "32px",
+          "body": "15px",
+          "small": "13px",
+          "micro": "11px"
+        },
+        "weights": {
+          "bold": 800,
+          "semibold": 400,
+          "regular": 300
+        },
+        "lineHeights": {
+          "tight": 1.1,
+          "normal": 1.5,
+          "relaxed": 1.7
+        }
+      },
+      "spacing": {
+        "section": "80px",
+        "element": "32px",
+        "tight": "12px"
+      },
+      "borderRadius": {
+        "card": "8px",
+        "button": "9999px",
+        "pill": "9999px",
+        "searchBar": "9999px"
+      },
+      "shadows": {
+        "card": "none",
+        "searchBar": "0 2px 8px rgba(0,0,0,0.06)"
+      },
+      "animation": {
+        "durations": {
+          "fast": "200ms",
+          "normal": "400ms"
+        },
+        "easings": {
+          "default": "ease-out",
+          "spring": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+        }
+      }
+    },
+    "effects": [
+      {
+        "slug": "organic-scattered-collage",
+        "name": "Organic Scattered Collage",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "mixed-weight-headline",
+        "name": "Mixed Weight Headline",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "centered-search-bar",
+        "name": "Centered Search Bar",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "warm-minimal-background",
+        "name": "Warm Minimal Background",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "spotlight-oval",
+        "name": "Spotlight Oval",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "small-logo-mark",
+        "name": "Small Logo Mark",
+        "category": "visual-accent"
+      },
+      {
+        "slug": "dark-pill-cta",
+        "name": "Dark Pill Cta",
+        "category": "visual-accent"
+      }
+    ],
+    "whyItWorks": "The scattered collage proves library breadth kinetically. Mixed-weight headline reads like a film title card — two registers, one sentence. Warm off-white feels physical, analog.",
+    "coreAesthetic": "Style: Ultra-Minimal Warm White — Intelligent Search with Scattered Organic Imagery\nDesign philosophy: Pure restraint — a search bar, a scattered collage of images that proves the breadth of the library, and one enormous headline. Every element earns its place.\nInfluences: Perplexity AI meets Are.na meets Muji product page. Calm technology aesthetic. Teenage Engineering minimalism.",
+    "techStack": [
+      "Next.js",
+      "custom"
+    ],
+    "screenshots": {
+      "desktop": "/references/hunt-spiral-soot/reference-desktop.png"
+    }
   }
 ]

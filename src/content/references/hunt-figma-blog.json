@@ -1,0 +1,83 @@
+{
+  "slug": "hunt-figma-blog",
+  "name": "Figma Blog",
+  "style": "",
+  "huntDate": "2026-02-24",
+  "categories": [
+    "B2B SaaS"
+  ],
+  "engagement": 5,
+  "mode": "light",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#131313",
+        "secondary": "#222222",
+        "hero": "#F5F5F5",
+        "heroDark": "#0A0A0A",
+        "card": "#131313",
+        "cardHover": "#222222",
+        "tag": "#1A1A1A",
+        "tagHover": "#222222",
+        "footer": "#131313",
+        "focusHighlight": "#E4FF97",
+        "overlay": "#131313"
+      },
+      "accent": {
+        "green": "#00E639",
+        "orange": "#FF6B2B",
+        "blue": "#3B82F6",
+        "cyan": "#22D3EE",
+        "magenta": "#D946EF",
+        "red": "#EF4444",
+        "purple": "#A855F7"
+      },
+      "text": {
+        "primary": "#FFFFFF",
+        "secondary": "#999999",
+        "muted": "#666666",
+        "onLight": "#000000",
+        "onFocus": "#000000"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "",
+        "body": ""
+      },
+      "scale": {},
+      "weights": {},
+      "lineHeights": {}
+    },
+    "spacing": {},
+    "borderRadius": {},
+    "shadows": {},
+    "animation": {
+      "durations": {},
+      "easings": {}
+    }
+  },
+  "effects": [
+    {
+      "slug": "transitions",
+      "name": "Transitions",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "hover",
+      "name": "Hover",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "focus",
+      "name": "Focus",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "",
+  "coreAesthetic": "",
+  "techStack": [],
+  "screenshots": {
+    "desktop": ""
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "slug": "hunt-a24",
+  "name": "A24 Membership",
+  "style": "Dark Chrome Brutalist Cinematic",
+  "huntDate": "2026-03-11",
+  "categories": [
+    "Creative / 3D",
+    "Portfolio"
+  ],
+  "engagement": 9.5,
+  "mode": "dark",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#000000",
+        "secondary": "#111111",
+        "tertiary": "#222222"
+      },
+      "accent": {
+        "primary": "#F5F0E8",
+        "secondary": "#C8C8C8"
+      },
+      "text": {
+        "primary": "#F0F0F0",
+        "secondary": "#999999",
+        "muted": "#555555"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Helvetica Neue Condensed",
+        "body": "Helvetica Neue",
+        "mono": "JetBrains Mono"
+      },
+      "scale": {
+        "hero": "100px",
+        "h1": "60px",
+        "h2": "36px",
+        "body": "14px",
+        "small": "12px",
+        "micro": "11px"
+      },
+      "weights": {
+        "bold": 900,
+        "semibold": 700,
+        "regular": 400
+      },
+      "lineHeights": {
+        "tight": 0.95,
+        "normal": 1.4,
+        "relaxed": 1.6
+      }
+    },
+    "spacing": {
+      "section": "0px",
+      "element": "24px",
+      "tight": "8px"
+    },
+    "borderRadius": {
+      "card": "0px",
+      "button": "4px",
+      "pill": "9999px"
+    },
+    "shadows": {
+      "card": "none"
+    },
+    "animation": {
+      "durations": {
+        "fast": "150ms",
+        "normal": "300ms"
+      },
+      "easings": {
+        "default": "ease-out"
+      }
+    }
+  },
+  "effects": [
+    {
+      "slug": "3d-chrome-letterform",
+      "name": "3d Chrome Letterform",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "absolute-black-canvas",
+      "name": "Absolute Black Canvas",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "sidebar-pricing-panel",
+      "name": "Sidebar Pricing Panel",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "condensed-display-headline",
+      "name": "Condensed Display Headline",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "warm-cta-on-black",
+      "name": "Warm Cta On Black",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "em-dash-in-headline",
+      "name": "Em Dash In Headline",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "Typography as sculpture. The 3D chrome letters don't explain the product — they ARE the experience. Functional sidebar quietly supports a star performer.",
+  "coreAesthetic": "Style: Dark Chrome Brutalist Cinematic — 3D Metallic Display Typography\nDesign philosophy: Typography as sculpture. The site is one massive 3D chrome letterform that fills and overflows the viewport. The UI is secondary — the art is the hero.\nInfluences: David Carson deconstructivism × Neville Brody metal poster design × Industrial editorial. Film poster culture applied to web.",
+  "techStack": [
+    "Custom WebGL/Three.js likely"
+  ],
+  "screenshots": {
+    "desktop": "/references/hunt-a24/reference-desktop.png"
+  }
+}

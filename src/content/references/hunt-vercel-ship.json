@@ -1,0 +1,121 @@
+{
+  "slug": "hunt-vercel-ship",
+  "name": "Vercel Ship",
+  "style": "",
+  "huntDate": "2026-02-21",
+  "categories": [
+    "B2B SaaS"
+  ],
+  "engagement": 5,
+  "mode": "light",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#000000",
+        "secondary": "#1A1A1A",
+        "tertiary": "#333333"
+      },
+      "accent": {
+        "primary": "#FFFFFF",
+        "secondary": "#E5E5E5"
+      },
+      "text": {
+        "primary": "#FFFFFF",
+        "secondary": "#A0A0A0",
+        "muted": "#666666"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Geist Sans",
+        "body": "Geist Mono",
+        "mono": "Geist Mono"
+      },
+      "scale": {
+        "hero": "600px",
+        "h1": "80px",
+        "h2": "48px",
+        "h3": "32px",
+        "body": "16px",
+        "small": "14px",
+        "micro": "12px"
+      },
+      "weights": {
+        "heavy": 800,
+        "bold": 700,
+        "regular": 400,
+        "light": 300
+      },
+      "lineHeights": {
+        "tight": 1,
+        "normal": 1.5,
+        "relaxed": 1.7
+      }
+    },
+    "spacing": {
+      "section": "120px",
+      "element": "32px",
+      "tight": "8px",
+      "container": "80px"
+    },
+    "borderRadius": {
+      "card": "0px",
+      "button": "0px",
+      "pill": "9999px"
+    },
+    "shadows": {},
+    "animation": {
+      "durations": {
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "600ms"
+      },
+      "easings": {
+        "default": "cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    }
+  },
+  "effects": [
+    {
+      "slug": "particle-disintegration",
+      "name": "Particle Disintegration",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "hero-crop-type",
+      "name": "Hero Crop Type",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "dotted-section-frame",
+      "name": "Dotted Section Frame",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "corner-bracket-frame",
+      "name": "Corner Bracket Frame",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "mono-metadata-strip",
+      "name": "Mono Metadata Strip",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "letter-feature-grid",
+      "name": "Letter Feature Grid",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "vercel-triangle-footer",
+      "name": "Vercel Triangle Footer",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "",
+  "coreAesthetic": "Style: Brutalist Conference Noir\nOne-sentence philosophy: Massive deconstructed typography on pure black, punctuated by particle disintegration effects and monospace metadata, creating a high-contrast editorial brutalism that signals premium developer events.\nKey influences: Swiss typographic posters, brutalist web design, particle physics visualizations, Vercel's existing brand language (triangle, monochrome).",
+  "techStack": [],
+  "screenshots": {
+    "desktop": "/references/hunt-vercel-ship/reference-desktop.png"
+  }
+}

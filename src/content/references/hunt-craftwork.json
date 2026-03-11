@@ -1,0 +1,129 @@
+{
+  "slug": "hunt-craftwork",
+  "name": "Craftwork",
+  "style": "Clean Light Curated Gallery with Sidebar Navigation",
+  "huntDate": "2026-03-11",
+  "categories": [
+    "Creative / 3D",
+    "B2B SaaS"
+  ],
+  "engagement": 8,
+  "mode": "light",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#FFFFFF",
+        "secondary": "#F7F7F7",
+        "tertiary": "#F3F4F6"
+      },
+      "accent": {
+        "primary": "#1A1A1A",
+        "secondary": "#FBBF24"
+      },
+      "text": {
+        "primary": "#1A1A1A",
+        "secondary": "#6B7280",
+        "muted": "#9CA3AF"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Inter",
+        "body": "Inter",
+        "mono": "JetBrains Mono"
+      },
+      "scale": {
+        "hero": "30px",
+        "h1": "30px",
+        "h2": "20px",
+        "body": "14px",
+        "small": "13px",
+        "micro": "11px"
+      },
+      "weights": {
+        "bold": 700,
+        "semibold": 500,
+        "regular": 400
+      },
+      "lineHeights": {
+        "tight": 1.3,
+        "normal": 1.5,
+        "relaxed": 1.6
+      }
+    },
+    "spacing": {
+      "section": "48px",
+      "element": "20px",
+      "tight": "8px"
+    },
+    "borderRadius": {
+      "card": "10px",
+      "button": "6px",
+      "pill": "9999px"
+    },
+    "shadows": {
+      "card": "0 1px 4px rgba(0,0,0,0.06)",
+      "hover": "0 4px 16px rgba(0,0,0,0.10)"
+    },
+    "animation": {
+      "durations": {
+        "fast": "150ms",
+        "normal": "250ms"
+      },
+      "easings": {
+        "default": "ease-out"
+      }
+    }
+  },
+  "effects": [
+    {
+      "slug": "sidebar-category-nav",
+      "name": "Sidebar Category Nav",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "two-column-masonry-grid",
+      "name": "Two Column Masonry Grid",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "tab-navigation",
+      "name": "Tab Navigation",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "filter-dropdown-row",
+      "name": "Filter Dropdown Row",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "breadcrumb-nav",
+      "name": "Breadcrumb Nav",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "card-action-icons",
+      "name": "Card Action Icons",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "category-color-icons",
+      "name": "Category Color Icons",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "pro-badge",
+      "name": "Pro Badge",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "Sidebar provides hierarchical taxonomy while main area provides visual browsing. Two mental models simultaneously: \"I know what I want\" (sidebar) and \"I'm exploring\" (grid).",
+  "coreAesthetic": "Style: Clean Light Curated Gallery — Sidebar Navigation with Masonry Grid\nDesign philosophy: Functional curation first — the sidebar acts as a taxonomy system while the main area is a pure gallery. Clarity over decoration.\nInfluences: Dribbble, Behance light mode, Apple HIG for navigation patterns. Studio database aesthetic.",
+  "techStack": [
+    "Next.js",
+    "BunnyCDN"
+  ],
+  "screenshots": {
+    "desktop": "/references/hunt-craftwork/reference-desktop.png"
+  }
+}

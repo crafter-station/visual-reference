@@ -1,0 +1,126 @@
+{
+  "slug": "hunt-spiral-soot",
+  "name": "Spiral Soot",
+  "style": "Ultra-Minimal Warm White Intelligent Search",
+  "huntDate": "2026-03-11",
+  "categories": [
+    "Creative / 3D",
+    "B2B SaaS"
+  ],
+  "engagement": 9,
+  "mode": "warm",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#EDECEA",
+        "secondary": "#F5F4F2",
+        "tertiary": "#DDE8F5"
+      },
+      "accent": {
+        "primary": "#1A1A1A",
+        "secondary": "#D0CFC8"
+      },
+      "text": {
+        "primary": "#1A1A1A",
+        "secondary": "#888884",
+        "muted": "#B0AFA8"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Tiempos Headline / serif",
+        "body": "Inter",
+        "mono": "JetBrains Mono"
+      },
+      "scale": {
+        "hero": "68px",
+        "h1": "48px",
+        "h2": "32px",
+        "body": "15px",
+        "small": "13px",
+        "micro": "11px"
+      },
+      "weights": {
+        "bold": 800,
+        "semibold": 400,
+        "regular": 300
+      },
+      "lineHeights": {
+        "tight": 1.1,
+        "normal": 1.5,
+        "relaxed": 1.7
+      }
+    },
+    "spacing": {
+      "section": "80px",
+      "element": "32px",
+      "tight": "12px"
+    },
+    "borderRadius": {
+      "card": "8px",
+      "button": "9999px",
+      "pill": "9999px",
+      "searchBar": "9999px"
+    },
+    "shadows": {
+      "card": "none",
+      "searchBar": "0 2px 8px rgba(0,0,0,0.06)"
+    },
+    "animation": {
+      "durations": {
+        "fast": "200ms",
+        "normal": "400ms"
+      },
+      "easings": {
+        "default": "ease-out",
+        "spring": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+      }
+    }
+  },
+  "effects": [
+    {
+      "slug": "organic-scattered-collage",
+      "name": "Organic Scattered Collage",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "mixed-weight-headline",
+      "name": "Mixed Weight Headline",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "centered-search-bar",
+      "name": "Centered Search Bar",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "warm-minimal-background",
+      "name": "Warm Minimal Background",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "spotlight-oval",
+      "name": "Spotlight Oval",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "small-logo-mark",
+      "name": "Small Logo Mark",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "dark-pill-cta",
+      "name": "Dark Pill Cta",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "The scattered collage proves library breadth kinetically. Mixed-weight headline reads like a film title card — two registers, one sentence. Warm off-white feels physical, analog.",
+  "coreAesthetic": "Style: Ultra-Minimal Warm White — Intelligent Search with Scattered Organic Imagery\nDesign philosophy: Pure restraint — a search bar, a scattered collage of images that proves the breadth of the library, and one enormous headline. Every element earns its place.\nInfluences: Perplexity AI meets Are.na meets Muji product page. Calm technology aesthetic. Teenage Engineering minimalism.",
+  "techStack": [
+    "Next.js",
+    "custom"
+  ],
+  "screenshots": {
+    "desktop": "/references/hunt-spiral-soot/reference-desktop.png"
+  }
+}

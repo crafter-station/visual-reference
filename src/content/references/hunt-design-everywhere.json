@@ -1,0 +1,124 @@
+{
+  "slug": "hunt-design-everywhere",
+  "name": "Design Everywhere",
+  "style": "Dark Editorial Photography Gallery",
+  "huntDate": "2026-03-11",
+  "categories": [
+    "Portfolio",
+    "Creative / 3D"
+  ],
+  "engagement": 8,
+  "mode": "dark",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#0A0A0A",
+        "secondary": "#111111",
+        "tertiary": "#1E1E1E"
+      },
+      "accent": {
+        "primary": "#E8E6E0",
+        "secondary": "#C8B898"
+      },
+      "text": {
+        "primary": "#E8E6E0",
+        "secondary": "#666666",
+        "muted": "#444444"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Helvetica Neue",
+        "body": "Helvetica Neue",
+        "mono": "JetBrains Mono"
+      },
+      "scale": {
+        "hero": "14px",
+        "h1": "22px",
+        "h2": "18px",
+        "body": "13px",
+        "small": "12px",
+        "micro": "11px"
+      },
+      "weights": {
+        "bold": 500,
+        "semibold": 400,
+        "regular": 300
+      },
+      "lineHeights": {
+        "tight": 1.2,
+        "normal": 1.5,
+        "relaxed": 1.6
+      }
+    },
+    "spacing": {
+      "section": "0px",
+      "element": "16px",
+      "tight": "8px"
+    },
+    "borderRadius": {
+      "card": "0px",
+      "button": "4px",
+      "pill": "9999px"
+    },
+    "shadows": {
+      "card": "none",
+      "overlay": "linear-gradient(to top, rgba(0,0,0,0.6), transparent)"
+    },
+    "animation": {
+      "durations": {
+        "fast": "200ms",
+        "normal": "400ms"
+      },
+      "easings": {
+        "default": "ease-out"
+      }
+    }
+  },
+  "effects": [
+    {
+      "slug": "full-bleed-photography",
+      "name": "Full Bleed Photography",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "dark-cinematic-bg",
+      "name": "Dark Cinematic Bg",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "centered-wordmark-nav",
+      "name": "Centered Wordmark Nav",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "gradient-overlay-text",
+      "name": "Gradient Overlay Text",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "copyright-in-site-name",
+      "name": "Copyright In Site Name",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "tight-category-nav",
+      "name": "Tight Category Nav",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "like-count-chip",
+      "name": "Like Count Chip",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "Strips away every UI element that doesn't serve the photography. The dark background functions as a darkroom — images are developed, not displayed.",
+  "coreAesthetic": "Style: Dark Editorial Photography Gallery — Cinematic Moody Archive\nDesign philosophy: Full-bleed photography as the primary design element — the interface disappears into the content. Typography floats over film-like imagery.\nInfluences: A24 film archives, Kinfolk magazine, Craig Mod digital walks. Dark-room editorial restraint.",
+  "techStack": [
+    "DatoCMS",
+    "Next.js"
+  ],
+  "screenshots": {
+    "desktop": "/references/hunt-design-everywhere/reference-desktop.png"
+  }
+}

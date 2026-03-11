@@ -1,0 +1,119 @@
+{
+  "slug": "hunt-cosmos",
+  "name": "Cosmos",
+  "style": "Dark Editorial Moodboard Gallery",
+  "huntDate": "2026-03-11",
+  "categories": [
+    "Creative / 3D",
+    "Portfolio"
+  ],
+  "engagement": 9,
+  "mode": "dark",
+  "tokens": {
+    "colors": {
+      "background": {
+        "primary": "#0A0A0A",
+        "secondary": "#141414",
+        "tertiary": "#1F1F1F"
+      },
+      "accent": {
+        "primary": "#FFFFFF",
+        "secondary": "#1E1E1E"
+      },
+      "text": {
+        "primary": "#F5F5F5",
+        "secondary": "#888888",
+        "muted": "#555555"
+      }
+    },
+    "typography": {
+      "families": {
+        "display": "Inter",
+        "body": "Inter",
+        "mono": "JetBrains Mono"
+      },
+      "scale": {
+        "hero": "60px",
+        "h1": "48px",
+        "h2": "32px",
+        "body": "15px",
+        "small": "13px",
+        "micro": "11px"
+      },
+      "weights": {
+        "bold": 700,
+        "semibold": 500,
+        "regular": 400
+      },
+      "lineHeights": {
+        "tight": 1.15,
+        "normal": 1.5,
+        "relaxed": 1.7
+      }
+    },
+    "spacing": {
+      "section": "80px",
+      "element": "24px",
+      "tight": "8px"
+    },
+    "borderRadius": {
+      "card": "8px",
+      "button": "9999px",
+      "pill": "9999px"
+    },
+    "shadows": {
+      "card": "none",
+      "hover": "0 0 0 1px rgba(255,255,255,0.08)"
+    },
+    "animation": {
+      "durations": {
+        "fast": "150ms",
+        "normal": "250ms"
+      },
+      "easings": {
+        "default": "ease-out"
+      }
+    }
+  },
+  "effects": [
+    {
+      "slug": "scattered-image-mosaic",
+      "name": "Scattered Image Mosaic",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "headline-over-gallery",
+      "name": "Headline Over Gallery",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "minimal-dark-nav",
+      "name": "Minimal Dark Nav",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "mixed-aspect-cards",
+      "name": "Mixed Aspect Cards",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "dark-editorial",
+      "name": "Dark Editorial",
+      "category": "visual-accent"
+    },
+    {
+      "slug": "no-card-chrome-at-rest",
+      "name": "No Card Chrome At Rest",
+      "category": "visual-accent"
+    }
+  ],
+  "whyItWorks": "The gallery IS the hero — scattered photos replace the traditional hero illustration. Near-black canvas makes every image luminous. Maximum confidence move: text floats over chaos with no container.",
+  "coreAesthetic": "Style: Dark Editorial Moodboard Gallery\nDesign philosophy: Let the content be the interface — the hero IS the gallery, scattered organically over a near-black canvas with headline text floating above the chaos.\nInfluences: Are.na meets Pinterest Dark, editorial magazine layouts, photography portfolio sites. Anti-grid expressionism.",
+  "techStack": [
+    "Next.js",
+    "Sanity CMS"
+  ],
+  "screenshots": {
+    "desktop": "/references/hunt-cosmos/reference-desktop.png"
+  }
+}
