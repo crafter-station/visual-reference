@@ -24,20 +24,24 @@ export function getReferencesByEffect(category: EffectCategory): VisualReference
 }
 
 const FEATURED_SLUGS = [
-  "hunt-united-drone-company",
-  "hunt-nexara",
-  "hunt-blissful-team",
-  "hunt-cassette-cat",
-  "hunt-amp-dev",
-  "hunt-cursor-directory",
-  "hunt-big-architects",
-  "hunt-maca-voice",
+  "hunt-topology",
+  "hunt-cosmos",
+  "hunt-a24",
+  "hunt-spiral-soot",
 ];
 
 export function getFeaturedReferences(): VisualReference[] {
   return FEATURED_SLUGS
     .map((slug) => data.find((m) => m.slug === slug))
     .filter((m): m is VisualReference => m !== undefined);
+}
+
+export function getAllReferencesSortedByDate(): VisualReference[] {
+  return [...data].sort((a, b) => {
+    const da = a.huntDate ?? "0000-00-00";
+    const db = b.huntDate ?? "0000-00-00";
+    return db.localeCompare(da);
+  });
 }
 
 export function getReferenceSlugs(): string[] {
