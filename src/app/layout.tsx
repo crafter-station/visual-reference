@@ -47,12 +47,6 @@ export default function RootLayout({
             </Link>
             <div className="flex items-center gap-5">
               <Link
-                href="/references"
-                className="font-mono text-[12px] text-white/40 transition-colors hover:text-white/70"
-              >
-                browse
-              </Link>
-              <Link
                 href="/effects"
                 className="font-mono text-[12px] text-white/40 transition-colors hover:text-white/70"
               >
